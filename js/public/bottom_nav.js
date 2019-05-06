@@ -20,7 +20,7 @@ var iconWH = [
 ]
 /*底部nav-title_按循序*/
 var buttonNavTitle = [
-	"消息",
+	"信息",
 	"通讯录",
 	"发现",
 ];
