@@ -1,0 +1,70 @@
+@charset "utf-8";
+/*弹性布局*/
+.container {  
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */  
+    display: -moz-box; /* Firefox 17- */  
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */  
+    display: -moz-flex; /* Firefox 18+ */  
+    display: -ms-flexbox; /* IE 10 */  
+    display: flex; /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */  
+}
+/*底部导航wrap*/
+.bottomNavWrap {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 9;
+	padding-top: .03rem;
+	box-sizing: border-box;
+	width: 100%;
+	height: .98rem;
+	background-color: #248de6;
+}
+
+/*导航 项*/
+.bottomNavTerm {
+	-prefix-box-flex: 1; 
+	-webkit-box-flex: 1; 
+	-webkit-flex: 1; 
+	-moz-box-flex: 1; 
+	-ms-flex: 1; 
+	flex: 1; 
+	height: .95rem;
+}
+/*icon box*/
+.bottomNavIconBox {
+	position: relative;
+	width: 100%;
+	height: .62rem;
+}
+
+/*icon box=>icon:（bottom_nav.js设置）*/
+.bottomNavIcon {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: .36rem;
+	height: .36rem;
+}
+.bottomNavTitle {
+	width: 100%;
+	font-size: .18rem;
+	line-height: .2rem;
+	letter-spacing: .02rem;
+	text-align: center;
+	color: #c5e2fb;
+}
+
+/*点击时 font-color*/
+.bNavYseFontColor {
+	color: #fff;
+}
+/*不-点击时 font-color*/
+.bNavNoFontColor {
+	color: #c5e2fb;
+}
+
