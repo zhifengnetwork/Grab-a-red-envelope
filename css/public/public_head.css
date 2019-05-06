@@ -12,9 +12,13 @@
 	font-size: .3rem;
 	line-height: .88rem;
 	text-align: center;
-	color: #fefefe;
+	color: #fff;
 	letter-spacing: .02rem;
-	background-color: #37afe6;
+	/*从左到右的渐变色：*/
+	background:-webkit-linear-gradient(left,#00dafd,#00a7ff);
+	background:-o-linear-gradient(right,#00dafd,#00a7ff);
+	background:-moz-linear-gradient(right,#00dafd,#00a7ff);
+	background: linear-gradient(to right,#00dafd,#00a7ff);
 } 
 /*头部 底部线*/
 .lb_headWrap_line {

@@ -2,41 +2,37 @@
  *  *bottomTabArrOne.length来循环
  * **/
 var bottomTabArrOne = [
-	"../../img/public/bottom_nav/home0_1.png",
-	"../../img/public/bottom_nav/example1_1.png",
-	"../../img/public/bottom_nav/purchase2_1.png",
-	"../../img/public/bottom_nav/my3_1.png"
+	"../../img/public/bottom_nav/news@2x_1.png",
+	"../../img/public/bottom_nav/mail_list@2x_1.png",
+	"../../img/public/bottom_nav/find@2x_1.png",
 ];
 /*底部nav切换(已-点击)_按循序*/
 var bottomTabArrTwo = [
-	"../../img/public/bottom_nav/home0_2.png",
-	"../../img/public/bottom_nav/example1_2.png",
-	"../../img/public/bottom_nav/purchase2_2.png",
-	"../../img/public/bottom_nav/my3_2.png"
+	"../../img/public/bottom_nav/news@2x_2.png",
+	"../../img/public/bottom_nav/mail_list@2x_2.png",
+	"../../img/public/bottom_nav/find@2x_2.png",
 ];
 /*图标的大小_按循序（不设置默认）*/
 var iconWH = [
-	'width: .4rem; height: .4rem;',
-	'width: .34rem; height: .4;',
-	'width: .4rem; height: .4rem;',
-	'width: .4rem; height: .38rem;',
+	'width: .44rem; height: .44rem;',
+	'width: .44rem; height: .44rem;',
+	'width: .6rem; height: .39rem;',
 ]
 /*底部nav-title_按循序*/
 var buttonNavTitle = [
-	"首页",
-	"示例报告",
-	"购买",
-	"我的"
+	"消息",
+	"通讯录",
+	"发现",
 ];
 
 /*底部nav-点击url路径_按循序*/
 var buttonNavUrl = [];
 /*未-登陆路径*/
 var loginFalse = [
-	"'../home/index.html'",
-	"'../example/example.html'",
-	"'../purchase/purchase.html'",
-	"'../my/my.html'",
+	"''",
+	"''",
+	"''",
+	"''",
 ]
 /*已-登陆路径*/
 var loginTrue = [
