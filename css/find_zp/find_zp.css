@@ -1,0 +1,157 @@
+body{
+    background-color: #051d29;
+}
+/*汉仪菱心体简字体*/
+@font-face{
+	font-family: '汉仪菱心体简';
+    src: url("../../font/汉仪菱心体简.ttf"),
+         url("../../font/汉仪菱心体简.eot"),
+         url("../../font/汉仪菱心体简.otf"),
+         url("../../font/汉仪菱心体简.svg")
+}
+
+/* 苹方字体 */
+@font-face{
+	font-family: 'PingFangMedium';
+	src: url("../../font/PingFangMedium.ttf")
+}
+
+/* 内容 */
+.find-content{
+    padding: .2rem .3rem;
+    box-sizing: border-box;
+    height: 100%;
+    color: #fff;
+}
+
+/* 盒子公共样式 */
+.find-content .item-wrap{
+    background: -webkit-gradient(linear,left top, left bottom,from(#25d3f9),to(#307ddb));
+    background: -webkit-linear-gradient(#25d3f9,#307ddb);
+    background: -o-linear-gradient(#25d3f9,#307ddb);
+    background: linear-gradient(#25d3f9,#307ddb);
+    padding: .2rem;
+    box-sizing: border-box;
+    position: relative;
+}
+/* 大标题 */
+.find-content .item-title{
+    width: 3.72rem;
+    height: .64rem;
+    line-height: .64rem;
+    text-align: center;
+    font-size: .3rem;
+    font-family: "汉仪菱心体简";
+    background: url(../../img/find_zp/theader-bg.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: -.1rem;
+    left: 50%;
+    margin-left: -1.86rem;
+}
+.find-content .item-des p{
+    font-size: .24rem;
+    line-height: .4rem;
+}
+
+/* 玩法规则说明 */
+.rule-des{
+    width: 100%;
+}
+.rule-des .item-des{
+    width: 4.4rem;
+    margin: 0 auto;
+    padding-top: .3rem;
+}
+.rule-des .item-des h4{
+    text-align: center;
+    font-size: .30rem;
+    margin-top: .1rem;
+    font-family: "PingFangMedium";
+}
+
+/* 规则提示 */
+.rule-tips{
+    color: #f30940;
+    font-size: .24rem;
+    text-align: center;
+    line-height: .4rem;
+    margin: .18rem 0 .3rem;
+}
+
+/* 抢包奖励 */
+.rob-reward .item-des{
+    width: 5.6rem;
+    margin: .58rem auto 0;
+}
+.rob-reward .item-des p{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.find-content .row{
+    margin-top: .4rem;
+    /* overflow: hidden; */
+}
+/* 7包发包奖励 */
+.send7-reward{
+    width: 3rem;
+    min-height: 2.94rem;
+    float: left;
+}
+.send7-reward .item-title{
+    width: 2.61rem;
+    height: .43rem;
+    line-height: .43rem;
+    font-size: .24rem;
+    background: url(../../img/find_zp/theader-bg01.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: -.06rem;
+    left: 50%;
+    margin-left: -1.3rem;
+}
+.send7-reward .item-des{
+    width: 2.12rem;
+    margin: .7rem auto 0;
+}
+
+/* 9包发包奖励 */
+.send9-reward{
+    width: 3.7rem;
+    min-height: 2.94rem;
+    float: right;
+}
+.send9-reward .item-title{
+    width: 3.41rem;
+    height: .43rem;
+    line-height: .43rem;
+    font-size: .24rem;
+    background: url(../../img/find_zp/theader-bg02.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: -.06rem;
+    left: 50%;
+    margin-left: -1.7rem;
+}
+.send9-reward .item-des{
+    margin-top: .15rem;
+}
+.send9-reward .item-des p{
+    text-align: center;
+}
+.send9-reward .down h4{
+    text-align: center;
+    color: #e92252;
+    line-height: .4rem;
+}
+.send9-reward .odd{
+    float: left;
+}
+.send9-reward .many{
+    float: right;
+}
