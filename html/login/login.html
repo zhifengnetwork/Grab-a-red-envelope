@@ -2,8 +2,62 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>登录</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<title class="pageTopTitle" page-id="0">登录</title>
+		<script src="../../js/public/rem.js"></script>
+		<!--public-->
+		<link rel="stylesheet" href="../../css/public/public.css" />
+		<!--头部-->
+		<link rel="stylesheet" href="../../css/public/public_head.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/login/login.css"/>
 	</head>
 	<body>
+		<div class="wrapper">
+			<!--头部-->
+			<div class="head">
+				<span>登录</span>
+            </div>
+            <!--内容-->
+            <div class="content">
+            	<!--头像-->
+            	<div class="photo_img">
+            		<img src="../../img/login/touxiang.png" />
+            	</div>
+            	<!--手机密码框-->
+            	<div class="word_box">
+            		<!--手机输入框-->
+            		<div class="mobile">
+            			<div class="mark">+86</div>
+            			<div class="inp">
+            				<input class="text name" type="text" placeholder="请输入手机号码" />
+            			</div>
+            		</div>
+            		<!--密码输入框-->
+            		<div class="mobile">
+            			<div class="mark">密码</div>
+            			<div class="inp">
+            				<input class="text name" type="text" placeholder="请输入登录密码" />
+            			</div>
+            		</div>
+            	</div>
+            	<!--登录按钮-->
+            	<a class="last_btn">立即登录</a>
+            	<!--找回密码/注册跳转-->
+            	<div class="skip_wrap">
+            		<a href="../password/password.html" class="password">找回密码</a>
+            		<a href="../signin/signin.html" class="signin">立即注册</a>
+            	</div>
+            	
+            </div>
+		</div>
+		
+		<script src="../../js/public/jquery-1.8.3.js"></script>
+		<script>
+			//input输入框失去焦点，页面视觉回弹
+			$(".name").blur(function(){
+			  	document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			});
+		</script>
 	</body>
 </html>
