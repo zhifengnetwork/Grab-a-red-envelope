@@ -1,0 +1,77 @@
+body{
+    background-color: #f5f5f5;
+}
+
+/* 头部 */
+.lb_headWrap{
+    background:#ffffff;
+    color: #060606;
+}
+
+/* 主内容 */
+.personal-content{
+    background-color: #fff;
+    padding-left: .28rem;
+    box-sizing: border-box;
+}
+.personal-content ul li{
+    height: 1rem;
+    line-height: 1rem;
+    border-bottom: .01rem solid #f3f3f3;
+    position: relative;
+}
+
+/* 左边 */
+.personal-content ul li .fl{
+    font-size: .28rem;
+    color: #000;
+}
+
+/* 右边 */
+.personal-content ul li .fr{
+    padding-right: .6rem;
+    color: #747886;
+    font-size: .24rem;
+}
+
+/* 头像 */
+.personal-content ul li .fr .text{
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.personal-content ul li .fr .avatar img{
+    width: .66rem;
+    height: .66rem;
+}
+.personal-content ul li .fr .avatar-file{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* 二维码 */
+.personal-content ul li .fr .code-icon img{
+    width: .36rem;
+    height: .36rem;
+}
+
+/* 右箭头 */
+.right-arrow {
+    border-bottom: .02rem solid #afaeb6;
+    border-right: .02rem solid #afaeb6;
+    width: .18rem;
+    height: .18rem;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: .28rem;
+}
