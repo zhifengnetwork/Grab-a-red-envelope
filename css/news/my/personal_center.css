@@ -75,3 +75,49 @@ body{
     margin: auto;
     right: .28rem;
 }
+
+/* 修改名字 */
+/* 字体渐变  */
+.editBtn{
+    position: absolute;
+    right: .3rem;
+    color: #5ac0f7;
+    background: -webkit-gradient(linear, left top, right top, from(#60d0f7) , to(#50a5f8));
+    background: -webkit-linear-gradient(left, #60d0f7 , #50a5f8);
+    background: -o-linear-gradient(left, #60d0f7 , #50a5f8);
+    background: linear-gradient(to right, #60d0f7 , #50a5f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.edit-content{
+    margin-top: .36rem;
+}
+.edit-content .edit-item{
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    background: #fff;
+    position: relative;
+}
+.edit-content .edit-item .editName{
+    width: 100%;
+    height: .5rem;
+    padding: 0 .28rem;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    outline: none;
+}  
+.edit-content .edit-item .del-icon{
+    width: .44rem;
+    height: .44rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: .28rem;
+    line-height: 0;
+}   
+.edit-content .edit-item .del-icon img{
+    width: 100%;
+}
