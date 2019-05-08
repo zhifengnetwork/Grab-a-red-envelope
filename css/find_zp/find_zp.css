@@ -54,14 +54,14 @@ body{
     line-height: .4rem;
 }
 
+
 /* 玩法规则说明 */
 .rule-des{
     width: 100%;
 }
 .rule-des .item-des{
-    width: 4.4rem;
-    margin: 0 auto;
     padding-top: .3rem;
+   
 }
 .rule-des .item-des h4{
     text-align: center;
@@ -69,6 +69,10 @@ body{
     margin-top: .1rem;
     font-family: "PingFangMedium";
 }
+.rule-des .item-des p{
+    text-align: center;
+}
+
 
 /* 规则提示 */
 .rule-tips{
@@ -81,7 +85,7 @@ body{
 
 /* 抢包奖励 */
 .rob-reward .item-des{
-    width: 5.6rem;
+    width: 6.2rem;
     margin: .58rem auto 0;
 }
 .rob-reward .item-des p{
@@ -99,12 +103,12 @@ body{
 }
 /* 7包发包奖励 */
 .send7-reward{
-    width: 3rem;
-    min-height: 2.94rem;
+    width: 2.5rem;
+    min-height: 2.98rem;
     float: left;
 }
 .send7-reward .item-title{
-    width: 2.61rem;
+    width: 2.4rem;
     height: .43rem;
     line-height: .43rem;
     font-size: .24rem;
@@ -113,21 +117,21 @@ body{
     position: absolute;
     top: -.06rem;
     left: 50%;
-    margin-left: -1.3rem;
+    margin-left: -1.2rem;
 }
 .send7-reward .item-des{
-    width: 2.12rem;
+    width: 2.23rem;
     margin: .7rem auto 0;
 }
 
 /* 9包发包奖励 */
 .send9-reward{
-    width: 3.7rem;
-    min-height: 2.94rem;
+    width: 4.2rem;
+    min-height: 2.98rem;
     float: right;
 }
 .send9-reward .item-title{
-    width: 3.41rem;
+    width: 3.68rem;
     height: .43rem;
     line-height: .43rem;
     font-size: .24rem;
@@ -136,12 +140,12 @@ body{
     position: absolute;
     top: -.06rem;
     left: 50%;
-    margin-left: -1.7rem;
+    margin-left: -1.84rem;
 }
 .send9-reward .item-des{
-    margin-top: .15rem;
+    margin-top: .2rem;
 }
-.send9-reward .item-des p{
+.send9-reward .item-des > p{
     text-align: center;
 }
 .send9-reward .down h4{
