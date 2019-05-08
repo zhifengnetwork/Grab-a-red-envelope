@@ -1,0 +1,98 @@
+body {
+	width: 100%;
+    height: 100vh;
+	background-image: linear-gradient(-30deg, 
+		#2a65b1 0%, 
+		#82ccbe 100%), 
+	linear-gradient(
+		#00ff00, 
+		#00ff00);
+}
+.headWrap {
+	position: relative;
+	width: 100%;
+	height: .88rem;
+	font-size: .3rem;
+	line-height: .88rem;
+	text-align: center;
+	color: #fff;
+	letter-spacing: .02rem;
+}
+
+.item_wrap {
+	margin: 0 .75rem;
+}
+.img {
+	width: .31rem;
+}
+.img img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.user_name {
+	margin: .55rem 0 0;
+	padding: .2rem 0;
+	border-bottom: solid 1px #fff;
+}
+.user_name div {
+	display: inline-block;
+	vertical-align: middle;
+}
+.inp {
+	margin-left: .42rem;
+}
+.text {
+	width: 4rem;
+	height: .45rem;
+	border: none;
+	outline: none;
+	background: rgba(255,0,0,0);
+	font-size: .24rem;
+	color: #ededed;
+}
+input::-webkit-input-placeholder {
+    font-size: .24rem;
+	color: #ededed;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.put {
+	width: 2rem;
+	height: .45rem;
+	border: none;
+	outline: none;
+	background: rgba(255,0,0,0);
+	font-size: .24rem;
+	color: #ededed;
+}
+
+.btn_wrap {
+	margin-left: 1.25rem;
+	width: 1.8rem;
+	height: .65rem;
+	background-color: #398295;
+	border-radius: 25px;
+	text-align: center;
+	line-height: .65rem;
+}
+.gain {
+	color: #ededed;
+	font-size: .24rem;
+}
+
+.sub_btn {
+	margin: .6rem auto;
+	width: 5.98rem;
+	height: .88rem;
+	background-color: #00ccff;
+	border-radius: 44px;
+	letter-spacing: 2px;
+	color: #fff;
+	font-size: .3rem;
+	text-align: center;
+	line-height: .88rem;
+}

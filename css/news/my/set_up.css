@@ -1,0 +1,93 @@
+/*
+ 
+ 我的设置
+
+*/
+
+*{
+	box-sizing: border-box;
+}
+
+/* 头部 */
+.lb_headWrap{
+    background: linear-gradient(to right,#fefefe,#fefefe);
+    color: #060606;
+}
+
+.set-page>ul{
+    margin-top:.21rem;
+}
+
+.page-item{
+    position: relative;
+    padding-left: .28rem;
+    padding-right: .28rem;
+    height: 1.02rem;
+    line-height: 1.02rem;
+    background: linear-gradient(to right,#fefefe,#fefefe);
+    margin-bottom: .05rem;
+}
+
+.page-item .item-text{
+    font-size: .28rem;
+}
+
+.page-item  .item-leftImg{
+    position: absolute;
+    right: .28rem;
+}
+.page-item  .item-leftImg>img{
+    width: .9rem;
+    height: .5rem;
+    margin-top: .27rem;
+}
+
+.main-wrap .set-but{
+    width: 4rem;
+    margin: 1.21rem auto;
+}
+
+.set-but .quit-but{
+    width: 4rem;
+    height: .7rem;
+    background: #f15a5a;
+    color: #ffffff;
+    line-height: .7rem;
+    text-align: center;
+    border-radius: .1rem;
+}
+
+
+/* 
+
+通用样式
+
+*/
+
+.typeface-select {
+    position: absolute;
+    right: .1rem;
+    height: 100%;
+}
+
+.typeface-select .typeface{
+    font-size: .2rem;
+    color: #9e9e9e;
+    display: inline-block;
+    max-width: 5rem;
+    margin-right: .5rem;
+}
+
+
+/* 
+
+账号与安全
+
+*/
+
+.information .cue{
+    padding: .21rem;
+    color: #9e9e9e;
+    font-size: .2rem;
+    text-align: center;
+}

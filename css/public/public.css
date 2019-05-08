@@ -81,3 +81,18 @@ input[type=button], input[type=submit], input[type=file], button {
 	-ms-flex: 1; 
 	flex: 1; 
 }
+
+
+/* 右箭头 */
+.right-arrow {
+    border-bottom: .03rem solid #afaeb6;
+    border-right: .03rem  solid #afaeb6;
+    width: .18rem;
+    height:  .18rem;
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: .28rem;
+}
