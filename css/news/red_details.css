@@ -1,0 +1,162 @@
+.headWrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	height: .88rem;
+	background-image: linear-gradient(90deg, 
+		#fd0059 0%, 
+		#fe0050 50%, 
+		#ff0048 100%), 
+	linear-gradient(
+		#f8f400, 
+		#f8f400);
+	font-size: .3rem;
+	line-height: .88rem;
+	text-align: center;
+	color: #fff;
+	letter-spacing: .02rem;
+}
+
+.top_wrap {
+	position: relative;
+}
+.top {
+	width: 100%;
+	height: 3rem;
+	background-image: linear-gradient(90deg, 
+		#fd0059 0%, 
+		#fe0050 50%, 
+		#ff0048 100%), 
+	linear-gradient(
+		#f8f400, 
+		#f8f400);
+}
+.money {
+	padding: .25rem  0 0;
+	text-align: center;
+	color: #fff38f;
+}
+.com {
+	font-size: .26rem;
+}
+.sum {
+	margin: 0 .1rem;
+	font-size: .48rem;
+}
+
+.middle {
+	position: relative;
+	
+}
+.oval {
+	position: absolute;
+	top: -.98rem;
+	left: 0;
+	width: 100%;
+	height: 1rem;
+	background: url(../../img/news/tuoyuan.png) no-repeat;
+	background-size: 100% 100%;
+}
+img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.photo img {
+	border-radius: 50%;
+}
+.photo {
+	position: absolute;
+	top: -1.55rem;
+	left: 41.5%;
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 50%;
+}
+.name {
+	background: #fff;
+	text-align: center;
+	font-size: .3rem;
+	color: #151515;
+	line-height: .75rem;
+}
+.account {
+	padding: 0 .28rem 0;
+	font-size: .26rem;
+	color: #8a8a8a;
+	line-height: .55rem;
+	background: #fff;
+}
+.account div {
+	display: inline-block;
+	vertical-align: top;
+}
+.ray {
+	margin-left: .35rem;
+}
+
+.get_wrap {
+	background: #dadada;
+}
+.item {
+	margin: 1px 0;
+	padding: .17rem .27rem .17rem .28rem;
+	background: #fff;
+}
+.item .img,.name_time,.right_sum {
+	display: inline-block;
+	vertical-align: middle;
+}
+.img {
+	width: .75rem;
+	height: .75rem;
+}
+.img img {
+	border-radius: 50%;
+}
+
+.name_time {
+	margin: 0 0 0 .25rem;
+	line-height: .45rem;
+}
+.super {
+	font-size: .26rem;
+	color: #151515;
+}
+.time {
+	font-size: .26rem;
+	color: #8a8a8a;
+}
+.time span:nth-child(2) {
+	margin-left: .15rem;
+}
+.right_sum {
+	float: right;
+	
+}
+.fig {
+	font-size: .36rem;
+	color: #151515;
+}
+.crump {
+	line-height: .55rem;
+}
+.crump_tu {
+	display: inline-block;
+	width: .3rem;
+	height: .25rem;
+	background: url(../../img/news/crump.png) no-repeat;
+	background-size: 100% 100%;
+	vertical-align: middle;
+}
+.theRay {
+	font-size: .26rem;
+	color: #f50c48;
+}
+
+/*中雷状态背景*/
+.active {
+	background: #fff1f5;
+}
