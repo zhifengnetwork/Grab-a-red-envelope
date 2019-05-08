@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>设置</title>
+        <script src="../../../../js/public/rem.js"></script>
+         <!--public-->
+		<link rel="stylesheet" href="../../../../css/public/public.css" />
+		<!--头部-->
+        <link rel="stylesheet" href="../../../../css/public/public_head.css" />
+        <link rel="stylesheet" href="../../../../css/news/my/set_up.css">
+</head>
+<body>
+    <div class="wrap_frame">
+        <!--public head-->
+        <div class="lb_headWrap">
+            <p class="lb_headWrap_return" data-num="1" onclick="returnFun()">
+                <img class="lb_headWrap_return_img" src="../../../../img/public/back@2x.png"/>
+            </p>
+            <span>设置</span>
+        </div>
+        <div class="main-wrap">
+              <div class="set-page">
+                       <ul>
+                           <li class="page-item">
+                               <span class="item-text">账号与安全</span>
+                               <span class="right-arrow"></span>
+                           </li>
+                           <li class="page-item">
+                                <span class="item-text">通用</span>
+                                <span class="right-arrow"></span>
+                           </li>
+                           <li class="page-item">
+                                <span class="item-text">新消息通知</span>
+                                <span class="item-leftImg message">
+                                    <img src="../../../../img/news/set_up/radio-a@2x.png" alt="" data-src="../../../../img/news/set_up/radio-b@2x.png">
+                                </span>
+                           </li>
+                       </ul>
+                       <ul>
+                        <li class="page-item">
+                            <span class="item-text">关于</span>
+                        </li>
+                       </ul>
+              </div>
+              <div class="set-but">
+                  <a href="javascript:;" class="quit-but">
+                      退出登录
+                  </a>
+              </div>
+            
+        </div>
+    </div>
+        <script src="../../../../js/public/jquery-1.8.3.js"></script>
+        <script src="../../../../js/public/public.js"></script>
+        <script>
+            $(function(){
+                
+                //接受消息通知
+                $('.message').click(function(){
+                      var that = $(this)
+                      var src = that.children().attr("src")
+                      var newSrc = that.children().attr("data-src")
+                      if(that.children().hasClass('select')){
+                        that.children().attr('src',newSrc).removeClass('select')
+                        that.children().attr('data-src',src)
+                      }else{
+                        that.children().attr('src',newSrc).addClass('select')
+                        that.children().attr('data-src',src)
+                      }
+                })
+
+            })
+        
+        </script>
+</body>
+</html>

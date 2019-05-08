@@ -74,7 +74,7 @@ body{
     padding-left: .3rem;
     position: absolute;
     left: 50%;
-    top: .26rem;
+    top: .03rem;
     transform: translate(-50%,0%);
     -moz-transform: translate(-50%,0%);
 	-ms-transform: translate(-50%,0%);
@@ -182,3 +182,40 @@ body{
 	
 	
 }
+
+  .mui-content{
+  	 background: white;
+  	
+  }
+   .mui-input-group{
+   	
+   	
+   	 position: absolute;
+   	 left: 0;
+   	 top: 0;
+   	 bottom: 0;
+   	 right: 0;
+   	
+   	
+   	
+   }
+   .mui-input-group .mui-input-row:after{
+   	
+   	background: white;
+   	
+   }
+  
+   .zhongjian{
+   	
+    border: 2px solid red;
+    position: relative;
+    bottom: 0;
+    overflow-y: scroll!important;
+   
+   	
+   	
+   }	
+   	
+   	
+ 
+   
