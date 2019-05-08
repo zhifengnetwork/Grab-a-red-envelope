@@ -1,0 +1,22 @@
+body{
+    padding: 0 .28rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: #fff;
+}
+/* 上级列表 */
+.superior_list{
+    margin-top: .3rem;
+    height:1rem;
+    line-height: 1rem;
+    background: #fff;
+}
+.superior_list_img{
+    width: 1rem;
+    height: 1rem;
+    vertical-align: top;
+}
+.superior_list_text{
+    margin-left: .2rem
+}
