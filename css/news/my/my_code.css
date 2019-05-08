@@ -1,0 +1,48 @@
+/* 
+
+我的二维码
+
+*/
+/* 头部 */
+.lb_headWrap{
+    background:#ffffff;
+    color: #060606;
+}
+
+.page-img-box{
+    width: 6.26rem;
+    margin: 2.02rem auto;
+    background: #ffffff;
+}
+
+.code-box .imgBox {
+    height: .64rem;
+    line-height: .64rem;
+    padding: .15rem .3rem;
+}
+
+.code-box .imgBox .my-img>img{
+    width: .64rem;
+    height: .64rem;
+    border-radius: .1rem;
+}
+ 
+.code-box .imgBox .user-name{
+    margin-left: .2rem;
+    font-weight: 600;
+    font-size: .28rem; 
+}
+
+.img-coder>img{
+    padding: .49rem;
+    width: 5.3rem;
+    height: 5.39rem;
+}
+
+.info-msg{
+    height: .92rem;
+    line-height: .92rem;
+    text-align: center;
+    font-size: .2rem;
+    color: #303030;
+}

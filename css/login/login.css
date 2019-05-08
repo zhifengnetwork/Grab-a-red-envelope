@@ -8,6 +8,10 @@ body {
 		#00ff00, 
 		#00ff00);
 }
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
 .head {
 	letter-spacing: 2px;
 	color: #fff;
@@ -45,7 +49,7 @@ body {
 	color: #151515;
 	text-align: center;
 	line-height: .45rem;
-	border-right: solid 1px #dadada;
+	border-right: 1px solid #dadada;
 }
 .inp {
 	margin-left: .15rem;

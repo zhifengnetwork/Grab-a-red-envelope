@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<title>个人中心</title>
+		<script src="../../../../js/public/rem.js"></script>
+		<!--public-->
+		<link rel="stylesheet" href="../../../../css/public/public.css" />
+		<!--头部-->
+		<link rel="stylesheet" href="../../../../css/public/public_head.css" />
+		<link rel="stylesheet" href="../../../../css/news/my/personal_center.css">
+	</head>
+	<body>
+		<!--最大边框-->
+		<div class="wrap_frame">
+			<!--public head-->
+			<div class="lb_headWrap">
+				<p class="lb_headWrap_return" data-num="1" onclick="returnFun()">
+					<img class="lb_headWrap_return_img" src="../../../../img/public/back@2x.png"/>
+				</p>
+                <span>更改名字</span>
+                
+                <span class="editBtn"><a href="../../my/personal_center/personal_center.html">完成</a></span>
+                
+			</div>
+
+            <!-- 内容 -->
+			<div class="edit-content">
+                <div class="edit-item">
+                    <input type="text" value="小明" class="editName">
+                    <span class="del-icon">
+                        <img src="../../../../img/news/my/del-icon.png" />
+                    </span>
+                </div>
+            </div>
+			
+		</div>
+		
+		<script src="../../../../js/public/jquery-1.8.3.js"></script>
+        <script src="../../../../js/public/public.js"></script>
+        <script>
+            $(function(){
+                $(".del-icon").click(function(){
+                    $(".editName").val("");
+                })
+            })
+        </script>
+	</body>
+</html>

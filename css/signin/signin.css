@@ -8,6 +8,10 @@ body {
 		#00ff00, 
 		#00ff00);
 }
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
 .headWrap {
 	position: relative;
 	width: 100%;
@@ -33,7 +37,7 @@ body {
 .user_name {
 	margin: .55rem 0 0;
 	padding: .2rem 0;
-	border-bottom: solid 1px #fff;
+	border-bottom: 1px solid #fff;
 }
 .user_name div {
 	display: inline-block;
