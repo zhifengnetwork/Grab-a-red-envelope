@@ -1,0 +1,130 @@
+body {
+	background: #F2F2F2;
+}
+.headWrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: .88rem;
+	background-image: linear-gradient(90deg, 
+		#fd0059 0%, 
+		#fe0050 50%, 
+		#ff0048 100%), 
+	linear-gradient(
+		#f8f400, 
+		#f8f400);
+	font-size: .3rem;
+	line-height: .88rem;
+	text-align: center;
+	color: #fff;
+	letter-spacing: .02rem;
+}
+
+.middle {
+	margin: .2rem .28rem;
+}
+.pdt {
+	margin-bottom: .06rem;
+	padding: 0 .2rem;
+	background-color: #fff;
+	border-radius: 6px;
+	line-height: .75rem;
+}
+.nitems {
+	font-size: .26rem;
+	color: #151515;
+}
+.pdt .nitems,.inp_wrap {
+	display: inline-block;
+	vertical-align: top;
+}
+.inp_wrap {
+	float: right;
+}
+.inp_wrap span {
+	font-size: .26rem;
+	color: #151515;
+	vertical-align: middle;
+}
+.text {
+	margin: 0 .2rem 0 0;
+	width: 1.95rem;
+	font-size: .3rem;
+	color: #151515;
+	text-align: right;
+	border: none;
+	outline: none;
+	vertical-align: middle;
+}
+input::-webkit-input-placeholder {
+    font-size: .26rem;
+	color: #a5a5a5;
+}
+
+.select {
+	padding: 0 .2rem;
+	background-color: #fff;
+	border-radius: 6px;
+}
+.dot {
+	line-height: .65rem;
+	border-bottom: 1px solid #dadada;
+}
+.dot span:nth-child(1) {
+	font-size: .26rem;
+	color: #151515;
+}
+.dot span:nth-child(2) {
+	margin-top: .3rem;
+	float: right;
+	display: inline-block;
+	width: .24rem;
+	height: .12rem;background: url(../../img/news/jiantou.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.ray_wrap {
+	padding: .15rem 0 .35rem 0;
+	font-size: 0;
+}
+.ray_wrap ul li {
+	margin: .3rem 0 0 .95rem;
+	display: inline-block;
+	width: .5rem;
+	height: .5rem;
+	font-size: .3rem;
+	color: #151515;
+	text-align: center;
+	line-height: .5rem;
+	border: 1px solid #cdcdcd;
+}
+.ray_wrap ul .rob {
+	margin-left: 0rem;
+}
+.ray_wrap ul li.active {
+	background: #e60d54;
+	color: #fff;
+	border: 1px solid #e60d54;
+}
+
+.state {
+	color: #747373;
+	font-size: .26rem;
+	line-height: .75rem;
+}
+
+.give_btn {
+	margin: .5rem auto 0;
+}
+.btn {
+	width: 6.94rem;
+	height: .7rem;
+	background-color: #e60d54;
+	border-radius: 6px;
+	letter-spacing: 2px;
+	color: #fff;
+	font-size: .3rem;
+	text-align: center;
+	line-height: .7rem;
+}
