@@ -20,6 +20,9 @@ body{
     border-bottom: .01rem solid #f3f3f3;
     position: relative;
 }
+.personal-content ul li a{
+    overflow: hidden;
+}
 
 /* 左边 */
 .personal-content ul li .fl{
@@ -76,9 +79,66 @@ body{
     right: .28rem;
 }
 
-/* 修改名字 */
+/* 蒙层 */
+.mask{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.3);
+    z-index: 100;
+    display: none;
+}
+/* 上拉弹窗 */
+.select-wrap{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: -100%;
+    z-index: 101;
+    background: #f5f6fa;
+    transition: all 0.5s
+}
+.select-wrap .select-list{
+    background-color: #fff;
+}
+.select-wrap .select-list li{
+    height: .9rem;
+    line-height: .9rem;
+    text-align: center;
+    font-size: .3rem;
+    color: #000006;
+    border-bottom: .01rem solid #f3f3f3;
+    position: relative;
+}
+.select-wrap .select-list li input{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.select-wrap .cancelBtn{
+    width: 100%;
+    height: .9rem;
+    line-height: .9rem;
+    text-align: center;
+    font-size: .3rem;
+    color: #000006;
+    background-color: #fff;
+    margin-top: .25rem;
+    border-top: .01rem solid #f3f3f3;
+    outline: none;
+}
+
+
+/* 修改名字页 */
+
 /* 字体渐变  */
-.editBtn{
+/* .editBtn{
     position: absolute;
     right: .3rem;
     color: #5ac0f7;
@@ -88,7 +148,27 @@ body{
     background: linear-gradient(to right, #60d0f7 , #50a5f8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+} */
+.editBtn{
+    width: .9rem;
+    height: .44rem;
+    line-height: .44rem;
+    color: #fff;
+    text-align: center;
+    display: block;
+    position: absolute;
+    right: .3rem;
+    top: 50%;
+    margin-top: -.22rem;
+    background: #5ac0f7;
+    border-radius: .08rem;
+    opacity: .5;
 }
+.editBtn a{
+    line-height: .44rem;
+    color: #fff;
+}
+
 .edit-content{
     margin-top: .36rem;
 }
@@ -100,7 +180,7 @@ body{
     position: relative;
 }
 .edit-content .edit-item .editName{
-    width: 100%;
+    width: 90%;
     height: .5rem;
     padding: 0 .28rem;
     box-sizing: border-box;

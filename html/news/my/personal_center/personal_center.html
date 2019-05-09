@@ -17,7 +17,7 @@
 			<!--public head-->
 			<div class="lb_headWrap">
 				<p class="lb_headWrap_return" data-num="1" onclick="returnFun()">
-					<img class="lb_headWrap_return_img" src="../../../../img/public/left.png"/>
+					<img class="lb_headWrap_return_img" src="../../../../img/public/back@2x.png"/>
 				</p>
 				<span>个人中心</span>
 			</div>
@@ -29,17 +29,17 @@
 						<div class="fl">头像</div>
 						<div class="fr">
 							<span class="text avatar">
-								<img src="../../../../img/00avatar-01-zp.png" id="">
+								<img src="../../../../img/00avatar-01-zp.png" id="avatarPic">
 								<!-- <input type="file" class="avatar-file" > -->
 							</span>
 							<span class="right-arrow"></span>
 						</div>
 					</li>
 					<li>
-						<a href="###">
+						<a href="./edit_name.html">
 							<div class="fl">名字</div>
 							<div class="fr">
-								<span class="text">小明</span>
+								<span class="text userName">小明</span>
 								<span class="right-arrow"></span>
 							</div>
 						</a>
@@ -64,12 +64,78 @@
 				</ul>
 			</div>
 
-
+			<!-- 蒙层 -->
+			<div class="mask"></div>
+			<div class="select-wrap">
+				<ul class="select-list">
+					<li>
+						相机
+						<input type="file" id='shotAvatar' accept="image/*" capture='camera'>
+					</li>
+					<li>
+						相册
+						<input type="file" id="selectAvatar">
+					</li>
+				</ul>
+				<button class="cancelBtn">取消</button>
+			</div>
 
 			
 		</div>
 		
 		<script src="../../../../js/public/jquery-1.8.3.js"></script>
 		<script src="../../../../js/public/public.js"></script>
+
+		<script>
+			$(function(){
+				
+				// 上拉菜单
+				$('.avatar').click(function(){
+					showSelect();
+				})
+
+				$(".mask,.select-list li,.cancelBtn").click(function(){
+					hideSelect();
+				})
+
+				// 显示上拉菜单
+				function showSelect(){
+					$(".mask").css("display","block");
+					$(".select-wrap").css("bottom","0")
+				}
+
+				// 隐藏上拉菜单
+				function hideSelect(){
+					$(".mask").css("display","none");
+					$(".select-wrap").css("bottom","-100%")
+				}
+
+				/**
+				 * 更换头像头像
+				 * **/
+				 $("#selectAvatar,#shotAvatar").change(function (e) {
+			        for (var i = 0; i < e.target.files.length; i++) {
+			            var file = e.target.files.item(i);
+			            //验证是否为图片，不是就跳出循环
+			            if (!(/^image\/.*$/i.test(file.type))) {
+			                alert("请选择图片上传！")
+			                continue;
+			            }
+			            //实例化FileReader API  
+			            var freader = new FileReader();
+			            freader.readAsDataURL(file);
+			            freader.onload = function (e) {
+			                $("#avatarPic").attr("src", e.target.result);  //显示图片
+			            }
+			        }
+    			});
+
+				// 从本地数据中获取修改后的昵称
+				var userName = localStorage["userName"];
+				$(".userName").html(userName) 
+
+				
+			})
+		</script>
 	</body>
 </html>
