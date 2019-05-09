@@ -29,14 +29,12 @@ var buttonNavTitle = [
 var buttonNavUrl = [];
 /*未-登陆路径*/
 var loginFalse = [
-	"''",
-	"''",
-	"''",
-	"''",
+	"'../news/news.html'",
+	"'../mail_list/mail_list.html'",
+	"'../find/find.html'",
 ]
 /*已-登陆路径*/
 var loginTrue = [
-	"''",
 	"''",
 	"''",
 	"''",
