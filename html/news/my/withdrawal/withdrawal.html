@@ -3,20 +3,20 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-		<title class="pageTopTitle" page-id="0">提现</title>
+		<title>提现</title>
 		<script src="../../../../js/public/rem.js"></script>
 		<!--public-->
 		<link rel="stylesheet" href="../../../../css/public/public.css" />
 		<!--头部-->
 		<link rel="stylesheet" href="../../../../css/public/public_head.css" />
-		<link rel="stylesheet" type="text/css" href="../../../../css/news/withdrawal.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../../css/news/my/withdrawal.css"/>
 	</head>
 	<body>
 		<div class="wrap_frame">
 			<!--头部-->
 			<div class="lb_headWrap">
 				<p class="lb_headWrap_return" data-num="1" onclick="returnFun()">
-                    <img class="lb_headWrap_return_img" src="../../../../img/news/back@2x.png"/> 
+                    <img class="lb_headWrap_return_img" src="../../../../img/public/back@2x.png"/> 
                 </p>
 				<span>提现</span>
             </div>
@@ -26,7 +26,9 @@
             	<div class="basic_wrap">
             		<a href="withdrawal_way.html">
 	            		<div class="data">
+	            			<!--提现方式名称-->
 	            			<div class="way">选择提现方式</div>
+	            			
 	            			<div class="run"></div>
 	            		</div>
             		</a>	
@@ -66,5 +68,12 @@
 		
 		<script src="../../../../js/public/jquery-1.8.3.js"></script>
 		<script src="../../../../js/public/public.js"></script>
+		<script>
+			//input输入框失去焦点，页面视觉回弹
+			$(".inp").blur(function(){
+			  	document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			});
+		</script>
 	</body>
 </html>

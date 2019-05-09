@@ -1,0 +1,95 @@
+/*
+ 我的收益
+ * */
+.lb_headWrap {
+	background: #fff;
+}
+.lb_headWrap span {
+	letter-spacing: 1px;
+	color: #0b0b0b;
+}
+
+.team {
+	margin-right: .28rem;
+	float: right;
+	color: #57b8f7;
+	
+}
+
+.record {
+	padding: .6rem .28rem;
+	width: 100%;
+	background: url(../../../img/news/background@2x.png) no-repeat;
+	background-size: 100% 100%;
+}
+.record h2 {
+	font-size: .3rem;
+	letter-spacing: 1px;
+	color: #fff;
+	text-align: center;
+	line-height: .55rem;
+}
+.record p {
+	font-size: .26rem;
+	color: #fff;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: .55rem;
+}
+
+.unit {
+	padding-left: .28rem;
+	line-height: .65rem;
+}
+.unit div {
+	display: inline-block;
+	vertical-align: top;
+	font-size: .26rem;
+}
+.today {
+	margin: 0 .65rem 0 0;
+}
+.days {
+	margin-right: .1rem;
+}
+.days,.ts {
+	color: #fff;
+}
+.tr {
+	color: #fd2d2d;
+}
+
+.item_wrap {
+	font-size: 0;
+}
+.item_wrap ul {
+	margin-bottom: .2rem;
+}
+.item_wrap ul li {
+	display: inline-block;
+	width: 25%;
+	letter-spacing: 1px;
+	color: #000006;
+	font-size: .26rem;
+	text-align: center;
+	line-height: .85rem;
+}
+
+.list_wrap {
+	font-size: 0;
+}
+.list_wrap ul {
+	margin-bottom: .2rem;
+}
+.list_wrap ul li {
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	color: #000006;
+	font-size: .26rem;
+	text-align: center;
+	line-height: .85rem;
+}
+.list_wrap ul li p {
+	line-height: .35rem;
+}

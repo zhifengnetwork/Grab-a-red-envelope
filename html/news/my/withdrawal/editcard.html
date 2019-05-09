@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<title>编辑银行卡</title>
+		<script src="../../../../js/public/rem.js"></script>
+		<!--public-->
+		<link rel="stylesheet" href="../../../../css/public/public.css" />
+		<!--头部-->
+		<link rel="stylesheet" href="../../../../css/public/public_head.css" />
+		<link rel="stylesheet" type="text/css" href="../../../../css/news/my/editcard.css"/>
+	</head>
+	<body>
+		<div class="wrap_frame">
+			<!--头部-->
+			<div class="lb_headWrap">
+				<p class="lb_headWrap_return" data-num="1" onclick="returnFun()">
+                    <img class="lb_headWrap_return_img" src="../../../../img/news/back@2x.png"/> 
+                </p>
+				<span>编辑银行卡</span>
+            </div>
+            <!--内容-->
+            <div class="content">	
+            	<div class="minor">
+            		<!--输入银行名称-->
+            		<div class="bank_wrap">
+            			<div class="name">银行</div>
+            			<div class="inp_wrap">
+            				<input class="inp put" type="text" placeholder="请输入银行名称" />
+            			</div>
+            		</div>
+            		<!--输入姓名-->
+            		<div class="bank_wrap">
+            			<div class="name">姓名</div>
+            			<div class="inp_wrap">
+            				<input class="inp put" type="text" placeholder="请输入真实名字" />
+            			</div>
+            		</div>
+            		<!--输入卡号-->
+            		<div class="bank_wrap">
+            			<div class="name">卡号</div>
+            			<div class="inp_wrap">
+            				<input class="inp put" type="number" placeholder="请输入卡号" />
+            			</div>
+            		</div>
+            		
+            		<div>
+            			<div class="site">请输入开户行地址</div>
+            			<textarea class="text put" placeholder="请输入开户行地址"></textarea>
+            		</div>
+            		
+            	</div>
+            </div>
+            <!--按钮-->
+            <div class="btn_wrap">
+            	<a href="withdrawal_way.html" class="btn">确定</a>
+            </div>
+		</div>
+		
+		<script src="../../../../js/public/jquery-1.8.3.js"></script>
+		<script src="../../../../js/public/public.js"></script>
+		<script>
+			//input输入框失去焦点，页面视觉回弹
+			$(".put").blur(function(){
+			  	document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			});
+		</script>
+	</body>
+</html>

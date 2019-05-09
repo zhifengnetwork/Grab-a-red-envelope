@@ -3,13 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-		<title class="pageTopTitle" page-id="0">注册</title>
+		<title>注册</title>
 		<script src="../../js/public/rem.js"></script>
 		<!--public-->
 		<link rel="stylesheet" href="../../css/public/public.css" />
 		<!--头部-->
 		<link rel="stylesheet" href="../../css/public/public_head.css" />
-		<link rel="stylesheet" type="text/css" href="../../css/signin/signin.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/login/signin.css"/>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -40,7 +40,7 @@
             			</div>
             			<!--输入短信验证码-->
             			<div class="inp">
-            				<input class="put name" type="number" placeholder="输入短信验证码" />
+            				<input class="put name" type="text" placeholder="输入短信验证码" />
             			</div>
             			<!--发送短信验证码-->
             			<div class="btn_wrap">
@@ -84,8 +84,9 @@
 			function settime(val) { 
 				if (countdown == 0) { 
 					val.removeAttribute("disabled");    
-					val.value="免费获取验证码"; 
-					countdown = 60; 
+					val.value="获取验证码"; 
+					countdown = 60;
+					return false;
 				} else { 
 					val.setAttribute("disabled", true); 
 					val.value="重新发送(" + countdown + ")"; 
