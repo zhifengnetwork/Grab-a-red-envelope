@@ -47,6 +47,7 @@ body{
 .personal-content ul li .fr .avatar img{
     width: .66rem;
     height: .66rem;
+    border-radius: 50%;
 }
 .personal-content ul li .fr .avatar-file{
     width: 100%;
