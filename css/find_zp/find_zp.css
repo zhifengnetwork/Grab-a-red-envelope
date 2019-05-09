@@ -10,15 +10,9 @@ body{
          url("../../font/汉仪菱心体简.svg")
 }
 
-/* 苹方字体 */
-@font-face{
-	font-family: 'PingFangMedium';
-	src: url("../../font/PingFangMedium.ttf")
-}
-
 /* 内容 */
 .find-content{
-    padding: .2rem .3rem;
+    padding: .2rem .3rem 1.18rem;
     box-sizing: border-box;
     height: 100%;
     color: #fff;
@@ -67,7 +61,6 @@ body{
     text-align: center;
     font-size: .30rem;
     margin-top: .1rem;
-    font-family: "PingFangMedium";
 }
 .rule-des .item-des p{
     text-align: center;
