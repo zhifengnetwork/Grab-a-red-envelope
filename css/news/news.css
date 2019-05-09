@@ -2,6 +2,7 @@
 body{
 	
   background:white;
+  overflow: hidden;
 	
 }
 .lb_headWrap_return{
@@ -27,7 +28,8 @@ body{
 	
 }
 .search{
-    width: 100%;
+    width: 90%;
+    margin: auto;
     height: .88rem;    
    
 }
@@ -214,7 +216,8 @@ body{
    
    	
    	
-   }	
+   }
+  
    	
    	
  

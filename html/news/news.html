@@ -18,7 +18,7 @@
 	<body>
 		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
 			<!--侧滑菜单部分-->
-			<aside id="offCanvasSide" class="mui-off-canvas-left">
+			<aside id="offCanvasSide" class="mui-off-canvas-left" >
 				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
 					<div class="mui-scroll">
 						<div class="title">侧滑导航</div>
@@ -27,9 +27,19 @@
 				</div>
 			</aside>
 			<!--主界面部分-->
-			<div class="mui-inner-wrap">
-
+			<div class="mui-inner-wrap" >
+               
 				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<!--public head-->
+					<div class="lb_headWrap">
+						<p class="lb_headWrap_return" data-num="1">
+							<img class="lb_headWrap_return_img" src="../../img/1.jpg" />
+						</p>
+						<span>信息</span>
+						<p class="lb_headWrap_share" data-num="1">
+							<img class="lb_headWrap_return_img" src="../../img/public/Plus sign@2x.png" />
+						</p>
+					</div>
 					<div class="mui-scroll">
 
 						<form class="mui-input-group" style="margin-bottom: 15px;">
@@ -37,16 +47,7 @@
 							<div class="mui-input-row mui-radio">
 
 								<div>
-									<!--public head-->
-									<div class="lb_headWrap">
-										<p class="lb_headWrap_return" data-num="1">
-											<img class="lb_headWrap_return_img" src="../../img/1.jpg" />
-										</p>
-										<span>信息</span>
-										<p class="lb_headWrap_share" data-num="1">
-											<img class="lb_headWrap_return_img" src="../../img/public/Plus sign@2x.png" />
-										</p>
-									</div>
+									
 
 									<!--中间内容聊天区域-->
 									<div>
@@ -235,8 +236,9 @@
 
 					</div>
 					<!-- 底部导航 -->
-					<div class="bottomNavWrap container" id="bottomNavWrap" ></div>
+				 <div class="bottomNavWrap container" id="bottomNavWrap" ></div>
 				</div>
+				
 				<!-- off-canvas backdrop -->
 				<div class="mui-off-canvas-backdrop"></div>
 			</div>

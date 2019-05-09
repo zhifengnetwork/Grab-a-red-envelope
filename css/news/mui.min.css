@@ -19,7 +19,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom:0;
-	border: 1px solid blueviolet;
+	/*border: 1px solid blueviolet;*/
 	overflow: auto!important;
 }
 
@@ -603,11 +603,12 @@ p {
 .mui-scroll-wrapper {
 	position: absolute;
 	z-index: 2;
-	top: 0;
-	bottom: 0;
+	top: 0rem;
+	bottom: 1rem;
 	left: 0;
-	overflow: hidden;
-	width: 100%
+	overflow: auto;
+	width: 100%;
+	
 }
 
 .mui-scroll {
@@ -750,8 +751,8 @@ p {
 	left: 0;
 	display: block;
 	transition: background 350ms cubic-bezier(.165, .84, .44, 1);
-	background: rgba(0, 0, 0, .4);
-	box-shadow: -4px 0 4px rgba(0, 0, 0, .5), 4px 0 4px rgba(0, 0, 0, .5);
+	/*background: rgba(0, 0, 0, .4);*/
+	/*box-shadow: -4px 0 4px rgba(0, 0, 0, .5), 4px 0 4px rgba(0, 0, 0, .5);*/
 	-webkit-tap-highlight-color: transparent
 }
 
@@ -775,7 +776,7 @@ p {
 	box-sizing: content-box;
 	width: 70%;
 	min-height: 100%;
-	background: #333;
+	/*background: #333;*/
 	-webkit-overflow-scrolling: touch
 }
 
@@ -2550,9 +2551,9 @@ select:focus {
    	/*padding-bottom: 1rem;*/
    	position:relative;
    	bottom: 0rem;
-   	top: 1.1rem;
+   	top: 1rem;
    	/*margin-bottom: 1rem;*/
-   	border: 1px solid green;
+   	/*border: 1px solid green;*/
    /*	height:500px;*/
    	/*overflow-y: scroll!important;*/
    	
