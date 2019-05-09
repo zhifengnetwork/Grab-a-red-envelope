@@ -1,3 +1,6 @@
+/*
+ 提现
+ * */
 .lb_headWrap {
 	background: #fff;
 }
@@ -5,6 +8,7 @@
 	letter-spacing: 1px;
 	color: #0b0b0b;
 }
+
 .basic_wrap {
 	margin: .3rem 0;
 	background: #fff;
@@ -27,7 +31,7 @@
 	float: right;
 	width: .16rem;
 	height: .3rem;
-	background: url(../../img/news/arrow@2x.png) no-repeat;
+	background: url(../../../img/news/arrow@2x.png) no-repeat;
 	background-size: 100% 100%;
 }
 
@@ -64,7 +68,7 @@ input::-webkit-inner-spin-button {
 	margin-right: .15rem;
 	width: .34rem;
 	height: .43rem;
-	background: url(../../img/news/dl.png) no-repeat;
+	background: url(../../../img/news/dl.png) no-repeat;
 	background-size: 100% 100%;
 }
 .inp {

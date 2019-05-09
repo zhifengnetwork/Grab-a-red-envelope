@@ -1,3 +1,6 @@
+/*
+ 选择提现方式
+ * */
 .lb_headWrap {
 	background: #fff;
 }
@@ -9,6 +12,7 @@
 	margin: .4rem .24rem;
 	background-color: #fff;
 	border-radius: 4px;
+	border: 1px solid #fff;
 }
 .clip {
 	padding: .3rem .24rem;
@@ -21,13 +25,13 @@
 .icon {
 	width: .4rem;
 	height: .3rem;
-	background: url(../../img/news/Bank.png) no-repeat;
+	background: url(../../../img/news/Bank.png) no-repeat;
 	background-size: 100% 100%;
 }
 .ico {
 	width: .4rem;
 	height: .3rem;
-	background: url(../../img/news/Alipay2@2x.png) no-repeat;
+	background: url(../../../img/news/Alipay2@2x.png) no-repeat;
 	background-size: 100% 100%;
 }
 .house {
@@ -67,38 +71,36 @@
 }
 
 .name {
-	padding-bottom: .25rem;
+	padding-bottom: .15rem;
 	line-height: .55rem;
 	font-size: .3rem;
-	color: #9696a9;
+	color: #31313f;
 }
 .small {
-	display: none;
 	margin-left: .2rem;
 }
 .card {
-	display: none;
-	padding: .25rem 0 0;
+	padding-top: .15rem;
 	width: 4.9rem;
 	line-height: .55rem;
 	font-size: .3rem;
 	color: #31313f;
-	border-top: 1px solid #f3f3f3;
+	border-top: 1px solid #d6daed;
 }
 
 .active {
-	background: #fff;
+	border: 1px solid #d6daed;
 }
 
 .ack {
 	margin: 1.2rem auto 0;
 	width: 4rem;
-	height: .8rem;
+	height: .76rem;
 	background-color: #2eda9f;
 	border-radius: 8px;
 	font-size: .3rem;
 	letter-spacing: 1px;
 	color: #fff;
 	text-align: center;
-	line-height: .8rem;
+	line-height: .76rem;
 }
