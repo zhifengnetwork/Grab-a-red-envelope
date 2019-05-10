@@ -227,11 +227,11 @@ th {
 }
 
 body {
-	font-family: 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 17px;
+	/*font-family: 'Helvetica Neue', Helvetica, sans-serif;*/
+	/*font-size: 17px;
 	line-height: 21px;
 	color: #000;
-	background-color: #efeff4;
+	background-color: #efeff4;*/
 	-webkit-overflow-scrolling: touch
 }
 
@@ -464,12 +464,12 @@ h6 {
 	color: #8f8f94
 }
 
-p {
+/*p {
 	font-size: 14px;
 	margin-top: 0;
 	margin-bottom: 10px;
 	color: #8f8f94
-}
+}*/
 
 .mui-row:after,
 .mui-row:before {

@@ -16,3 +16,21 @@ function pageJump(_url){
 	/*页面跳转*/
     window.location.href = _url;
 }
+/**获取焦点=> 隐藏元素
+ * 参数1: 获取焦点的jQuery元素;
+ * 参数2: 隐藏的jQuery元素;
+ * **/
+function focus_fun(_ele,_hideBox){
+	_ele.focus(function(){
+		_hideBox.hide();
+	})
+}
+/**失去焦点=> 隐藏元素
+ * 参数1: 获取焦点的jQuery元素;
+ * 参数2: 隐藏的jQuery元素;
+ * **/
+function blur_fun(_ele,_hideBox){
+	_ele.blur(function(){
+		_hideBox.show();
+	})
+}
