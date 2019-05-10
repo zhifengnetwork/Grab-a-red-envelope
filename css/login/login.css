@@ -64,6 +64,7 @@ body {
 	outline: none;
 	color: #151515;
 	font-size: .3rem;
+	vertical-align: top;
 }
 input::-webkit-input-placeholder {
     font-size: .3rem;
