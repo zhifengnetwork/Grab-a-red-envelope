@@ -1,0 +1,240 @@
+body{
+    background: #f4f4f4;
+    padding: 0 .28rem 1.6rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+/* 对话框内容 */
+.dialog_content{
+    
+}
+.dialog_content_time{
+    text-align: center;
+    line-height: .6rem;
+    color: #919191;
+}
+/* 对方消息 */
+.dialog_content_opposite{
+    margin-top: .5rem;
+    width: 100%;
+    height: auto;
+}
+.dialog_content_opposite_imgwrap{
+    float: left;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.dialog_content_opposite_img,.dialog_content_oneself_img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.dialog_content_opposite_info{
+    max-width: 5rem;
+    word-wrap: break-word;
+    float: left;
+    margin-left: .2rem;
+}
+.dialog_content_opposite_name{
+    font-size: .26rem;
+    color: #8a8a8a;
+}
+.dialog_content_opposite_text{
+    position: relative;
+    margin-top: .1rem;
+    line-height: .4rem;
+    font-size: .3rem;
+    padding: .14rem .22rem;
+    background: #fff;
+    border-radius: .1rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.dialog_content_opposite_text:after{
+    content:'';
+    display: block;
+    position:absolute;
+    left:-0.1rem;;
+    top:.1rem;
+    width:.1rem;
+    border-width:0;
+    border-style:solid;
+    border-color:transparent;
+    border-top-width:.1rem;
+    border-top-color:currentColor;
+    border-radius:0 0 0 1rem;
+    color:#fff;
+}
+/* 本人消息 */
+.dialog_content_oneself{
+    margin-top:.5rem; 
+    width: 100%;
+    float: right;
+}
+.dialog_content_oneself_imgwrap{
+    float: right;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.dialog_content_oneself_info{
+    max-width: 5rem;
+    word-wrap: break-word;
+    float: right;
+    margin-right: .2rem;
+}
+.dialog_content_oneself_name{
+    font-size: .28rem;
+    text-align: right;
+    color: #8a8a8a;
+}
+.dialog_content_oneself_text{
+    position: relative;
+    margin-top: .1rem;
+    line-height: .4rem;
+    font-size: .3rem;
+    color: #fff;
+    padding: .14rem .22rem;
+    background: #59bbf3;
+    border-radius: .1rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.dialog_content_oneself_text:after{
+    content:'';
+    display: block;
+    position:absolute;
+    right:-0.1rem;;
+    top:.1rem;
+    width:.1rem;
+    border-width:0;
+    border-style:solid;
+    border-color:transparent;
+    border-top-width:.1rem;
+    border-top-color:currentColor;
+    border-radius:0 0 1rem 0;
+    color:#59bbf3;
+}
+/* 底部菜单 */
+/* 输入框 */
+.dialog_menu{
+    width: 100%;
+    height: 1.4rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #eff2f4;
+    padding: 0 .28rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.dialog_menu_inputwrap{
+    margin-top: .1rem;
+    height: .45rem;
+    line-height: .4rem;    
+}
+.dialog_menu_label{
+    position: relative;
+    float: left;
+    display: block;
+    width:78%;
+    height: .45rem;
+    border-radius: .2rem;
+    overflow: hidden;
+}
+/* .dialog_menu_label:before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: .6rem;
+    margin: auto;
+    width: .01rem;
+    height: 80%;
+    border-left: .01rem solid #8a8a8a;
+} */
+.dialog_menu_voice{
+    position: relative;
+    float: left;
+    display: inline-block;
+    width: 6.5%;
+    height: 100%;
+    margin-right: .1rem;
+    background: #fff;
+    border-radius: 50%;
+}
+.dialog_menu_img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    width: .26rem;
+    height: .3rem;
+}
+.dialog_menu_input{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: none;
+    text-indent:.2rem;
+    background: #fff;
+}
+.dialog_menu_send{
+    float: left;
+    display: block;
+    margin-left: .1rem;
+    width: 12%;
+    height: .45rem;
+    line-height: .45rem;
+    text-align: center;
+    border-radius: .2rem;
+    color: #fff;
+    background: #c3f4ff;
+}
+/* 功能菜单 */
+.dialog_menu_submenu{
+    height: .8rem;;
+    display: box;              /* OLD - Android 4.4- */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    /* 09版 */
+    -webkit-box-pack: space-between;
+    /* 12版 */
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+}
+.dialog_menu_submenu_item{
+    position: relative;
+    display: block;
+    width: 10%;
+    height: 100%;
+}
+.dialog_menu_submenu_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    width: .4rem;
+    height: .4rem;
+}
