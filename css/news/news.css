@@ -464,7 +464,7 @@ body{
 	float: right;
 	display: table;
 	margin: 1.05rem .1rem 0 0;
-	padding: 0 .3rem;
+	padding: 0 .4rem;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -510,6 +510,20 @@ body{
 	line-height: .65rem;
 	text-indent: .2rem;
 }
+.qunliao_item_icon2{
+	
+	height: .3rem;
+	width: .45rem;
+	
+	
+}
+.qunliao_item_icon3{
+	
+	height: .3rem;
+	width: .45rem;
+	
+}
+
 
 
   

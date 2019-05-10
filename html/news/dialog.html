@@ -3,24 +3,88 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />    
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="../../js/public/rem.js"></script>    
     <link rel="stylesheet" href="../../css/public/public.css">
-	<link rel="stylesheet" href="../../css/public/public_head.css">
-	<link rel="stylesheet" href="../../css/mail_list/mail_list.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../css/public/public_head.css">
+    <link rel="stylesheet" href="../../css/public/bottom_nav.css" />    
+    <link rel="stylesheet" href="../../css/news/dialog.css">
+    <title>对话框</title>
 </head>
 
 <body>
     <div class="wrap_frame">
         <!--public head-->
         <div class="lb_headWrap">
-            <!--<p class="lb_headWrap_return" data-num="1" onclick="returnFun()">
+            <p class="lb_headWrap_return" data-num="1" onclick="returnFun()">
                 <img class="lb_headWrap_return_img" src="../../img/public/left.png"/>
-            </p>-->
-            <span>对话框</span>
+            </p>
+            <p class="lb_headWrap_dialog">
+                <span class="lb_headWrap_dialog_text">99+</span>
+            </p>
+            <span>神秘电波</span>
+            <p class="lb_headWrap_remove">
+                <img class="lb_headWrap_remove_img" src="../../img/news/remove.png">
+            </p>
+        </div>
+        <!-- 聊天内容 -->
+        <div class="dialog_content">
+            <div class="dialog_content_time">
+                昨天 22:22
+            </div>
+            <!-- 对方消息 -->
+            <div class="dialog_content_opposite clearfloat">
+                <div class="dialog_content_opposite_imgwrap">
+                    <img class="dialog_content_opposite_img" src="../../img/0000⑨.jpg" alt="">
+                </div>
+                <div class="dialog_content_opposite_info">
+                    <p class="dialog_content_opposite_name">神秘电波</p>
+                    <p class="dialog_content_opposite_text">66666666</p>
+                </div>
+            </div>
+            <!-- 本人消息 -->
+            <div class="dialog_content_oneself clearfloat">
+                <div class="dialog_content_oneself_imgwrap">
+                    <img class="dialog_content_oneself_img" src="../../img/0000⑨.jpg" alt="">
+                </div>
+                <div class="dialog_content_oneself_info">
+                    <p class="dialog_content_oneself_name">质检员</p>
+                    <p class="dialog_content_oneself_text">66666666</p>
+                </div>
+            </div>
+            
+        </div>
+        <!-- 底部菜单 -->
+        <div class="dialog_menu">
+            <div class="dialog_menu_inputwrap">
+                <div class="dialog_menu_voice">
+                    <img class="dialog_menu_img" src="../../img/news/voice.png" alt="">
+                </div>
+                <label class="dialog_menu_label">
+                    <input class="dialog_menu_input" type="text">
+                </label>
+                <span class="dialog_menu_send">发送</span>
+            </div>
+            <div class="dialog_menu_submenu">
+                <p class="dialog_menu_submenu_item">
+                    <img class="dialog_menu_submenu_img" src="../../img/news/camera.png" alt="">
+                </p>
+                <p class="dialog_menu_submenu_item">
+                    <img class="dialog_menu_submenu_img" src="../../img/news/picture.png" alt="">
+                </p>
+                <p class="dialog_menu_submenu_item">
+                    <img class="dialog_menu_submenu_img" src="../../img/news/transfer.png" alt="">
+                </p>
+                <p class="dialog_menu_submenu_item">
+                    <img class="dialog_menu_submenu_img" src="../../img/news/transfer1.png" alt="">
+                </p>
+                <p class="dialog_menu_submenu_item">
+                    <img class="dialog_menu_submenu_img" src="../../img/news/smile.png" alt="">
+                </p>
+            </div>
         </div>
     </div>
     <script src="../../js/public/jquery-1.8.3.js"></script>
-	<script src="../../js/mail_list/mail_list.js"></script>
+    <script src="../../js/public/public.js"></script>
+    <script src="../../js//news/dialog.js"></script>
 </body>
 </html>

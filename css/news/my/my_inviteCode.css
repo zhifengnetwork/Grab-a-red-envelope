@@ -1,0 +1,85 @@
+/* 
+
+我的邀请二维码
+
+*/
+
+/* 头部 */
+
+
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+*{
+	box-sizing: border-box;
+}
+
+.lb_headWrap{
+    background:#1f1f29;
+    color: #ffffff;
+}
+
+.page-title{
+    padding-top: .57rem;
+    margin: 0 auto;
+    width: 2.91rem;
+    height: 1.52rem;
+}
+
+.invite-page{
+    min-height: 100vh;
+    background: #292935;
+}
+.page-title .title-img{
+    width: 100%;
+    height: 100%;
+}
+
+.page-notice{
+    padding: .46rem .26rem .46rem .26rem;
+}
+
+.page-notice .notice{
+    font-size: .39rem;
+    color: #36b5f7;
+    text-align: center;
+}
+
+.page-code{
+    width: 5.84rem;
+    height: 5.81rem;
+    background: url(../../../img/news/my/hong.png) ;
+    background-size: 100%;
+    margin: 0 auto ;
+    position: relative;
+    margin-bottom: .56rem;
+}
+
+.page-code .code{
+    position: absolute;
+   width: 2rem;
+   height: 2rem;
+   background: #ffffff;
+   bottom: .48rem;
+   margin: 0 auto;
+   left: 1.92rem;
+   right: 1.92rem;
+} 
+
+.page-btn{
+    display: flex;
+    background: #fdd803;
+    border-radius: .6rem;
+    justify-content: space-between;
+    margin: 0  1.1rem  0  1.1rem;
+    text-align: center;
+    padding: .24rem .58rem;
+    box-shadow:3px 5px 0px #a18115;
+}
+.page-btn  .btn{
+    color: #21210a;
+    font-size: .49rem;
+    text-align: center;
+}
