@@ -177,13 +177,13 @@ body{
 	z-index: 1;
 	min-width: .3rem;
 	height: .3rem;
-	line-height: .34rem;
+	line-height: .3rem;
 	background: red;
 	border-radius: .16rem;
 	text-align: center;
 	color: white;
 	margin-top: .07rem;
-	padding: 0 .02rem;
+	padding: 0 .1rem;
 	
 	
 	
@@ -431,9 +431,8 @@ body{
 	
 }
 .mask{
-	
 	position: absolute;
-	left: 0px;
+	left: 0;
 	top: 0;
 	bottom: 0;
 	right: 0;
