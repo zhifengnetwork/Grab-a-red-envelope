@@ -78,6 +78,14 @@
     margin-right: .5rem;
 }
 
+.set-page .clear{
+    margin:.8rem 0 ;
+    
+}
+.set-page .clear .page-item{
+    text-align: center;
+}
+
 
 /* 
 
