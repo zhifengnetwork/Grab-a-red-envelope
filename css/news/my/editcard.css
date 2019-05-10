@@ -1,0 +1,84 @@
+/*
+ 编辑银行卡
+ * */
+.lb_headWrap {
+	background: #fff;
+}
+.lb_headWrap span {
+	letter-spacing: 1px;
+	color: #0b0b0b;
+}
+
+.minor {
+	margin: .4rem .24rem;
+}
+.bank_wrap {
+	margin-bottom: .4rem;
+}
+.bank_wrap div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.name {
+	margin-right: .25rem;
+	line-height: .65rem;
+	font-size: .3rem;
+	letter-spacing: 1px;
+	color: #000006;
+}
+.inp {
+	width: 5rem;
+	padding: .27rem .3rem;
+	background-color: #fff;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	color: #000006;
+	font-size: .3rem;	
+}
+input::-webkit-input-placeholder {
+    font-size: .3rem;
+    letter-spacing: 1px;
+	color: #9696a9;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.text {
+	padding: .25rem .3rem;
+	width: 6.2rem;
+	resize: none;
+	border: none;
+	outline: none;
+	background-color: #fff;
+	color: #000006;
+	border-radius: 4px;
+	font-size: .3rem;
+}
+textarea::-webkit-input-placeholder {
+	font-size: .3rem;
+	letter-spacing: 1px;
+	color: #9696a9;
+}
+.site {
+	font-size: .3rem;
+	letter-spacing: 1px;
+	color: #000006;
+	line-height: .85rem;
+}
+
+.btn {
+	margin: 1.2rem auto;
+	width: 4rem;
+	height: .76rem;
+	background-color: #2eda9f;
+	letter-spacing: 2px;
+	color: #fff;
+	border-radius: 8px;
+	font-size: .3rem;
+	text-align: center;
+	line-height: .76rem;
+}
