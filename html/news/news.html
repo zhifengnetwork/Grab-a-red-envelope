@@ -119,6 +119,25 @@
 						<img class="lb_headWrap_return_img" src="../../img/public/Plus sign@2x.png" />
 					</p>
 				</div>
+				<!--mask遮罩层(头部-右边-按钮'+')-->
+				<div class="mask">
+							
+					<div class="mask_son">
+						<img src="../../img/news/d.png" class="jiantou" />
+						<div class="jiasaosao">
+							<a class="qunliao_item">
+								<img src="../../img/news/account@2x.png" class="qunliao" /><span class="qunliao_text qunliao_text1" onclick="gai(this)">创建聊</span>
+							</a>
+							<a class="qunliao_item">
+								<img src="../../img/news/account@2x.png" class="qunliao" /><span class="qunliao_text">创建群聊</span>
+							</a>
+							<a class="qunliao_item">
+								<img src="../../img/news/account@2x.png" class="qunliao" /><span class="qunliao_text">创建群聊</span>
+							</a>
+						</div>
+					</div>
+
+				</div>
 
 				<div class="mui-content">
 					<div id="scroll1" class="mui-scroll-wrapper" style="top:.88rem;bottom: 50px;">
@@ -445,27 +464,6 @@
 						<div class="bottomNavWrap container" id="bottomNavWrap" data-id="0"></div>
 					</div>
 
-					<!--mask遮罩层-->
-					<div class="mask">
-
-						<div class="mask_son">
-							<img src="../../img/news/d.png" class="jiantou" />
-							<div class="jiasaosao">
-
-								<a class="qunliao_item">
-									<img src="../../img/news/account@2x.png" class="qunliao" /><span class="qunliao_text qunliao_text1" onclick="gai(this)">创建聊</span>
-								</a>
-								<a class="qunliao_item">
-									<img src="../../img/news/account@2x.png" class="qunliao" /><span class="qunliao_text">创建群聊</span>
-								</a>
-								<a class="qunliao_item">
-									<img src="../../img/news/account@2x.png" class="qunliao" /><span class="qunliao_text">创建群聊</span>
-								</a>
-
-							</div>
-						</div>
-
-					</div>
 
 				</div>
 			</div>
@@ -577,6 +575,11 @@
 				$(".mask").on('tap', function(event) {
 					$(".mask").hide();
 				});
+				
+				/*底部导航-页面跳转*/
+				$(".bottomNavWrap .bottomNavTerm").on('tap',function(){
+					window.location.href = $(this).attr('onclick').split("'")[1];
+				})
 			</script>
 
 	</body>

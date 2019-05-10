@@ -64,9 +64,9 @@ for(var g = 0; g < bottomTabArrOne.length; g++) {
 		1、点击时 font-color：class="bNavYseFontColor";
 		2、（未点击时）字体颜色:class="bNavNoFontColor";
 	-->*/
-	botNavdStr += '<div class="bottomNavTerm">';
+	botNavdStr += '<div class="bottomNavTerm" onclick="window.location.href=' + buttonNavUrl[g] + '">';
 	/*<!--icon box-->*/
-	botNavdStr += '<p class="bottomNavIconBox" onclick="window.location.href=' + buttonNavUrl[g] + '">';
+	botNavdStr += '<p class="bottomNavIconBox">';
 		botNavdStr += '<img class="bottomNavIcon" style="'+ iconWH[g] +'" src="' + bottomTabArrOne[g] + '" />';
 	botNavdStr += '</p>';
 	/*<!--title
