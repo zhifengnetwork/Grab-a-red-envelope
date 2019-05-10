@@ -9,7 +9,7 @@
 
 html {
 	font-family: sans-serif;
-	-webkit-text-size-adjust: 100%
+	-webkit-text-size-adjustmui-off-canvas-wrap .mui-inner-wrap.mui-transitioning: 100%
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom:0;
+	bottom: 0;
 	/*border: 1px solid blueviolet;*/
 	overflow: auto!important;
 }
@@ -464,6 +464,7 @@ h6 {
 	color: #8f8f94
 }
 
+
 /*p {
 	font-size: 14px;
 	margin-top: 0;
@@ -608,9 +609,8 @@ h6 {
 	left: 0;
 	overflow: scroll;
 	overflow-y: scroll;
-    overflow: hidden scroll;
+	overflow: hidden scroll;
 	width: 100%;
-	
 }
 
 .mui-scroll {
@@ -1772,7 +1772,6 @@ input[type=submit]:enabled:active {
 	list-style: none;
 	background-color: #fff;
 	padding-top: .2rem
-	
 }
 
 .mui-table-view:after {
@@ -2549,19 +2548,15 @@ select:focus {
 }
 
 .mui-input-group .mui-input-row {
-	
-   
-   	/*background: red;*/
-   	/*padding-bottom: 1rem;*/
-   	position:relative;
-   	bottom: 0rem;
-   	top: 1rem;
-   	/*margin-bottom: 1rem;*/
-   	/*border: 1px solid green;*/
-   /*	height:500px;*/
-   	/*overflow-y: scroll!important;*/
-   	
-   	
+	/*background: red;*/
+	/*padding-bottom: 1rem;*/
+	position: relative;
+	bottom: 0rem;
+	top: 1rem;
+	/*margin-bottom: 1rem;*/
+	/*border: 1px solid green;*/
+	/*	height:500px;*/
+	/*overflow-y: scroll!important;*/
 }
 
 .mui-input-group .mui-input-row:after {
@@ -4693,4 +4688,22 @@ body>.mui-progressbar {
 	width: 100%;
 	height: 100%;
 	border: 0
+}
+
+
+/*设置左边导航栏滑动的宽度，显示全屏的css代码*/
+.mui-off-canvas-left,
+.mui-off-canvas-right {
+	width: 100%;
+	/*菜单宽度 此处为修改后的宽度但是出现白边如图*/
+}
+/*右侧侧滑*/
+.mui-off-canvas-wrap.mui-left .mui-inner-wrap {
+	-webkit-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+/*左侧侧滑*/
+.mui-off-canvas-wrap.mui-right .mui-inner-wrap {
+	-webkit-transform: translate3d(100%, 0, 0);
+	transform: translate3d(100%, 0, 0);
 }
