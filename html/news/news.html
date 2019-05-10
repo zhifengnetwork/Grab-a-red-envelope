@@ -30,9 +30,9 @@
 									<div class="person_message_my">
 
 										<span>我的</span>
-										
+
 										<img src="../../img/news/close@2x.png" class="close" />
-                                       
+
 									</div>
 									<div class="person_message_img">
 
@@ -119,42 +119,40 @@
 						<img class="lb_headWrap_return_img" src="../../img/public/Plus sign@2x.png" />
 					</p>
 				</div>
-				
+
 				<!--mask遮罩层-->
-					<div class="mask">
+				<div class="mask">
 
-						<div class="mask_son">
-							<!--<img src="../../img/news/d.png" class="jiantou" />-->
-							
-							<div class="jiasaosao">
-								<!--向上-三角形-->
-								<p class="triangle_border_up"></p>
-								<div class="qunliao_item" onclick="gai(this)">
-									<p class="qunliao_item_icon_box">
-										<img src="../../img/news/qunliao@2x.png" class="qunliao_item_icon" />
-									</p>
-									<span class="qunliao_item_text">创建群聊</span>
-								</div>
-								<div class="qunliao_item" onclick="gai(this)">
-									<p class="qunliao_item_icon_box">
-										<img src="../../img/news/jiahaoyou@2x.png" class="qunliao_item_icon" />
-									</p>
-									<span class="qunliao_item_text">添加好友</span>
-								</div>
-								<div class="qunliao_item" onclick="gai(this)">
-									<p class="qunliao_item_icon_box">
-										<img src="../../img/news/saoyisao@2x.png" class="qunliao_item_icon" />
-									</p>
-									<span class="qunliao_item_text">扫一扫</span>
-								</div>
+					<div class="mask_son">
+						<!--<img src="../../img/news/d.png" class="jiantou" />-->
 
+						<div class="jiasaosao">
+							<!--向上-三角形-->
+							<p class="triangle_border_up"></p>
+							<div class="qunliao_item" onclick="gai(this)">
+								<p class="qunliao_item_icon_box">
+									<img src="../../img/news/qunliao@2x.png" class="qunliao_item_icon" />
+								</p>
+								<span class="qunliao_item_text">创建群聊</span>
 							</div>
-							
+							<div class="qunliao_item" onclick="gai(this)">
+								<p class="qunliao_item_icon_box">
+									<img src="../../img/news/jiahaoyou@2x.png" class="qunliao_item_icon qunliao_item_icon2" />
+								</p>
+								<span class="qunliao_item_text">添加好友</span>
+							</div>
+							<div class="qunliao_item" onclick="gai(this)">
+								<p class="qunliao_item_icon_box">
+									<img src="../../img/news/saoyisao@2x.png" class="qunliao_item_icon qunliao_item_icon3" />
+								</p>
+								<span class="qunliao_item_text">扫一扫</span>
+							</div>
+
 						</div>
 
 					</div>
 
-				
+				</div>
 
 				<div class="mui-content">
 					<div id="scroll1" class="mui-scroll-wrapper" style="top:.88rem;bottom: 50px;">
@@ -481,7 +479,6 @@
 						<div class="bottomNavWrap container" id="bottomNavWrap" data-id="0"></div>
 					</div>
 
-					
 				</div>
 			</div>
 
@@ -505,15 +502,10 @@
 							$(".search-tip").show();
 						}
 					})
-					
+
 					mui('.mui-scroll-wrapper').scroll({
 						deceleration: 0.000000001 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
 					});
-					
-					
-					
-					
-					
 
 				}
 			</script>
@@ -569,7 +561,7 @@
 						offCanvasWrapper.offCanvas().refresh();
 					}
 				});
-				
+
 				mui('#offCanvasSideScroll').scroll();
 				mui('#offCanvasContentScroll').scroll();
 
@@ -594,22 +586,22 @@
 
 					$(".mask").show();
 					$(".mask_son").slideDown()
-				
+
 				});
 				$(".mask").on('tap', function(event) {
-				
+
 					$(".mask").hide();
-					
+
 				});
-				
+
 				$(".first_ear").on('tap', function(event) {
-				
+
 					$(location).attr('href', 'dialog.html')
-					
+
 				});
-				
+
 				/*底部导航-页面跳转*/
-				$(".bottomNavWrap .bottomNavTerm").on('tap',function(){
+				$(".bottomNavWrap .bottomNavTerm").on('tap', function() {
 					window.location.href = $(this).attr('onclick').split("'")[1];
 				})
 			</script>
