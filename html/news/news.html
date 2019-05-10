@@ -30,8 +30,9 @@
 									<div class="person_message_my">
 
 										<span>我的</span>
+										
 										<img src="../../img/news/close@2x.png" class="close" />
-
+                                       
 									</div>
 									<div class="person_message_img">
 
@@ -449,7 +450,7 @@
 
 						<div class="mask_son">
 							<img src="../../img/news/d.png" class="jiantou" />
-							<div style="width:2.5rem;height: 2.4rem;background: white;z-index: 30;float: right;margin-right: .1rem;margin-top: 1.05rem;border-radius: .06rem;">
+							<div class="jiasaosao">
 
 								<a class="qunliao_item">
 									<img src="../../img/news/account@2x.png" class="qunliao" /><span class="qunliao_text qunliao_text1" onclick="gai(this)">创建聊</span>
@@ -497,7 +498,6 @@
 			</script>
 			<script>
 				mui.init();
-
 				//侧滑容器父节点
 				var offCanvasWrapper = mui('#offCanvasWrapper');
 				//主界面容器
@@ -548,15 +548,7 @@
 						offCanvasWrapper.offCanvas().refresh();
 					}
 				});
-				//主界面‘显示侧滑菜单’按钮的点击事件
-				//						document.getElementById('offCanvasShow').addEventListener('tap', function() {
-				//							offCanvasWrapper.offCanvas('show');
-				//						});
-				//菜单界面，‘关闭侧滑菜单’按钮的点击事件
-				//						document.getElementById('offCanvasHide').addEventListener('tap', function() {
-				//							offCanvasWrapper.offCanvas('close');
-				//						});
-				//主界面和侧滑菜单界面均支持区域滚动；
+				
 				mui('#offCanvasSideScroll').scroll();
 				mui('#offCanvasContentScroll').scroll();
 
@@ -568,11 +560,11 @@
 						});
 					});
 				}
-				////			点击头像,左侧出现
+				//点击头像,左侧出现
 				$(".touxx").on('tap', function(event) {
 					mui('.mui-off-canvas-wrap').offCanvas('show');
 				});
-				//		     点击关闭按钮,左侧消失
+				//点击关闭按钮,左侧消失
 				$(".close").on('tap', function(event) {
 					mui('.mui-off-canvas-wrap').offCanvas('show');
 				});
@@ -583,9 +575,7 @@
 
 				});
 				$(".mask").on('tap', function(event) {
-
 					$(".mask").hide();
-
 				});
 			</script>
 
