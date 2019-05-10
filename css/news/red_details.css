@@ -1,3 +1,6 @@
+/*
+ 红包详情
+ * */
 .headWrap {
 	position: fixed;
 	top: 0;
@@ -56,7 +59,7 @@
 	left: 0;
 	width: 100%;
 	height: 1rem;
-	background: url(../../img/news/tuoyuan.png) no-repeat;
+	background: url(../../img/group_chat_room/tuoyuan.png) no-repeat;
 	background-size: 100% 100%;
 }
 img {
@@ -147,7 +150,7 @@ img {
 	display: inline-block;
 	width: .3rem;
 	height: .25rem;
-	background: url(../../img/news/crump.png) no-repeat;
+	background: url(../../img/group_chat_room/thunder.png) no-repeat;
 	background-size: 100% 100%;
 	vertical-align: middle;
 }

@@ -73,3 +73,45 @@
 	width: .28rem;
 	height: .3rem;
 }
+/* 个人谈话框-s */
+/* 新消息 */
+.lb_headWrap_dialog{
+	position: absolute;
+	top: 0;
+	left:.6rem;
+	width: .8rem;
+	height: .88rem;
+	line-height: .88rem;
+}
+.lb_headWrap_dialog_text{
+	height: .26rem;
+	line-height: .26rem;
+	text-align: center;
+	padding:0 .1rem;
+	border-radius: .2rem;
+	background: #0df4f7;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+/* 右侧删除图标 */
+.lb_headWrap_remove{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	width: .8rem;
+	height: 100%;
+}
+.lb_headWrap_remove_img{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	z-index: 1;
+	width: .34rem;
+	height: .34rem;
+}
+/* 个人谈话框-e */

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-		<title>个人中心</title>
+		<title>更改名字</title>
 		<script src="../../../../js/public/rem.js"></script>
 		<!--public-->
 		<link rel="stylesheet" href="../../../../css/public/public.css" />
@@ -21,14 +21,15 @@
 				</p>
                 <span>更改名字</span>
                 
-                <span class="editBtn"><a href="../../my/personal_center/personal_center.html">完成</a></span>
+                <!-- <span class="editBtn"><a href="../../my/personal_center/personal_center.html">保存</a></span> -->
+                <span class="editBtn">保存</span>
                 
 			</div>
 
             <!-- 内容 -->
 			<div class="edit-content">
                 <div class="edit-item">
-                    <input type="text" value="小明" class="editName">
+                    <input type="text" class="editName">
                     <span class="del-icon">
                         <img src="../../../../img/news/my/del-icon.png" />
                     </span>
@@ -41,9 +42,47 @@
         <script src="../../../../js/public/public.js"></script>
         <script>
             $(function(){
+				
+				var userName = localStorage["userName"];
+				$(".editName").val(userName);
+
+				// 清空输入框内容
                 $(".del-icon").click(function(){
                     $(".editName").val("");
+					$(".editName").focus();
                 })
+				
+				//获取焦点
+				moveEnd($(".editName").focus().get(0));
+				//移动光标到input最后面
+				function moveEnd(obj) {
+					obj.focus();
+					var len = obj.value.length;
+					if (document.selection) {
+						var sel = obj.createTextRange();
+						sel.moveStart('character', len); //设置开头的位置
+						sel.collapse();
+						sel.select();
+					}else if (typeof obj.selectionStart == 'number' && typeof obj.selectionEnd == 'number') {
+						obj.selectionStart = obj.selectionEnd = len;
+					}
+				}
+				
+				// 输入框值改变时触发
+				$('.editName').bind('input propertychange', function() {
+					$(".editBtn").css("opacity","1")
+				});
+
+				//保存后返回页面
+				$(".editBtn").click(function(){
+					var userName = $(".editName").val();
+					localStorage.userName = userName;
+					window.location.href='./personal_center.html';
+				})
+
+				
+
+
             })
         </script>
 	</body>

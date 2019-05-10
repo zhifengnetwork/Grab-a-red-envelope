@@ -1,451 +1,458 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="../../css/public/public.css">
-	<link rel="stylesheet" href="../../css/public/public_head.css">
-	<link rel="stylesheet" href="../../css/mail_list/mail_list.css">
-	<script src="../../js/public/rem.js"></script>
-	<title>通讯录</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<title class="pageTopTitle" page-id="1"></title>
+		<script src="../../js/public/rem.js"></script>
+		<link rel="stylesheet" href="../../css/public/public.css">
+		<link rel="stylesheet" href="../../css/public/public_head.css">
+		<link rel="stylesheet" href="../../css/public/bottom_nav.css" />
+		<link rel="stylesheet" href="../../css/mail_list/mail_list.css">
+	</head>
 
-<body>
-	<div class="wrap_frame">
-		<!--public head-->
-		<div class="lb_headWrap">
-			<!--<p class="lb_headWrap_return" data-num="1" onclick="returnFun()">
+	<body>
+		<div class="wrap_frame">
+			<!--public head-->
+			<div class="lb_headWrap">
+				<!--<p class="lb_headWrap_return" data-num="1" onclick="returnFun()">
 				<img class="lb_headWrap_return_img" src="../../img/public/left.png"/>
 			</p>-->
-			<span>通讯录</span>
-		</div>
-		<!-- 通讯录搜索-s -->
-		<div class="address_search">
-			<label class="address_search_label">
+				<span>通讯录</span>
+			</div>
+			<!-- 通讯录搜索-s -->
+			<div class="address_search">
+				<label class="address_search_label">
 				<span class="address_search_text"><img class="address_search_img" src="../../img/public/search.png" alt="">搜索</span>
 				<input class="address_search_input" type="text">
 			</label>
+			</div>
+			<!-- 通讯录搜索-e -->
+			<!-- 通讯录菜单-s -->
+			<div class="address_menu">
+				<div class="address_menu_item" onclick="window.location.href='superior.html'">
+					<img class="address_menu_img" src="../../img/mail_list/superior.png" alt="">
+					<p>我的上级</p>
+				</div>
+				<div class="address_menu_item" onclick="window.location.href='service.html'">
+					<img class="address_menu_img" src="../../img/mail_list/service.png" alt="">
+					<p>人工客服</p>
+				</div>
+				<div class="address_menu_item" onclick="window.location.href='course.html'">
+					<img class="address_menu_img" src="../../img/mail_list/course.png" alt="">
+					<p>充值教程</p>
+				</div>
+			</div>
+			<!-- 通讯录菜单-e -->
+			<!-- 置顶标题 -->
+			<div class="address_title"></div>
+			<!-- 通讯录联系人-s -->
+			<div class="address_linkman">
+				<div class="address_linkman_title">A</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Administrator</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Administrator</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Administrator</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Administrator</span>
+				</div>
+				<div class="address_linkman_title">B</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Banana king</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Banana king</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Banana king</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Banana king</span>
+				</div>
+				<div class="address_linkman_title">C</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">cartrl</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">cartrl</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">cartrl</span>
+				</div>
+				<div class="address_linkman_title">D</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Dave</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Dave</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Dave</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Dave</span>
+				</div>
+				<div class="address_linkman_title">E</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">eva</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">eva</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">eva</span>
+				</div>
+				<div class="address_linkman_title">F</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">flag</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">flag</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">flag</span>
+				</div>
+				<div class="address_linkman_title">G</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">game</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">GM</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">GM</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">GM</span>
+				</div>
+				<div class="address_linkman_title">H</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Hifi</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Hifi</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Hifi</span>
+				</div>
+				<div class="address_linkman_title">I</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Ice</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Ice</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Ice</span>
+				</div>
+				<div class="address_linkman_title">J</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">jessica</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">jessica</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">jessica</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">jessica</span>
+				</div>
+				<div class="address_linkman_title">K</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">K</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">K</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">K</span>
+				</div>
+				<div class="address_linkman_title">L</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Luck UP</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Luck UP</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Luck UP</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">Luck UP</span>
+				</div>
+				<div class="address_linkman_title">M</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">master</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">master</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">master</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">master</span>
+				</div>
+				<div class="address_linkman_title">N</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">NVIDIA</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">NVIDIA</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">NVIDIA</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">NVIDIA</span>
+				</div>
+				<div class="address_linkman_title">O</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">object</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">object</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">object</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">object</span>
+				</div>
+				<div class="address_linkman_title">P</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">panda</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">panda</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">panda</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">panda</span>
+				</div>
+				<div class="address_linkman_title">Q</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">quarter</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">quarter</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">quarter</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">quarter</span>
+				</div>
+				<div class="address_linkman_title">R</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">rabbit</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">rabbit</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">rabbit</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">rabbit</span>
+				</div>
+				<div class="address_linkman_title">S</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">start</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">start</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">start</span>
+				</div>
+				<div class="address_linkman_title">U</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">U.U</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">U.N</span>
+				</div>
+				<div class="address_linkman_title">V</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">val</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">val</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">val</span>
+				</div>
+				<div class="address_linkman_title">W</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">wrap</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">wrap</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">wrap</span>
+				</div>
+				<div class="address_linkman_title">X</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">xp</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">xp</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">xp</span>
+				</div>
+				<div class="address_linkman_title">Y</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">young</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">young</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">young</span>
+				</div>
+				<div class="address_linkman_title">Z</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">zombie</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">zombie</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">zombie</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">zombie</span>
+				</div>
+				<div class="address_linkman_title">#</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">⑧</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">⑨</span>
+				</div>
+				<div class="address_linkman_item">
+					<img class="address_linkman_img" src="../../img/0009g.png" alt="">
+					<span class="address_linkman_name">④</span>
+				</div>
+				<!-- 侧边栏 -->
+				<div class="address_linkman_list">
+
+				</div>
+				<!-- 侧边栏弹框 -->
+				<div class="address_linkman_index">
+
+				</div>
+			</div>
+			<!-- 通讯录联系人-e -->
+			<!-- 底部导航  -s-->
+			<div class="bottomNavWrap container" id="bottomNavWrap" data-id="0"></div>
+			<!-- 底部导航  -e-->
 		</div>
-		<!-- 通讯录搜索-e -->
-		<!-- 通讯录菜单-s -->
-		<div class="address_menu">
-			<div class="address_menu_item" onclick="window.location.href='superior.html'">
-				<img class="address_menu_img" src="../../img/mail_list/superior.png" alt="">
-				<p>我的上级</p>
-			</div>
-			<div class="address_menu_item" onclick="window.location.href='service.html'">
-				<img class="address_menu_img" src="../../img/mail_list/service.png" alt="">
-				<p>人工客服</p>
-			</div>
-			<div class="address_menu_item">
-				<img class="address_menu_img" src="../../img/mail_list/course.png" alt="">
-				<p>充值教程</p>
-			</div>
-		</div>
-		<!-- 通讯录菜单-e -->
-		<!-- 通讯录联系人-s -->
-		<div class="address_linkman">
-			<div class="address_linkman_title">A</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Administrator</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Administrator</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Administrator</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Administrator</span>
-			</div>
-			<div class="address_linkman_title">B</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Banana king</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Banana king</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Banana king</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Banana king</span>
-			</div>
-			<div class="address_linkman_title">C</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">cartrl</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">cartrl</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">cartrl</span>
-			</div>
-			<div class="address_linkman_title">D</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Dave</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Dave</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Dave</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Dave</span>
-			</div>
-			<div class="address_linkman_title">E</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">eva</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">eva</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">eva</span>
-			</div>
-			<div class="address_linkman_title">F</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">flag</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">flag</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">flag</span>
-			</div>
-			<div class="address_linkman_title">G</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">game</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">GM</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">GM</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">GM</span>
-			</div>
-			<div class="address_linkman_title">H</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Hifi</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Hifi</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Hifi</span>
-			</div>
-			<div class="address_linkman_title">I</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Ice</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Ice</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Ice</span>
-			</div>
-			<div class="address_linkman_title">J</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">jessica</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">jessica</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">jessica</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">jessica</span>
-			</div>
-			<div class="address_linkman_title">K</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">K</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">K</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">K</span>
-			</div>
-			<div class="address_linkman_title">L</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Luck UP</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Luck UP</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Luck UP</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">Luck UP</span>
-			</div>
-			<div class="address_linkman_title">M</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">master</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">master</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">master</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">master</span>
-			</div>
-			<div class="address_linkman_title">N</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">NVIDIA</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">NVIDIA</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">NVIDIA</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">NVIDIA</span>
-			</div>
-			<div class="address_linkman_title">O</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">object</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">object</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">object</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">object</span>
-			</div>
-			<div class="address_linkman_title">P</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">panda</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">panda</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">panda</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">panda</span>
-			</div>
-			<div class="address_linkman_title">Q</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">quarter</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">quarter</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">quarter</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">quarter</span>
-			</div>
-			<div class="address_linkman_title">R</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">rabbit</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">rabbit</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">rabbit</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">rabbit</span>
-			</div>
-			<div class="address_linkman_title">S</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">start</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">start</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">start</span>
-			</div>
-			<div class="address_linkman_title">U</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">U.U</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">U.N</span>
-			</div>
-			<div class="address_linkman_title">V</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">val</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">val</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">val</span>
-			</div>
-			<div class="address_linkman_title">W</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">wrap</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">wrap</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">wrap</span>
-			</div>
-			<div class="address_linkman_title">X</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">xp</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">xp</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">xp</span>
-			</div>
-			<div class="address_linkman_title">Y</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">young</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">young</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">young</span>
-			</div>
-			<div class="address_linkman_title">Z</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">zombie</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">zombie</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">zombie</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">zombie</span>
-			</div>
-			<div class="address_linkman_title">#</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">⑧</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">⑨</span>
-			</div>
-			<div class="address_linkman_item">
-				<img class="address_linkman_img" src="../../img/0009g.png" alt="">
-				<span class="address_linkman_name">④</span>
-			</div>
-			<!-- 侧边栏 -->
-			<div class="address_linkman_list">
-				
-			</div>
-			<!-- 侧边栏弹框 -->
-			<div class="address_linkman_index">
-				
-			</div>
-		</div>
-		<!-- 通讯录联系人-e -->
-	</div>
-	<script src="../../js/public/jquery-1.8.3.js"></script>
-	<script src="../../js/mail_list/mail_list.js"></script>
-</body>
+		<script src="../../js/public/jquery-1.8.3.js"></script>
+		<script src="../../js/public/bottom_nav.js"></script>
+		<script src="../../js/mail_list/mail_list.js"></script>
+
+	</body>
 
 </html>

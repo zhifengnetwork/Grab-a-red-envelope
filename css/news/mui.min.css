@@ -9,7 +9,7 @@
 
 html {
 	font-family: sans-serif;
-	-webkit-text-size-adjust: 100%
+	-webkit-text-size-adjustmui-off-canvas-wrap .mui-inner-wrap.mui-transitioning: 100%
 }
 
 body {
@@ -18,8 +18,8 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom:0;
-	border: 1px solid blueviolet;
+	bottom: 0;
+	/*border: 1px solid blueviolet;*/
 	overflow: auto!important;
 }
 
@@ -227,11 +227,11 @@ th {
 }
 
 body {
-	font-family: 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 17px;
+	/*font-family: 'Helvetica Neue', Helvetica, sans-serif;*/
+	/*font-size: 17px;
 	line-height: 21px;
 	color: #000;
-	background-color: #efeff4;
+	background-color: #efeff4;*/
 	-webkit-overflow-scrolling: touch
 }
 
@@ -464,12 +464,13 @@ h6 {
 	color: #8f8f94
 }
 
-p {
+
+/*p {
 	font-size: 14px;
 	margin-top: 0;
 	margin-bottom: 10px;
 	color: #8f8f94
-}
+}*/
 
 .mui-row:after,
 .mui-row:before {
@@ -603,11 +604,13 @@ p {
 .mui-scroll-wrapper {
 	position: absolute;
 	z-index: 2;
-	top: 0;
-	bottom: 0;
+	top: 0rem;
+	bottom: 1rem;
 	left: 0;
-	overflow: hidden;
-	width: 100%
+	overflow: scroll;
+	overflow-y: scroll;
+	overflow: hidden scroll;
+	width: 100%;
 }
 
 .mui-scroll {
@@ -750,8 +753,8 @@ p {
 	left: 0;
 	display: block;
 	transition: background 350ms cubic-bezier(.165, .84, .44, 1);
-	background: rgba(0, 0, 0, .4);
-	box-shadow: -4px 0 4px rgba(0, 0, 0, .5), 4px 0 4px rgba(0, 0, 0, .5);
+	/*background: rgba(0, 0, 0, .4);*/
+	/*box-shadow: -4px 0 4px rgba(0, 0, 0, .5), 4px 0 4px rgba(0, 0, 0, .5);*/
 	-webkit-tap-highlight-color: transparent
 }
 
@@ -775,7 +778,7 @@ p {
 	box-sizing: content-box;
 	width: 70%;
 	min-height: 100%;
-	background: #333;
+	/*background: #333;*/
 	-webkit-overflow-scrolling: touch
 }
 
@@ -1762,16 +1765,17 @@ input[type=submit]:enabled:active {
 }
 
 .mui-table-view {
-	position: relative;
+	/*position: relative;*/
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
 	list-style: none;
-	background-color: #fff
+	background-color: #fff;
+	padding-top: .2rem
 }
 
 .mui-table-view:after {
-	position: absolute;
+	/*position: absolute;*/
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -2544,19 +2548,15 @@ select:focus {
 }
 
 .mui-input-group .mui-input-row {
-	
-   
-   	/*background: red;*/
-   	/*padding-bottom: 1rem;*/
-   	position:relative;
-   	bottom: 0rem;
-   	top: 1.1rem;
-   	/*margin-bottom: 1rem;*/
-   	border: 1px solid green;
-   /*	height:500px;*/
-   	/*overflow-y: scroll!important;*/
-   	
-   	
+	/*background: red;*/
+	/*padding-bottom: 1rem;*/
+	position: relative;
+	bottom: 0rem;
+	top: 1rem;
+	/*margin-bottom: 1rem;*/
+	/*border: 1px solid green;*/
+	/*	height:500px;*/
+	/*overflow-y: scroll!important;*/
 }
 
 .mui-input-group .mui-input-row:after {
@@ -4688,4 +4688,22 @@ body>.mui-progressbar {
 	width: 100%;
 	height: 100%;
 	border: 0
+}
+
+
+/*设置左边导航栏滑动的宽度，显示全屏的css代码*/
+.mui-off-canvas-left,
+.mui-off-canvas-right {
+	width: 100%;
+	/*菜单宽度 此处为修改后的宽度但是出现白边如图*/
+}
+/*右侧侧滑*/
+.mui-off-canvas-wrap.mui-left .mui-inner-wrap {
+	-webkit-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+/*左侧侧滑*/
+.mui-off-canvas-wrap.mui-right .mui-inner-wrap {
+	-webkit-transform: translate3d(100%, 0, 0);
+	transform: translate3d(100%, 0, 0);
 }

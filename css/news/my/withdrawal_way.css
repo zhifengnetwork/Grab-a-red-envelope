@@ -1,0 +1,106 @@
+/*
+ 选择提现方式
+ * */
+.lb_headWrap {
+	background: #fff;
+}
+.lb_headWrap span {
+	letter-spacing: 1px;
+	color: #0b0b0b;
+}
+.clip_wrap {
+	margin: .4rem .24rem;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #fff;
+}
+.clip {
+	padding: .3rem .24rem;
+}
+
+.bank_wrap div {
+	display: inline-block;
+	vertical-align: middle;
+}
+.icon {
+	width: .4rem;
+	height: .3rem;
+	background: url(../../../img/news/Bank.png) no-repeat;
+	background-size: 100% 100%;
+}
+.ico {
+	width: .4rem;
+	height: .3rem;
+	background: url(../../../img/news/Alipay2@2x.png) no-repeat;
+	background-size: 100% 100%;
+}
+.house {
+	margin-left: .15rem;
+	font-size: .3rem;
+	letter-spacing: 1px;
+	color: #000006;
+}
+.edit {
+	float: right;	
+	display: inline-block;
+	width: 1rem;
+	height: .5rem;
+	background-image: linear-gradient(90deg, 
+		#60d1f7 0%, 
+		#4fa2f7 100%);
+	border-radius: 4px;
+	font-size: .28rem;
+	letter-spacing: 1px;
+	color: #fff;
+	text-align: center;
+	line-height: .5rem;
+}
+
+.detail_wrap {
+	margin-top: .3rem;
+}
+.arrive {
+	font-size: .3rem;
+	line-height: .55rem;
+	letter-spacing: 1px;
+	color: #000006;
+}
+.arrive,.ive {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.name {
+	padding-bottom: .15rem;
+	line-height: .55rem;
+	font-size: .3rem;
+	color: #31313f;
+}
+.small {
+	margin-left: .2rem;
+}
+.card {
+	padding-top: .15rem;
+	width: 4.9rem;
+	line-height: .55rem;
+	font-size: .3rem;
+	color: #31313f;
+	border-top: 1px solid #d6daed;
+}
+
+.active {
+	border: 1px solid #d6daed;
+}
+
+.ack {
+	margin: 1.2rem auto 0;
+	width: 4rem;
+	height: .76rem;
+	background-color: #2eda9f;
+	border-radius: 8px;
+	font-size: .3rem;
+	letter-spacing: 1px;
+	color: #fff;
+	text-align: center;
+	line-height: .76rem;
+}
