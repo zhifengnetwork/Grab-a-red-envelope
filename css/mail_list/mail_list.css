@@ -110,7 +110,7 @@ body{
 .address_linkman_list{
     display: none;
     position: fixed;
-    top: 1.6rem;
+    top: 1.4rem;
     right: .1rem;
 }
 .address_linkman_list .list{

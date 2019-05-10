@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-		<title>个人中心</title>
+		<title>个人资料</title>
 		<script src="../../../../js/public/rem.js"></script>
 		<!--public-->
 		<link rel="stylesheet" href="../../../../css/public/public.css" />
@@ -25,7 +25,7 @@
 			<!-- 主内容 -->
 			<div class="personal-content">
 				<ul>
-					<li>
+					<li id="avatar">
 						<div class="fl">头像</div>
 						<div class="fr">
 							<span class="text avatar">
@@ -51,7 +51,7 @@
 						</div>
 					</li>
 					<li>
-					   <a href="my-code.html" class="clearfloat">
+					   <a href="../my_inviteCode.html" class="clearfloat">
 						<div class="fl">我的二维码</div>
 						<div class="fr">
 							<span class="text code-icon">
@@ -90,7 +90,7 @@
 			$(function(){
 				
 				// 上拉菜单
-				$('.avatar').click(function(){
+				$('#avatar').click(function(){
 					showSelect();
 				})
 

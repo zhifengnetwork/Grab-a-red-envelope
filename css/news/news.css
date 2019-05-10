@@ -326,7 +326,6 @@ body{
 .list_ear{
 	
 	position: relative;
-	top: 1.7rem;
 	font-size: .26rem;
 	
 }
@@ -337,7 +336,6 @@ body{
 	border-bottom: .3rem solid #F5F5F5;
 	height: 1.2rem;
 	line-height: .9rem;
-    margin-top: 1rem;
 	
 	
 }
