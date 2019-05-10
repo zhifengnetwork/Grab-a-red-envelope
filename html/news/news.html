@@ -119,6 +119,42 @@
 						<img class="lb_headWrap_return_img" src="../../img/public/Plus sign@2x.png" />
 					</p>
 				</div>
+				
+				<!--mask遮罩层-->
+					<div class="mask">
+
+						<div class="mask_son">
+							<!--<img src="../../img/news/d.png" class="jiantou" />-->
+							
+							<div class="jiasaosao">
+								<!--向上-三角形-->
+								<p class="triangle_border_up"></p>
+								<div class="qunliao_item" onclick="gai(this)">
+									<p class="qunliao_item_icon_box">
+										<img src="../../img/news/qunliao@2x.png" class="qunliao_item_icon" />
+									</p>
+									<span class="qunliao_item_text">创建群聊</span>
+								</div>
+								<div class="qunliao_item" onclick="gai(this)">
+									<p class="qunliao_item_icon_box">
+										<img src="../../img/news/jiahaoyou@2x.png" class="qunliao_item_icon" />
+									</p>
+									<span class="qunliao_item_text">添加好友</span>
+								</div>
+								<div class="qunliao_item" onclick="gai(this)">
+									<p class="qunliao_item_icon_box">
+										<img src="../../img/news/saoyisao@2x.png" class="qunliao_item_icon" />
+									</p>
+									<span class="qunliao_item_text">扫一扫</span>
+								</div>
+
+							</div>
+							
+						</div>
+
+					</div>
+
+				
 
 				<div class="mui-content">
 					<div id="scroll1" class="mui-scroll-wrapper" style="top:.88rem;bottom: 50px;">
@@ -445,28 +481,7 @@
 						<div class="bottomNavWrap container" id="bottomNavWrap" data-id="0"></div>
 					</div>
 
-					<!--mask遮罩层-->
-					<div class="mask">
-
-						<div class="mask_son">
-							<img src="../../img/news/d.png" class="jiantou" />
-							<div class="jiasaosao">
-
-								<a class="qunliao_item">
-									<img src="../../img/news/account@2x.png" class="qunliao" /><span class="qunliao_text qunliao_text1" onclick="gai(this)">创建聊</span>
-								</a>
-								<a class="qunliao_item">
-									<img src="../../img/news/account@2x.png" class="qunliao" /><span class="qunliao_text">创建群聊</span>
-								</a>
-								<a class="qunliao_item">
-									<img src="../../img/news/account@2x.png" class="qunliao" /><span class="qunliao_text">创建群聊</span>
-								</a>
-
-							</div>
-						</div>
-
-					</div>
-
+					
 				</div>
 			</div>
 
@@ -479,7 +494,7 @@
 			<script>
 				window.onload = function() {
 
-					// 搜索框
+					//搜索框
 					$(".search-input").focus(function() {
 						$(".search-tip").hide();
 					}).blur(function() {
@@ -490,6 +505,7 @@
 							$(".search-tip").show();
 						}
 					})
+					
 					mui('.mui-scroll-wrapper').scroll({
 						deceleration: 0.000000001 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
 					});
@@ -572,11 +588,23 @@
 				$(".lb_headWrap_share").on('tap', function(event) {
 
 					$(".mask").show();
-
+					$(".mask_son").slideDown()
+				
 				});
 				$(".mask").on('tap', function(event) {
+				
 					$(".mask").hide();
+					
 				});
+				
+				$(".first_ear").on('tap', function(event) {
+				
+					$(location).attr('href', 'dialog.html')
+					
+				});
+				
+				
+				
 			</script>
 
 	</body>
