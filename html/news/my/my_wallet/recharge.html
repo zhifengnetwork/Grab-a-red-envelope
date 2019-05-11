@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<title>充值</title>
+		<script src="../../../../js/public/rem.js"></script>
+		<!--public-->
+		<link rel="stylesheet" href="../../../../css/public/public.css">
+		<!--头部-->
+		<link rel="stylesheet" href="../../../../css/public/public_head.css" />
+		<link rel="stylesheet" type="text/css" href="../../../../css/news/my/recharge.css"/>
+	</head>
+	<body>
+		<div class="wrap_frame">
+			<!--头部-->
+			<div class="lb_headWrap">
+				<p class="lb_headWrap_return" data-num="1" onclick="returnFun()">
+                    <img class="lb_headWrap_return_img" src="../../../../img/public/back@2x.png"/> 
+                </p>
+				<span>充值</span>
+            </div>
+            <!--内容-->
+            <div class="content">
+            	<div class="item_wrap">
+    				<!--微信支付-->
+            		<div class="pay_wrap">
+            			<div class="img">
+            				<img src="../../../../img/news/my_wallet/wechat.png" />
+            			</div>
+            			<div class="chat">微信支付</div>
+            			<div class="hook_wrap active">
+            				<div class="hook"></div>
+            			</div>
+            		</div>
+    				<!--支付宝支付-->
+    				<div class="pay_wrap">
+            			<div class="img">
+            				<img src="../../../../img/news/my_wallet/Alipay.png" />
+            			</div>
+            			<div class="chat">支付宝支付</div>
+            			<div class="hook_wrap">
+            				<div class="hook"></div>
+            			</div>
+            		</div>
+            		<!--二维码，充值按钮区-->
+            		<div class="code_btn_wrap">
+            			<!--微信支付二维码-->
+            			<div class="wecha_code">
+            				<div class="amount">
+            					<div class="aimg_wrap">
+            						<div class="aimg">
+            							<img src="../../../../img/news/my_wallet/wechat.png"/ >
+            						</div>
+            						<p>微信用户</p>
+            					</div>
+            					<div class="money_wrap">
+            						<div class="money"></div>
+            						<div class="inp_wrap">
+            							<input class="inp" type="text" placeholder="转账金额" />
+            						</div>
+            					</div>
+            				</div>
+            				<div class="code_img">
+            					<img src="../../../../img/news/my_wallet/Qrcode.png" />
+            				</div>
+            			</div>
+            			<!--支付宝支付二维码-->
+            			<div class="wecha_code alipay">
+            				<div class="amount">
+            					<div class="aimg_wrap">
+            						<div class="aimg">
+            							<img src="../../../../img/news/my_wallet/Alipay.png"/ >
+            						</div>
+            						<p>支付宝用户</p>
+            					</div>
+            					<div class="money_wrap">
+            						<div class="money"></div>
+            						<div class="inp_wrap">
+            							<input class="inp" type="text" placeholder="转账金额" />
+            						</div>
+            					</div>
+            				</div>
+            				<div class="code_img">
+            					<img src="../../../../img/news/my_wallet/Qrcode.png" />
+            				</div>
+            			</div>
+            			<!--确认充值按钮-->
+            			<div class="verify">
+            				<a class="verify_btn">确认充值</a>
+            			</div>
+            		</div>
+            		<!--上传凭证区-->
+            		<div class="push_wrap">
+            			<h2>请上传凭证</h2>
+	            		<div class="box_wrap">
+	            			<!--上传图片存放区-->
+	            			<div class="file_img_ut">
+								<img id="file_img" src=""/>
+							</div>
+							<!--点击上存按钮-->
+	            			<div class="add_wrap" id="add_wrap">
+	            				<img src="../../../../img/news/my_wallet/jia.png" />
+	            			</div>
+	            			<input type="file" id="file"/>
+	            		</div>
+            		</div>
+            		<!--提交按钮-->
+            		<div class="refer_btn">提交</div>
+            	</div>
+            </div>
+            <!--提交弹框-->
+			<div class="submit_pop">
+				<div class="submit_wrap">
+					<div class="imges">
+						<img src="../../../../img/news/my_wallet/submit@2x.png" />
+					</div>
+					<div class="text">已提交</div>
+					<div class="text">充值已提交待审核</div>
+				</div>
+			</div>
+        </div>    
+		
+		
+		<script src="../../../../js/public/jquery-1.8.3.js"></script>
+		<script src="../../../../js/public/public.js"></script>
+		<script>
+			$(function() {
+				//支付方式切换
+			    $('.pay_wrap').on('click', function() {
+			    	//子元素添加class类
+   					$(this).children(".hook_wrap").addClass("active").parent(".pay_wrap").siblings().find(".hook_wrap").removeClass('active');   						       
+			        //获取当前wecha_code的索引
+			        var n = $(this).index();
+			        $('.code_btn_wrap .wecha_code').eq(n).show().siblings('.wecha_code').hide();
+			    });
+			    //提交弹框
+			    $('.refer_btn').on('click', function() {
+			    	$('.submit_pop').show();
+			    });
+			    $('.submit_pop').on('click', function() {
+			    	$('.submit_pop').hide();
+			    });
+			});
+			
+			//上传凭证
+        	var Input  = document.getElementById("file");   // input file
+			var FileImg = document.getElementById("file_img");//img file
+			var Addwrap = document.getElementById("add_wrap");
+			
+			Input.onchange = function(){
+			    var file = this.files[0];
+			        if(!!file){
+			            var reader = new FileReader();
+			            // 图片文件转换为base64
+			            reader.readAsDataURL(file);
+			            reader.onload = function(){
+			            // 显示图片
+			            FileImg.src = this.result;
+			            Addwrap.style.display = 'none';
+			            Input.style.display = 'none';
+			        }
+			    }
+			}
+		</script>
+	</body>
+</html>
