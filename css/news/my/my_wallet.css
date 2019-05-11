@@ -2,6 +2,11 @@ body{
     background-color: #f5f5f5;
 }
 
+.wrap_frame{
+    padding-bottom: .3rem;
+    box-sizing: border-box;
+}
+
 /* 头部 */
 .lb_headWrap{
     background:#ffffff;
@@ -87,7 +92,7 @@ body{
 
 /* 账单 */
 .bill-content{
-    height: 100vh;
+    height: 100%;
     background-color: #ebedf5;
 }
 
@@ -227,3 +232,40 @@ body{
     position: relative;
     top: .02rem;
 }
+.tab-wrap .tab-content .tbody .record-item .state span{
+    display: block;
+}
+
+/* 转出状态 */
+.tab-wrap .tab-content .tbody .record-item.red .amount-money{
+    color: #f52222;
+}
+.tab-wrap .tab-content .tbody .record-item.red .amount-money span{
+    color: #f52222;
+}
+.tab-wrap .tab-content .tbody .record-item.red .state{
+    color: #f52222;
+}
+
+/* 转入状态 */
+.tab-wrap .tab-content .tbody .record-item.green .amount-money{
+    color: #08dd21;
+}
+.tab-wrap .tab-content .tbody .record-item.green .amount-money span{
+    color: #08dd21;
+}
+.tab-wrap .tab-content .tbody .record-item.green .state{
+    color: #08dd21;
+}
+
+/* 中雷状态 */
+.tab-wrap .tab-content .tbody .record-item.selected .amount-money{
+    color: #f30000;
+} 
+.tab-wrap .tab-content .tbody .record-item.selected .amount-money span{
+    color: #f30000;
+}  
+.tab-wrap .tab-content .tbody .record-item.selected .state .sign{
+    color: #f30000;
+    font-size: .14rem;
+}   
