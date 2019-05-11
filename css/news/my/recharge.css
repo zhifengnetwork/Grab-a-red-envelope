@@ -1,0 +1,229 @@
+/*
+ * 充值
+ * */
+.wrap_frame {
+	position: relative;
+}
+.lb_headWrap {
+	background: #fff;
+}
+.lb_headWrap span {
+	letter-spacing: 1px;
+	color: #0b0b0b;
+}
+
+.pay_wrap {
+	padding: .23rem .28rem;
+	margin: .26rem 0;
+	background: #fff;
+}
+.pay_wrap .img,.chat,.hook_wrap {
+	display: inline-block;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.img {
+	margin-right: .2rem;
+	width: .4rem;
+	height: .34rem;
+	vertical-align: middle;
+}
+.chat {
+	font-size: .28rem;
+	letter-spacing: 1px;
+	color: #000006;
+	vertical-align: middle;
+}
+.hook_wrap {
+	float: right;
+	width: .44rem;
+	height: .44rem;
+	background-color: #d6d7dd;	
+	border-radius: 50%;
+	vertical-align: top;
+}
+.hook {
+	margin: .13rem auto;
+	width: .25rem;
+	height: .19rem;
+	background: url(../../../img/news/my_wallet/gou.png) no-repeat;
+	background-size: 100% 100%;
+}
+.pay_wrap .hook_wrap.active {
+	background-image: linear-gradient(90deg, 
+		#60d1f7 0%, 
+		#4fa3f8 100%);
+}
+
+.code_btn_wrap {
+	margin: 0 .28rem;
+	background: #fff;
+}
+.wecha_code {
+	font-size: 0;
+}
+.wecha_code .amount,.code_img {
+	display: inline-block;
+	vertical-align: top;
+}
+/*支付宝支付二维码*/
+.alipay {
+	display: none;
+}
+.aimg {
+	margin-right: .22rem;
+	width: .46rem;
+	height: .38rem;
+}
+.aimg_wrap {
+	margin: .3rem 0 0 .3rem;
+}
+.aimg_wrap .aimg,p {
+	display: inline-block;
+	vertical-align: top;
+}
+.aimg_wrap p {
+	font-size: .28rem;
+	letter-spacing: 1px;
+	color: #000006;
+}
+
+.money_wrap {
+	margin: 1.5rem 0 0 .3rem;
+} 
+.money_wrap .money,.inp_wrap {
+	display: inline-block;	
+}
+.money {
+	margin-right: .2rem;
+	width: .34rem;
+	height: .43rem;
+	background: url(../../../img/news/dl.png) no-repeat;
+	background-size: 100% 100%;
+	vertical-align: top;
+}
+.inp_wrap {
+	padding-top: .05rem;
+}
+.inp {
+	width: 2rem;
+	height: .45rem;
+	color: #000006;
+	font-size: .24rem;
+	border: none;
+	outline: none;
+	vertical-align: bottom;
+}
+input::-webkit-input-placeholder {
+    font-size: .24rem;
+    letter-spacing: 1px;
+	color: #000006;
+}
+
+.code_img {
+	margin: .6rem 0 0 1.5rem;
+	width: 2rem;
+	height: 2rem;
+}
+
+.verify {
+	padding-bottom: .3rem;
+}
+.verify_btn {
+	margin: 1.32rem auto 0;
+	width: 4rem;
+	height: .76rem;
+	background-color: #2eda9f;
+	border-radius: 8px;
+	font-size: .24rem;
+	letter-spacing: 1px;
+	color: #fff;
+	text-align: center;
+	line-height: .76rem;
+}
+
+.push_wrap h2 {
+	padding-left: .28rem;
+	font-size: .28rem;
+	letter-spacing: 1px;
+	color: #000006;
+	line-height: .75rem;
+}
+.box_wrap {
+	position: relative;
+	margin: 0 auto .26rem;
+	width: 6.94rem;
+	height: 3.15rem;
+	background: #fff;
+}
+.add_wrap {
+	position: absolute;
+	top: .92rem;
+	left: 44%;
+	width: 1rem;
+	height: 1rem;
+}
+#file {
+	position: absolute;
+	top: .92rem;
+	left: 44%;
+	width: 1rem;
+	height: 1rem;
+	opacity: 0;
+}
+
+.file_img_ut {
+	width: 6.94rem;
+	height: 3.15rem;
+}
+
+.refer_btn {
+	margin: 0 0 .45rem 4.54rem;
+	width: 2.1rem;
+	height: .7rem;
+	background-color: #2eda9f;
+	border-radius: 8px;
+	font-size: .24rem;
+	letter-spacing: 1px;
+	color: #fff;
+	text-align: center;
+	line-height: .7rem;
+}
+
+.submit_pop {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 55;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+}
+.submit_wrap {
+	padding: .6rem 0 0;
+	margin: 4.7rem auto 0;
+	width: 6rem;
+	height: 3.06rem;
+	background-color: #fff;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.imges {
+	margin: 0 auto .2rem;
+	width: .8rem;
+	height: .8rem;
+}
+.text {
+	font-size: .28rem;
+	letter-spacing: 1px;
+	color: #000006;
+	text-align: center;
+	line-height: .55rem;
+}
