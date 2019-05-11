@@ -45,7 +45,7 @@
 							<!--列表区域-->
 							<div class="list_ear">
 
-								<div class="first_ear page_trrem" data-url="./my/my_inviteCode.html">
+								<div class="first_ear page_trrem" data-url="">
 
 									<img src="../../img/news/wallet@2x.png" class="img_left" />
 									<span>我的钱包</span>
@@ -58,7 +58,7 @@
 									<img src="../../img/news/arrow@2x.png" class="img_right" />
 								</div>
 								<div class="three_ear">
-									<div class="three_ear_son page_trrem" data-url="./">
+									<div class="three_ear_son page_trrem" data-url="">
 										<img src="../../img/news/account@2x.png" class="img_left" />
 										<span>账号管理</span>
 										<img src="../../img/news/arrow@2x.png" class="img_right" />
@@ -587,10 +587,11 @@
 
 				});
 				/*遍历--绑定页面跳转*/
-				$('.list_ear .page_trrem').each(function(_index) {
+				$('.page_trrem').each(function(_index) {
 					console.log(_index);
 					$(".page_trrem").eq(_index).on('tap', function() {
 						/*$(location).attr('href', 'dialog.html');*/
+						
 						window.location.href = $(this).attr('data-url');
 					});
 				})

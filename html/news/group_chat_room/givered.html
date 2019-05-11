@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
@@ -9,81 +10,201 @@
 		<link rel="stylesheet" href="../../../css/public/public.css" />
 		<!--头部-->
 		<link rel="stylesheet" href="../../../css/public/public_head.css" />
-		<link rel="stylesheet" type="text/css" href="../../../css/news/givered.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../css/news/givered.css" />
 	</head>
-	<body>
+
+	<body onresize="document.activeElement.scrollIntoView(true);">
 		<div class="wrap_frame">
 			<!--public head-->
 			<div class="headWrap">
 				<p class="lb_headWrap_return" onclick="returnFun()">
-                    <img class="lb_headWrap_return_img" src="../../../img/public/left.png"/> 
-                </p>
+					<img class="lb_headWrap_return_img" src="../../../img/public/left.png" />
+				</p>
 				<span>发红包</span>
-            </div>
-            <!--内容-->
-            <div class="content">
-            	<div class="middle">
-            		<!--红包个数-->
-            		<div class="pdt">
-            			<div class="nitems">红包个数</div>
-            			<div class="inp_wrap">
-            				<input class="text" type="number" placeholder="最多发9个红包" />
-            				<span>个</span>
-            			</div>
-            		</div>
-            		<!--总金额-->
-            		<div class="pdt">
-            			<div class="nitems">总金额</div>
-            			<div class="inp_wrap">
-            				<input class="text" type="number" placeholder="红包范围20-800" />
-            				<span>元</span>
-            			</div>
-            		</div>
-            		<!--雷点选择-->
-            		<div class="select">
-            			
-            			<div class="dot">
-            				<span>雷点选择</span>
-            				<span></span>
-            			</div>
-            			<div class="ray_wrap">
-            				<ul>
-            					<li class="rob">0</li>
-            					<li class="active">1</li>
-            					<li>2</li>
-            					<li>3</li>
-            					<li>4</li>
-            					<li class="rob">5</li>
-            					<li>6</li>
-            					<li>7</li>
-            					<li>8</li>
-            					<li>9</li>
-            				</ul>
-            			</div>
-            			
-            		</div>
-            		<!--雷点说明-->
-            		<div class="state">多雷请选择多个数字，游戏倍数0</div>
-            		<!--发红包按钮-->
-            		<div class="give_btn">
-            			<a class="btn">发红包</a>
-            		</div>
-            		<!--红包说明-->
-            		<div class="state">未领取的红包，将3分钟后退款</div>
-            	</div>
-            </div>
-        </div>    
-		
+			</div>
+			<!--内容-->
+			<div class="content">
+				<div class="middle">
+					<!--红包个数-->
+					<div class="pdt">
+						<div class="nitems">红包个数</div>
+						<div class="inp_wrap">
+							<input class="text" type="number" placeholder="最多发9个红包" />
+							<span>个</span>
+						</div>
+					</div>
+					<!--总金额-->
+					<div class="pdt">
+						<div class="nitems">总金额</div>
+						<div class="inp_wrap">
+							<input class="text" type="number" placeholder="红包范围20-800" />
+							<span>元</span>
+						</div>
+					</div>
+					<!--雷点选择-->
+					<div class="select">
+
+						<div class="dot">
+							<span>雷点选择</span>
+							<span></span>
+						</div>
+						<div class="ray_wrap">
+							<ul>
+								<li class="rob">0</li>
+								<li class="active">1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>4</li>
+								<li class="rob">5</li>
+								<li>6</li>
+								<li>7</li>
+								<li>8</li>
+								<li>9</li>
+							</ul>
+						</div>
+
+					</div>
+					<!--雷点说明-->
+					<div class="state">多雷请选择多个数字，游戏倍数0</div>
+					<!--发红包按钮-->
+					<div class="give_btn">
+						<a class="btn">发红包</a>
+					</div>
+
+					<!--遮罩层-->
+					<div class="mask_box">
+
+						<!--白色框-->
+						<div class="mask_text">
+ 
+                             
+                           <p class="red_envelope">红包</p>
+                           <p class="red_envelope_money">￥<span>50.00</span></p>
+                        
+	                       <div class="ds"> 
+	                       	
+	                       	   <div class="ds_ds">
+	                           	<div class="dsds_item" >
+									<p class="dsds_item_icon_box">
+										<img src="../../../img/news/qian.png" class="tixian_pic" />
+									</p>
+								   <span class="qunliao_item_text">账号余额(608元)</span>
+							   </div>
+							  </div> 
+							   
+							   
+                           </div> 	
+                          
+							<div class="inputBoxContainer" id="inputBoxContainer">
+								<input type="text" class="realInput" name="shuru_kuan" />
+								<div class="bogusInput">
+									<input type="password" maxlength="6" disabled/>
+									<input type="password" maxlength="6" disabled/>
+									<input type="password" maxlength="6" disabled/>
+									<input type="password" maxlength="6" disabled/>
+									<input type="password" maxlength="6" disabled/>
+									<input type="password" maxlength="6" disabled/>
+								</div>
+							</div>
+							<p class="find_passworld">找回密码</p>
+							
+							
+							
+							
+							<!--输入的密码-结果-->
+							<p class="showValue" id="showValue" hidden></p>
+
+						</div>
+
+					</div>
+
+					<!--红包说明-->
+					<div class="state">未领取的红包，将3分钟后退款</div>
+				</div>
+			</div>
+		</div>
+
 		<script src="../../../js/public/jquery-1.8.3.js"></script>
 		<script src="../../../js/public/public.js"></script>
 		<script>
-			$(function(){
-			    $(".ray_wrap ul li").click(function() {
-			        $(this).siblings('.ray_wrap ul li').removeClass('active');// 删除其他兄弟元素的样式
-			        $(this).addClass('active');// 添加当前元素的样式
+			window.onload=function(){
 			
-			    });
+			
+//		       $(".input1").focus();
+			
+			
+			}
+			
+			
+			$(function() {
+				$(".ray_wrap ul li").click(function() {
+					$(this).siblings('.ray_wrap ul li').removeClass('active'); // 删除其他兄弟元素的样式
+					$(this).addClass('active'); // 添加当前元素的样式
+
+				});
 			});
+			/*input-输入密码框*/
+			(function() {
+				var container = document.getElementById("inputBoxContainer");
+				boxInput = {
+					maxLength: "",
+					realInput: "",
+					bogusInput: "",
+					bogusInputArr: "",
+					callback: "",
+					init: function(fun) {
+						var that = this;
+						this.callback = fun;
+						that.realInput = container.children[0];
+						that.bogusInput = container.children[1];
+						that.bogusInputArr = that.bogusInput.children;
+						that.maxLength = that.bogusInputArr[0].getAttribute("maxlength");
+						that.realInput.oninput = function() {
+							that.setValue();
+						}
+						that.realInput.onpropertychange = function() {
+							that.setValue();
+						}
+					},
+					setValue: function() {
+						this.realInput.value = this.realInput.value.replace(/\D/g, "");
+						console.log(this.realInput.value.replace(/\D/g, ""))
+						var real_str = this.realInput.value;
+						for(var i = 0; i < this.maxLength; i++) {
+							this.bogusInputArr[i].value = real_str[i] ? real_str[i] : "";
+						}
+						if(real_str.length >= this.maxLength) {
+							this.realInput.value = real_str.substring(0, 6);
+							this.callback();
+						}
+					},
+					getBoxInputValue: function() {
+						var realValue = "";
+						for(var i in this.bogusInputArr) {
+							if(!this.bogusInputArr[i].value) {
+								break;
+							}
+							realValue += this.bogusInputArr[i].value;
+						}
+						return realValue;
+					}
+				}
+			})()	
+            //输入六位密码完毕,执行
+			boxInput.init(function() {
+				getValue();
+				$(".mask_box").hide()
+			});
+			/*获取*/
+			function getValue() {
+				document.getElementById("showValue").innerText = boxInput.getBoxInputValue();
+			}
+			$(".give_btn").click(function(){
+				$(".mask_box").show()
+			})
+			
+			
 		</script>
 	</body>
+
 </html>
