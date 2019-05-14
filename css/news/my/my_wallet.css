@@ -1,0 +1,271 @@
+body{
+    background-color: #f5f5f5;
+}
+
+.wrap_frame{
+    padding-bottom: .3rem;
+    box-sizing: border-box;
+}
+
+/* 头部 */
+.lb_headWrap{
+    background:#ffffff;
+    color: #060606;
+}
+
+/* 字体渐变  */
+.right-link{
+    position: absolute;
+    right: .3rem;
+    color: #5ac0f7;
+    background: -webkit-gradient(linear, left top, right top, from(#60d0f7) , to(#50a5f8));
+    background: -webkit-linear-gradient(left, #60d0f7 , #50a5f8);
+    background: -o-linear-gradient(left, #60d0f7 , #50a5f8);
+    background: linear-gradient(to right, #60d0f7 , #50a5f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 主内容 */
+.money-wrap{
+    text-align: center;
+    margin-top: .82rem;
+}
+.money-wrap .money-icon{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.money-wrap .money-tit{
+    color: #000006;
+    font-size: .24rem;
+    margin:.20rem auto;
+}
+.money-wrap .balance{
+    color: #000006;
+    font-size: .58rem;
+    margin-bottom: .4rem;
+}
+.money-wrap .balance span{
+    color: #000006;
+    font-size: .54rem
+}
+.money-wrap .rechargeBtn{
+    width: 4rem;
+    height: .76rem;
+    text-align: center;
+    line-height: .76rem;
+    color: #fff;
+    background-color: #2eda9f;
+    border-radius:.08rem;
+    display: inline-block;
+}
+
+/* 编辑 */
+.edit-list{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.edit-list .edit-item{
+    width: 100%;
+    height: .9rem;
+    line-height: .9rem;
+    background-color: #fff;
+    border-bottom: .01rem solid #eff0f2;
+    margin-top: .25rem;
+    padding: 0 .28rem;
+    box-sizing: border-box;
+}
+.edit-list .edit-item:last-child{
+    border-bottom: none;
+    border-top: .01rem solid #eff0f2;
+}
+.edit-list .edit-item img{
+    width: .4rem;
+    height: .32rem;
+    font-size: .28rem;
+    vertical-align: middle;
+    margin-right: .22rem;
+}
+
+
+/* 账单 */
+.bill-content{
+    height: 100%;
+    background-color: #ebedf5;
+}
+
+/* 我的钱包 */
+.bill-content .my-wallet{
+    width: 100%;
+    height: 1.6rem;
+    background-color: #f5f6fa;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 .28rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: .25rem;
+}
+.bill-content .my-wallet .money-icon{
+    width: .9rem;
+    margin-right: .3rem;
+}
+.bill-content .my-wallet .money-icon img{
+    width: 100%;
+}
+.bill-content .my-wallet .text{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.bill-content .my-wallet .text h5{
+    font-size: .24rem;
+    color: #747886;
+}
+.bill-content .my-wallet .text .balance{
+    font-size: .52rem;
+    color: #000006;
+}
+.bill-content .my-wallet .text .balance span{
+    font-size: .44rem;
+}
+
+/* tab选项卡切换 */
+
+.bill-content .tab-wrap .tab-tit{
+    margin-bottom: .06rem;
+}
+
+.bill-content .tab-wrap .tab-tit,.tab-wrap .tab-content .thead{
+    width: 100%;
+    height: .82rem;
+    font-size: .26rem;
+    color: #000006;
+    background-color: #f5f6fa;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 0 .28rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.bill-content .tab-wrap .tab-tit span{
+    height: .82rem;
+    line-height: .82rem;
+    display: block;
+    position: relative;
+}
+.bill-content .tab-wrap .tab-tit span.active:after{
+    content: '';
+    display:block;
+    width: 1rem;
+    height: .06rem;
+    margin: 0 auto;
+    background: -webkit-gradient(linear, left top, right top, from(#61d1f7) , to(#4fa3f7));
+    background: -webkit-linear-gradient(left, #61d1f7 , #4fa3f7);
+    background: -o-linear-gradient(left, #61d1f7 , #4fa3f7);
+    background: linear-gradient(to right, #61d1f7 , #4fa3f7);
+    position: absolute;
+    bottom: -.06rem;
+    left: 50%;
+    margin-left: -.5rem;
+}
+
+/* tab选项卡切换内容 */
+.tab-wrap .tab-content .main{
+    display: none;
+}
+.tab-wrap .tab-content .active{
+    display: block;
+}
+
+/* 表格头部 */
+.tab-wrap .tab-content .thead{
+    font-weight: bold;
+}
+
+/* 表格内容 */
+.tab-wrap .tab-content .tbody{
+    background-color: #fff;
+    padding: 0 .28rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.tab-wrap .tab-content .tbody .record-item{
+    height: .9rem;
+    font-size: .24rem;
+    color: #000006;
+    border-bottom:  .01rem solid #f3f3f3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}   
+.tab-wrap .tab-content .tbody .record-item div{
+    width: 33%;
+    text-align: center;
+}
+.tab-wrap .tab-content .tbody .record-item div.date p{
+    line-height: .34rem;
+} 
+.tab-wrap .tab-content .tbody .record-item .amount-money span{
+    font-size: .3rem;
+    color: #717277;
+    margin-right: .1rem;
+    position: relative;
+    top: .02rem;
+}
+.tab-wrap .tab-content .tbody .record-item .state span{
+    display: block;
+}
+
+/* 转出状态 */
+.tab-wrap .tab-content .tbody .record-item.red .amount-money{
+    color: #f52222;
+}
+.tab-wrap .tab-content .tbody .record-item.red .amount-money span{
+    color: #f52222;
+}
+.tab-wrap .tab-content .tbody .record-item.red .state{
+    color: #f52222;
+}
+
+/* 转入状态 */
+.tab-wrap .tab-content .tbody .record-item.green .amount-money{
+    color: #08dd21;
+}
+.tab-wrap .tab-content .tbody .record-item.green .amount-money span{
+    color: #08dd21;
+}
+.tab-wrap .tab-content .tbody .record-item.green .state{
+    color: #08dd21;
+}
+
+/* 中雷状态 */
+.tab-wrap .tab-content .tbody .record-item.selected .amount-money{
+    color: #f30000;
+} 
+.tab-wrap .tab-content .tbody .record-item.selected .amount-money span{
+    color: #f30000;
+}  
+.tab-wrap .tab-content .tbody .record-item.selected .state .sign{
+    color: #f30000;
+    font-size: .14rem;
+}   

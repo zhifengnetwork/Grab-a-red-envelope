@@ -98,7 +98,11 @@
 							<div class="inputBoxContainer" id="inputBoxContainer">
 								<input type="text" class="realInput" name="shuru_kuan" />
 								<div class="bogusInput">
+<<<<<<< HEAD
 									<input type="password" maxlength="6"  class="input1" autofocus="autofocus"/>
+=======
+									<input type="password" maxlength="6" disabled/>
+>>>>>>> 6c81a3cc7ba536ff8f4955a0ccdaa47990234a83
 									<input type="password" maxlength="6" disabled/>
 									<input type="password" maxlength="6" disabled/>
 									<input type="password" maxlength="6" disabled/>
@@ -111,7 +115,11 @@
 							
 							
 							
+<<<<<<< HEAD
 							
+=======
+							<!--输入的密码-结果-->
+>>>>>>> 6c81a3cc7ba536ff8f4955a0ccdaa47990234a83
 							<p class="showValue" id="showValue" hidden></p>
 
 						</div>
@@ -130,17 +138,25 @@
 			window.onload=function(){
 			
 			
+<<<<<<< HEAD
 		       $(".input1").focus();
+=======
+//		       $(".input1").focus();
+>>>>>>> 6c81a3cc7ba536ff8f4955a0ccdaa47990234a83
 			
 			
 			}
 			
+<<<<<<< HEAD
 			function load(){
 			    var oInp = document.getElementsByClassName("input1");
 			    if(oInp.autofocus != true){
 			        oInp.focus();
 			    }
 			}
+=======
+			
+>>>>>>> 6c81a3cc7ba536ff8f4955a0ccdaa47990234a83
 			$(function() {
 				$(".ray_wrap ul li").click(function() {
 					$(this).siblings('.ray_wrap ul li').removeClass('active'); // 删除其他兄弟元素的样式
@@ -148,6 +164,10 @@
 
 				});
 			});
+<<<<<<< HEAD
+=======
+			/*input-输入密码框*/
+>>>>>>> 6c81a3cc7ba536ff8f4955a0ccdaa47990234a83
 			(function() {
 				var container = document.getElementById("inputBoxContainer");
 				boxInput = {
@@ -197,17 +217,27 @@
             //输入六位密码完毕,执行
 			boxInput.init(function() {
 				getValue();
+<<<<<<< HEAD
 				alert("ss")
 			});
+=======
+				$(".mask_box").hide()
+			});
+			/*获取*/
+>>>>>>> 6c81a3cc7ba536ff8f4955a0ccdaa47990234a83
 			function getValue() {
 				document.getElementById("showValue").innerText = boxInput.getBoxInputValue();
 			}
 			$(".give_btn").click(function(){
 				$(".mask_box").show()
 			})
+<<<<<<< HEAD
 			$(".mask_box").click(function(){
 				$(".mask_box").hide()
 			})
+=======
+			
+>>>>>>> 6c81a3cc7ba536ff8f4955a0ccdaa47990234a83
 			
 		</script>
 	</body>
