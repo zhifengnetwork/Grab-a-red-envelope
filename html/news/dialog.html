@@ -67,7 +67,7 @@
                                 <div>￥999.00</div>
                             </div>
                         </div>
-                        <p class="oneself_transfer_text">转让</p>
+                        <p class="oneself_transfer_text">转帐</p>
                     </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                                 <div>￥999.00</div>
                             </div>
                         </div>
-                        <p class="opposite_transfer_text">转让</p>
+                        <p class="opposite_transfer_text">转帐</p>
                     </div>
                 </div>
             </div>
@@ -135,6 +135,38 @@
                 </div>
             </div>
         </div>
+        <!-- 转账 -->
+        <div class="dialog_transfer_wrap">
+            <div class="dialog_transfer">
+                <!-- 头部返回菜单 -->
+                <div class="dialog_transfer_back">
+                    <p class="dialog_transfer_back_title">
+                        <img class="dialog_transfer_back_img" src="../../img/public/left.png" alt="">
+                        <span>转账</span>
+                    </p>
+                </div>
+                <!-- 被转账用户 -->
+                <div class="dialog_transfer_user">
+                    <img class="dialog_transfer_user_img" src="../../img/0000⑨.jpg" alt="">
+                    <div class="dialog_transfer_user_name">
+                        神秘电波(10259)
+                    </div>
+                </div>
+                <!-- 转账金额 -->
+                <div class="dialog_transfer_num">
+                    <div class="dialog_transfer_num_title">
+                        请输入金额
+                    </div>
+                    <label class="dialog_transfer_num_label">￥
+                        <input class="dialog_transfer_num_input" type="number">
+                    </label>
+                </div>
+                <!-- 确认转账 -->
+                <div class="dialog_transfer_affirm">
+                    确认转账
+                </div>
+            </div>
+        </div>
         <!-- 底部菜单 -->
         <div class="dialog_menu">
             <div class="dialog_menu_inputwrap clearfloat">
@@ -147,20 +179,25 @@
                 <span class="dialog_menu_send">发送</span>
             </div>
             <div class="dialog_menu_submenu">
+                <!-- 相机 -->
                 <p class="dialog_menu_submenu_item">
                     <img class="dialog_menu_submenu_img" src="../../img/news/camera.png" alt="">
                     <input type="file" class='camera' accept="image/*" capture='camera'>
-                </p>
+                </p>    
+                <!-- 照片 -->
                 <p class="dialog_menu_submenu_item">
                     <img class="dialog_menu_submenu_img" src="../../img/news/picture.png" alt="">
                     <input type="file" class="picture">
                 </p>
-                <p class="dialog_menu_submenu_item">
+                <!-- 转账 -->
+                <p class="dialog_menu_submenu_item transfer">
                     <img class="dialog_menu_submenu_img" src="../../img/news/transfer.png" alt="">
                 </p>
+                <!-- 转账记录 -->
                 <p class="dialog_menu_submenu_item">
                     <img class="dialog_menu_submenu_img" src="../../img/news/transfer1.png" alt="">
                 </p>
+                <!-- 表情 -->
                 <p class="dialog_menu_submenu_item">
                     <img class="dialog_menu_submenu_img" src="../../img/news/smile.png" alt="">
                 </p>

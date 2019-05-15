@@ -237,6 +237,12 @@ body{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+.group_pack_img{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
 .group_pack_title{
     margin-bottom: 1rem;
     line-height: 1rem;

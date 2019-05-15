@@ -1,5 +1,5 @@
 $(function(){
-    //解决iOS fixed定位失效
+    //改变发送按钮样式
     $('.dialog_menu_input').keyup(function(){
         if($(this).html()!=''){
             $('.dialog_menu_send').css('background','#128ae6')
@@ -48,4 +48,13 @@ $(function(){
             }
         }
     });
+
+    // 显示转账弹框
+    $('.transfer').click(function(){
+        $('.dialog_transfer_wrap').show()
+    })
+    // 隐藏转账弹框
+    $('.dialog_transfer_back').click(function(){
+        $('.dialog_transfer_wrap').hide()
+    })
 })

@@ -188,6 +188,100 @@ body{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+/* 转账弹框-s */
+.dialog_transfer_wrap{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 30;
+}
+/* 头部返回菜单 */
+.dialog_transfer_back{
+    position: relative;
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	height: .88rem;
+	font-size: .3rem;
+	line-height: .88rem;
+	text-align: center;
+	color: #fff;
+	letter-spacing: .02rem;
+	/*从左到右的渐变色：*/
+	background:-webkit-linear-gradient(left,#00dafd,#00a7ff);
+	background:-o-linear-gradient(right,#00dafd,#00a7ff);
+	background:-moz-linear-gradient(right,#00dafd,#00a7ff);
+	background: linear-gradient(to right,#00dafd,#00a7ff);
+}
+.dialog_transfer_back_title{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: .2rem;
+    margin: auto;
+}
+.dialog_transfer_back_img{
+    width: .2rem;
+    height: .4rem;
+    vertical-align: text-bottom;
+}
+/* 被转账用户 */
+.dialog_transfer_user{
+    height: 3rem;
+    background: #eee;
+    line-height: 1rem;
+    text-align: center;
+}
+.dialog_transfer_user_img{
+    margin-top: .4rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: .2rem;
+    border-radius: 50%;
+    vertical-align: bottom;
+}
+/* 转账金额 */
+.dialog_transfer_num{
+    margin:.2rem;
+    line-height: 1rem;
+    border-bottom: .02rem solid #151515; 
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.dialog_transfer_num_title{
+    font-size: .3rem;
+}
+.dialog_transfer_num_label{
+    font-size: .48rem;
+    font-weight: bold;
+}
+.dialog_transfer_num_input{
+    height: 1rem;
+    width: 90%;
+    font-size: .48rem;
+    font-weight: bold;
+    border: 0;
+    outline: none;
+}
+/* 确认转账 */
+.dialog_transfer_affirm{
+    margin: 1rem auto 0;
+    width: 80%;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    color: #fff;
+    background: #00a7ff;
+    border-radius: .1rem;
+}
+/* 转账弹框-e */
+
 /* 底部菜单 */
 /* 输入框 */
 .dialog_menu{
