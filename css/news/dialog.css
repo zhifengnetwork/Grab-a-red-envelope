@@ -11,7 +11,7 @@ body{
 }
 .dialog_content_time{
     text-align: center;
-    line-height: .6rem;
+    line-height: 1rem;
     color: #919191;
 }
 /* 对方消息 */
@@ -22,8 +22,8 @@ body{
 }
 .dialog_content_opposite_imgwrap{
     float: left;
-    width: .8rem;
-    height: .8rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -45,8 +45,8 @@ body{
 .dialog_content_opposite_text{
     position: relative;
     margin-top: .1rem;
-    line-height: .4rem;
-    font-size: .3rem;
+    line-height: .5rem;
+    font-size: .36rem;
     padding: .14rem .22rem;
     background: #fff;
     border-radius: .1rem;
@@ -77,8 +77,8 @@ body{
 }
 .dialog_content_oneself_imgwrap{
     float: right;
-    width: .8rem;
-    height: .8rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -96,8 +96,8 @@ body{
 .dialog_content_oneself_text{
     position: relative;
     margin-top: .1rem;
-    line-height: .4rem;
-    font-size: .3rem;
+    line-height: .5rem;
+    font-size: .36rem;
     color: #fff;
     padding: .14rem .22rem;
     background: #59bbf3;
@@ -125,8 +125,10 @@ body{
 .dialog_content_oneself_transfer,.dialog_content_opposite_transfer{
     position: relative;
     margin-top: .1rem;
-    width: 3rem;
-    height: 1.2rem;
+    width: 4rem;
+    height: 1.6rem;
+    line-height: .5rem;
+    font-size: .3rem;
     color: #fff;
     overflow: hidden;
     border-radius: .1rem;
@@ -154,8 +156,8 @@ body{
 }
 .oneself_transfer_imgwrap,.opposite_transfer_imgwrap{
     position: relative;
-    width: .8rem;
-    height: .8rem;
+    width: 1.2rem;
+    height: 1.2rem;
 }
 .oneself_transfer_img,.opposite_transfer_img{
     position: absolute;
@@ -164,8 +166,8 @@ body{
     bottom: 0;
     left: 0;
     margin: auto;
-    width: .4rem;
-    height: .4rem;
+    width: .6rem;
+    height: .6rem;
 }
 .oneself_transfer_price,.opposite_transfer_price{
     margin-left: .2rem;
@@ -190,7 +192,6 @@ body{
 /* 输入框 */
 .dialog_menu{
     width: 100%;
-    height: 1.4rem;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -202,15 +203,24 @@ body{
 }
 .dialog_menu_inputwrap{
     margin-top: .1rem;
-    height: .45rem;
     line-height: .4rem;    
+    display: box;              /* OLD - Android 4.4- */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-box-align: end;
+    -moz-align-items: flex-end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
 }
 .dialog_menu_label{
     position: relative;
     float: left;
     display: block;
     width:78%;
-    height: .45rem;
+    max-height: 3rem;
     border-radius: .2rem;
     overflow: hidden;
 }
@@ -219,7 +229,7 @@ body{
     float: left;
     display: inline-block;
     width: 6.5%;
-    height: 100%;
+    height: .45rem;
     margin-right: .1rem;
     background: #fff;
     border-radius: 50%;
@@ -238,10 +248,12 @@ body{
 .dialog_menu_input{
     display: block;
     width: 100%;
-    height: 100%;
+    max-height: 3rem;
     border: 0;
     outline: none;
-    padding: .1rem .2rem;
+    font-size: .3rem;
+    padding: .029rem .1rem;
+    overflow-y:scroll;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -293,4 +305,11 @@ body{
     display: block;
     width: .4rem;
     height: .4rem;
+}
+/* 摄像机input */
+.camera,.picture{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
