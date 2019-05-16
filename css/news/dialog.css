@@ -71,10 +71,10 @@ body{
 }
 .dialog_content_oneself_textimg,.dialog_content_opposite_textimg{
     margin-top: .1rem;
-    max-width: 6rem;
-    max-height: 4rem;
+    max-width: 4rem;
+    max-height: 3rem;
     border-radius: .1rem;
-    border: .1rem solid #00a7ff;
+    overflow: hidden;
 }
 /* 本人消息 */
 .dialog_content_oneself,.dialog_content_opposite{
@@ -90,21 +90,32 @@ body{
     overflow: hidden;
 }
 .dialog_content_opposite_imgwrap{
-    float: right;
+    float: left;
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
     overflow: hidden;
 }
-.dialog_content_oneself_info,.dialog_content_opposite_info{
+.dialog_content_oneself_info{
     max-width: 5rem;
     word-wrap: break-word;
     float: right;
     margin-right: .2rem;
 }
-.dialog_content_oneself_name,.dialog_content_opposite_name{
+.dialog_content_opposite_info{
+    max-width: 5rem;
+    word-wrap: break-word;
+    float: left;
+    margin-right: .2rem;
+}
+.dialog_content_oneself_name{
     font-size: .28rem;
     text-align: right;
+    color: #8a8a8a;
+}
+.dialog_content_opposite_name{
+    font-size: .28rem;
+    text-align: left;
     color: #8a8a8a;
 }
 .dialog_content_oneself_text,.dialog_content_opposite_text{
