@@ -323,16 +323,27 @@ input::-webkit-input-placeholder {
 .loading_wrap {
 	display: none;
 	position: absolute;
+	/*top: 0;
+	left: 0;*/
 	top: 0;
+	bottom: 0;
 	left: 0;
+	right: 0;
+	margin: auto;
 	z-index: 1;
-	width: 100vw;
-	height: 100vh;
+	/*width: 100vw;
+	height: 100vh;*/
 	/*background-color: rgba(0,0,0,.4);*/
 	text-align: center;
-	line-height: 100vh;
-	color: red;
-	font-size: .3rem;
+	/*line-height: 100vh;*/
+	/*color: #e60d54;*/
+	background: white;
+	font-size: .35rem;
+	text-align: center;
+	width: 3.5rem;
+	height: 1rem;
+	line-height: 1rem;
+	border-radius:.06rem;
 	
 }
 /*底部弹窗 box */
