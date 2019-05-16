@@ -22,6 +22,20 @@ body{
 .group_notice_text{
     color:#ff0101;
 }
+/* 领取红包提示 */
+.group_content_tips{
+    text-align: center;
+    margin: .1rem 0;
+    line-height: .5rem;
+}
+.group_content_tips_img{
+    width: .24rem;
+    height: .28rem;
+    vertical-align: text-top;
+}
+.group_content_tips_strong{
+    color: #f80606;
+}
 /* 聊天内容 */
 .group_content{
     padding: 0 .28rem;
@@ -31,22 +45,22 @@ body{
 }
 .group_content_time{
     text-align: center;
-    margin: .1rem;
+    line-height: 1rem;
 }
 .group_content_opposite,.group_content_oneself{
-    margin-top: .5rem;
+    margin-top: .4rem;
 }
 .group_content_opposite_imgwrap{
     float: left;
-    width: .8rem;
-    height: .8rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     overflow: hidden;
 }
 .group_content_oneself_imgwrap{
     float: right;
-    width: .8rem;
-    height: .8rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -101,6 +115,9 @@ body{
     border-radius:0 0 1rem 0;
     color:#bf4753;
 }
+.group_content_oneself_name{
+    text-align: right;
+}
 /* 红包内容 */
 .pack_titie{
     position: absolute;
@@ -112,6 +129,7 @@ body{
     position: absolute;
     top: 1.4rem;
     width: 100%;
+    font-size: .32rem;
 }
 .pack_state{
     position: absolute;
@@ -143,7 +161,7 @@ body{
     float: left;
     display: block;
     width:78%;
-    height: .45rem;
+    height: 100%;
     border-radius: .2rem;
     overflow: hidden;
 }
@@ -171,7 +189,7 @@ body{
 .group_menu_input{
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     border: 0;
     outline: none;
     padding: .1rem .2rem;
@@ -192,9 +210,63 @@ body{
     color: #fff;
     background: #c3f4ff;
 }
+/* 红包弹出框 */
+.group_packwrap{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    background: rgba(0,0,0,.5)
+}
+.group_pack{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 80%;
+    height: 60%;
+    padding: .2rem;
+    border-radius: .2rem;
+    background: #e91043;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.group_pack_img{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.group_pack_title{
+    margin-bottom: 1rem;
+    line-height: 1rem;
+    color: #fee47e;
+    text-align: center;
+    font-size: .36rem;
+}
+.group_pack_state,.group_pack_num{
+    line-height: .8rem;
+    color: #fee47e;
+    text-align: center;
+    font-size: .4rem;
+}
+.group_pack_info{
+    position: absolute;
+    left: .4rem;
+    bottom: .4rem;
+    color: #9e192c;
+}
 /* 功能菜单 */
 .group_menu_submenu{
-    height: .8rem;;
+    float: left;
+    width: 85%;
+    margin-bottom: .1rem;
     display: box;              /* OLD - Android 4.4- */
     display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -202,27 +274,35 @@ body{
     display: -webkit-flex;     /* NEW - Chrome */
     display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
     /* 09版 */
-    -webkit-box-pack: space-between;
+    -webkit-box-pack: flex-start;
     /* 12版 */
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-justify-content: space-between;
-    -o-justify-content: space-between;
-    justify-content: space-between;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 .group_menu_submenu_item{
     position: relative;
     display: block;
-    width: 10%;
-    height: 100%;
+    width: 25%;
+    height: auto;
+    text-align: center;
 }
 .group_menu_submenu_img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    margin: .2rem auto;
+    display: block;
+    width: .4rem;
+    height: .4rem;
+}
+/* 更多 */
+.group_menu_more{
+    float: left;
+    width: 15%;
+}
+.group_menu_more_img{
+    margin: .2rem auto;
     display: block;
     width: .4rem;
     height: .4rem;
