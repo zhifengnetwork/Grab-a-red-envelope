@@ -74,46 +74,6 @@
 					<!--(数字-键盘)底部弹窗（蒙版）body-->
 					<div class="bottom_alert_wrap">
 						<div class="mask_text">
-<<<<<<< HEAD
- 
-                             
-                           <p class="red_envelope">红包</p>
-                           <p class="red_envelope_money">￥<span>50.00</span></p>
-                        
-	                       <div class="ds"> 
-	                       	
-	                       	   <div class="ds_ds">
-	                           	<div class="dsds_item" >
-									<p class="dsds_item_icon_box">
-										<img src="../../../img/news/qian.png" class="tixian_pic" />
-									</p>
-								   <span class="qunliao_item_text">账号余额(608元)</span>
-							   </div>
-							  </div> 
-							   
-							   
-                           </div> 	
-                          
-							<div class="inputBoxContainer" id="inputBoxContainer">
-								<input type="text" class="realInput" name="shuru_kuan" />
-								<div class="bogusInput">
-									<input type="password" maxlength="6"  class="input1" autofocus="autofocus"/>
-									<input type="password" maxlength="6" disabled/>
-									<input type="password" maxlength="6" disabled/>
-									<input type="password" maxlength="6" disabled/>
-									<input type="password" maxlength="6" disabled/>
-									<input type="password" maxlength="6" disabled/>
-								</div>
-							</div>
-							<p class="find_passworld">找回密码</p>
-							
-							
-							
-							
-							<!--输入的密码-结果-->
-							<p class="showValue" id="showValue" hidden></p>
-
-=======
 							<div class="red_envelope">
 								红包
 								<p class="delete_img_box">
@@ -144,7 +104,12 @@
 						
 						
 						<!--输入完密码 => 遮罩层-->
-						<div class="loading_wrap"><!--报错 标签--></div>
+						<div class="loading_wrap"><!--报错 标签-->
+							
+							输入的密码错误
+							
+							
+						</div>
 						
 						<!--底部弹窗（框）-->
 						<div class="bottom_alert_box">
@@ -169,7 +134,6 @@
 									<p class="delete_box digital_key" data-state="delete"></p>
 								</div>
 							</div>
->>>>>>> f7ffedd88e0eb032737743c7784394696152adf1
 						</div>
 
 					</div>
@@ -183,19 +147,6 @@
 		<script src="../../../js/public/jquery-1.8.3.js"></script>
 		<script src="../../../js/public/public.js"></script>
 		<script>
-<<<<<<< HEAD
-			window.onload=function(){
-			
-			
-//		       $(".input1").focus();
-			
-			
-			}
-			
-			
-=======
-
->>>>>>> f7ffedd88e0eb032737743c7784394696152adf1
 			$(function() {
 				/**
 				 * 全局变量
@@ -210,70 +161,6 @@
 					$(this).addClass('active'); // 添加当前元素的样式
 
 				});
-<<<<<<< HEAD
-			});
-			/*input-输入密码框*/
-			(function() {
-				var container = document.getElementById("inputBoxContainer");
-				boxInput = {
-					maxLength: "",
-					realInput: "",
-					bogusInput: "",
-					bogusInputArr: "",
-					callback: "",
-					init: function(fun) {
-						var that = this;
-						this.callback = fun;
-						that.realInput = container.children[0];
-						that.bogusInput = container.children[1];
-						that.bogusInputArr = that.bogusInput.children;
-						that.maxLength = that.bogusInputArr[0].getAttribute("maxlength");
-						that.realInput.oninput = function() {
-							that.setValue();
-						}
-						that.realInput.onpropertychange = function() {
-							that.setValue();
-						}
-					},
-					setValue: function() {
-						this.realInput.value = this.realInput.value.replace(/\D/g, "");
-						console.log(this.realInput.value.replace(/\D/g, ""))
-						var real_str = this.realInput.value;
-						for(var i = 0; i < this.maxLength; i++) {
-							this.bogusInputArr[i].value = real_str[i] ? real_str[i] : "";
-						}
-						if(real_str.length >= this.maxLength) {
-							this.realInput.value = real_str.substring(0, 6);
-							this.callback();
-						}
-					},
-					getBoxInputValue: function() {
-						var realValue = "";
-						for(var i in this.bogusInputArr) {
-							if(!this.bogusInputArr[i].value) {
-								break;
-							}
-							realValue += this.bogusInputArr[i].value;
-						}
-						return realValue;
-					}
-				}
-			})()	
-            //输入六位密码完毕,执行
-			boxInput.init(function() {
-				getValue();
-				$(".mask_box").hide()
-			});
-			/*获取*/
-			function getValue() {
-				document.getElementById("showValue").innerText = boxInput.getBoxInputValue();
-			}
-			$(".give_btn").click(function(){
-				$(".mask_box").show()
-			})
-			
-			
-=======
 				/*000*/
 				$('.digital_key').on('click',function(){
 					/*触摸-添加样式*/
@@ -319,9 +206,19 @@
 	            	console.log(pass_val);
 	        		/*密码长度为6时，ajax*/
 	            	if(pass_val.length == 6){
-	            		$('.loading_wrap').show();
-	            		console.log('ajax-最终密码:',pass_val);
 	            		remove_class($(this));
+	            		$('.loading_wrap').show();
+	            		$('.mask_text').hide();
+	            		$('.bottom_alert_box').hide();
+	            		console.log('ajax-最终密码:',pass_val);
+	            		setTimeout(function(){
+	            			$('.loading_wrap').hide();
+	            		    $('.mask_text').show();
+	            		    $('.bottom_alert_box').show();
+	            		    pass_val='';
+	            		    $('.trem_box').removeClass('show_box')
+	            		},1000);
+	            		
 	            		return false;
 	            	}
 	            	remove_class($(this));
@@ -354,7 +251,9 @@
 				})
 				/*关闭遮罩层*/
 				$('.delete_img_box').on('click',function(){
-					$('.bottom_alert_wrap').hide();
+					 $('.bottom_alert_wrap').hide();
+					 pass_val='';
+	                 $('.trem_box').removeClass('show_box');
 					/*底部弹窗(隐藏)*/
 					$('.bottom_alert_box').animate({'bottom':-($('.bottom_alert_box').height())});
 					/*恢复底部滑动*/
@@ -369,7 +268,6 @@
 					
 				})
 			});
->>>>>>> f7ffedd88e0eb032737743c7784394696152adf1
 		</script>
 	</body>
 

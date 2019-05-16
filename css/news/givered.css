@@ -328,7 +328,12 @@ input::-webkit-input-placeholder {
 	z-index: 1;
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(0,0,0,.4);
+	/*background-color: rgba(0,0,0,.4);*/
+	text-align: center;
+	line-height: 100vh;
+	color: red;
+	font-size: .3rem;
+	
 }
 /*底部弹窗 box */
 .bottom_alert_box {
