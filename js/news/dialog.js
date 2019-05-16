@@ -52,7 +52,7 @@ $(function(){
                 +'</div>'
                 +'<div class="dialog_content_oneself_info">'
                 +'<div class="dialog_content_oneself_name">质检员</div>'
-                +'<div class="dialog_content_opposite_textimg">'
+                +'<div class="dialog_content_oneself_textimg">'
                 +'<img class="dialog_content_oneself_img" src="'+e.target.result+'" alt="">'
                 +'</div>'
                 +'</div>'

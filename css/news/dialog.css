@@ -69,7 +69,7 @@ body{
     border-radius:0 0 0 1rem;
     color:#fff;
 }
-.dialog_content_opposite_textimg{
+.dialog_content_oneself_textimg,.dialog_content_opposite_textimg{
     margin-top: .1rem;
     max-width: 6rem;
     max-height: 4rem;
@@ -77,7 +77,7 @@ body{
     border: .1rem solid #00a7ff;
 }
 /* 本人消息 */
-.dialog_content_oneself{
+.dialog_content_oneself,.dialog_content_opposite{
     margin-top:.5rem; 
     width: 100%;
     height: auto;
@@ -89,18 +89,25 @@ body{
     border-radius: 50%;
     overflow: hidden;
 }
-.dialog_content_oneself_info{
+.dialog_content_opposite_imgwrap{
+    float: right;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.dialog_content_oneself_info,.dialog_content_opposite_info{
     max-width: 5rem;
     word-wrap: break-word;
     float: right;
     margin-right: .2rem;
 }
-.dialog_content_oneself_name{
+.dialog_content_oneself_name,.dialog_content_opposite_name{
     font-size: .28rem;
     text-align: right;
     color: #8a8a8a;
 }
-.dialog_content_oneself_text{
+.dialog_content_oneself_text,.dialog_content_opposite_text{
     position: relative;
     margin-top: .1rem;
     line-height: .5rem;
