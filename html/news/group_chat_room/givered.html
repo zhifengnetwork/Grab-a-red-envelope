@@ -104,7 +104,12 @@
 						
 						
 						<!--输入完密码 => 遮罩层-->
-						<div class="loading_wrap"><!--报错 标签--></div>
+						<div class="loading_wrap"><!--报错 标签-->
+							
+							输入的密码错误
+							
+							
+						</div>
 						
 						<!--底部弹窗（框）-->
 						<div class="bottom_alert_box">
@@ -142,7 +147,6 @@
 		<script src="../../../js/public/jquery-1.8.3.js"></script>
 		<script src="../../../js/public/public.js"></script>
 		<script>
-
 			$(function() {
 				/**
 				 * 全局变量
@@ -202,9 +206,18 @@
 	            	console.log(pass_val);
 	        		/*密码长度为6时，ajax*/
 	            	if(pass_val.length == 6){
-	            		$('.loading_wrap').show();
-	            		console.log('ajax-最终密码:',pass_val);
 	            		remove_class($(this));
+	            		$('.loading_wrap').show();
+	            		$('.mask_text').hide();
+	            		$('.bottom_alert_box').hide();
+	            		console.log('ajax-最终密码:',pass_val);
+	            		setTimeout(function(){
+	            			$('.loading_wrap').hide();
+	            		    $('.mask_text').show();
+	            		    $('.bottom_alert_box').show();
+	            		    pass_val='';
+	            		    $('.trem_box').removeClass('show_box')
+	            		},1100);
 	            		return false;
 	            	}
 	            	remove_class($(this));
@@ -237,7 +250,9 @@
 				})
 				/*关闭遮罩层*/
 				$('.delete_img_box').on('click',function(){
-					$('.bottom_alert_wrap').hide();
+					 $('.bottom_alert_wrap').hide();
+					 pass_val='';
+	                 $('.trem_box').removeClass('show_box');
 					/*底部弹窗(隐藏)*/
 					$('.bottom_alert_box').animate({'bottom':-($('.bottom_alert_box').height())});
 					/*恢复底部滑动*/
