@@ -12,7 +12,6 @@ $(function(){
     $('.dialog_menu_send').click(function(){
         let str = '';
         let text = $('.dialog_menu_input').html();
-        console.log(text)
         if(text == ''){
             return;
         }
@@ -28,7 +27,9 @@ $(function(){
         $('.dialog_content').append(str);
         $('.dialog_menu_input').html('');
         $('.dialog_menu_send').css('background','#c3f4ff')
-        $(document).scrollTop($(document).height());
+        $('html, body').animate({
+            scrollTop: $('html, body').height()
+        }, 'slow');
     })
 
     // 验证图片
@@ -44,8 +45,24 @@ $(function(){
             var freader = new FileReader();
             freader.readAsDataURL(file);
             freader.onload = function (e) {
-                //$("#avatarPic").attr("src", e.target.result);  //显示图片
+                let str = '';
+                str +='<div class="dialog_content_oneself clearfloat">'
+                +'<div class="dialog_content_oneself_imgwrap">'
+                +'<img class="dialog_content_oneself_img" src="../../img/0000⑨.jpg" alt="">'
+                +'</div>'
+                +'<div class="dialog_content_oneself_info">'
+                +'<div class="dialog_content_oneself_name">质检员</div>'
+                +'<div class="dialog_content_opposite_textimg">'
+                +'<img class="dialog_content_oneself_img" src="'+e.target.result+'" alt="">'
+                +'</div>'
+                +'</div>'
+                +'</div>'
+                $('.dialog_content').append(str);
+                $('html, body').animate({
+                    scrollTop: $('html, body').height()
+                }, 'slow');
             }
+            $(".camera,.picture").val('');
         }
     });
 

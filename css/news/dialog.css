@@ -69,6 +69,13 @@ body{
     border-radius:0 0 0 1rem;
     color:#fff;
 }
+.dialog_content_opposite_textimg{
+    margin-top: .1rem;
+    max-width: 6rem;
+    max-height: 4rem;
+    border-radius: .1rem;
+    border: .1rem solid #00a7ff;
+}
 /* 本人消息 */
 .dialog_content_oneself{
     margin-top:.5rem; 
@@ -226,8 +233,8 @@ body{
     margin: auto;
 }
 .dialog_transfer_back_img{
-    width: .2rem;
-    height: .4rem;
+    width: .19rem;
+    height: .34rem;
     vertical-align: text-bottom;
 }
 /* 被转账用户 */
