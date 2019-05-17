@@ -366,6 +366,8 @@ body{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     background: #fff;
+  
+    
 }
 .dialog_menu_send{
     float: left;
@@ -420,4 +422,31 @@ body{
     width: 100%;
     height: 100%;
     border: none;
+}
+#emotions {
+	position: absolute;
+	left: 0!important;
+	width: 395px;
+	font-size: 12px;
+	background: #fff;
+	border: 1px solid #e8e8e8;
+	
+}
+#prev{
+	display: none;	
+}
+#next{
+	
+	display: none;
+	
+}
+.container{
+	
+	width: 100%!important;
+	/*border: 1px solid red;*/
+	padding: 0 0!important;
+	
+}
+.page{
+	display: none;
 }
