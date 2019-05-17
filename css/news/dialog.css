@@ -435,7 +435,7 @@ body{
     border: none;
 }
 #emotions {
-	position: absolute;
+	position: fixed;
 	left: 0!important;
 	width: 395px;
 	font-size: 12px;
