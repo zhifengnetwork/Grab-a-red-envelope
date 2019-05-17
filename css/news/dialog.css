@@ -432,3 +432,267 @@ body{
     height: 100%;
     border: none;
 }
+
+/* 密码弹框 */
+.mask_text {
+	margin: 1.5rem auto 0;
+	width: 80%;
+	height: 4rem;
+	border-radius: .15rem;
+	background: white;
+}
+
+.red_envelope {
+	position: relative;
+    text-align: center;
+    font-size: .3rem;
+    padding: .3rem 0 .1rem 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.delete_img_box {
+	position: absolute;
+	top: .1rem;
+    right: .1rem;	
+	z-index: 1;
+	width: .5rem;
+	height: .5rem;
+}
+.delete_img {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;	
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+	margin: auto;
+	width: .3rem;
+	height: .3rem;
+}
+.red_envelope_money{
+	font-size: .2rem;
+	text-align: center;
+	margin-top: .1rem;
+	
+
+}
+.red_envelope_money span{
+	
+	font-size: .4rem;
+    font-weight: 800;
+ 
+}
+
+.ds{
+	
+	position: relative;
+	margin-bottom: 1rem;
+	width: 100%;
+	
+	
+}
+.ds_ds{
+	
+	
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	-webkit-transform: translate(-50%,0);
+	-o-transform: translate(-50%,0);
+	-moz-transform: translate(-50%,0);
+	-ms-transform: translate(-50%,0);
+	 
+	
+	
+	
+}
+
+
+.dsds_item {
+	display:block;
+	width: 100%;
+	height: .6rem;
+	letter-spacing: .02rem;
+	/*border-bottom: 1px solid green;*/
+}
+.dsds_item_icon_box {
+	float: left;
+	position: relative;
+	width: .4rem;
+	height: 100%;
+}
+.tixian_pic {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	margin: auto;
+	max-width: 100%;
+	height: auto;
+}
+.qunliao_item_text {
+	float: left;
+	display: block;
+	width: auto;
+	height: 100%;
+	font-size: .24rem;
+	line-height: .65rem;
+	text-indent: .2rem;
+}
+.password_box {
+	display: table;
+	margin: 0 auto;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: auto;
+	height: .8rem;
+	border: .02rem solid #a7a7a7;
+}
+.password_box_num {
+	float: left;
+	border-right: .02rem solid #a7a7a7;
+	width: .8rem;
+	height: 100%;
+	font-size: 1rem;
+	line-height: .76rem;
+	text-align: center;
+}
+.password_box_num:last-child {
+	border-right: none;
+}
+.password_box_num .trem_box {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+.password_box_num .show_box {
+	display: block;
+}
+
+/*数字键盘 -s*/
+/*底部弹窗 wrap*/
+.bottom_alert_wrap {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 7.5rem;
+	/*height: 4.85rem;*/
+	height: 100%;
+	z-index: 103;
+	/*#5f6063*/
+	background: rgba(95,96,99,.7);
+}
+/*输入完密码 => 遮罩层*/
+.loading_wrap {
+	display: none;
+	position: absolute;
+	/*top: 0;
+	left: 0;*/
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1;
+	/*width: 100vw;
+	height: 100vh;*/
+	/*background-color: rgba(0,0,0,.4);*/
+	text-align: center;
+	/*line-height: 100vh;*/
+	/*color: #e60d54;*/
+	background: white;
+	font-size: .35rem;
+	text-align: center;
+	width: 3.5rem;
+	height: 1rem;
+	line-height: 1rem;
+	border-radius:.06rem;
+	
+}
+/*底部弹窗 box */
+.bottom_alert_box {
+	position: absolute;
+	bottom: -4rem;
+	/*bottom: 0;*/
+	left: 0;
+	width: 7.5rem;
+	height: 4rem;
+	/*height: auto;*/
+	/*溢出出现滚动条*/
+	overflow-y: scroll;
+}
+/*底部弹窗 box=> 内容*/
+.digital_keyboard_box {
+	width: 7.5rem;
+	height: auto;	
+}
+/*项(数字)*/
+.number_trem {
+	float: left;
+	position: relative;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 33%;
+	height: 1rem;	
+	font-size: .36rem;
+	line-height: 1rem;
+	text-align: center;
+	font-family: "微软雅黑";
+	border-bottom: .02rem solid #BFBFBF;
+	border-right: .02rem solid #BFBFBF;
+	background-color: #fff;
+}
+.number_trem_active {
+	background-color: #ccc;
+}
+/*2、5、8*/
+.number_trem:nth-child(3n-1) {
+	width: 34%;
+}
+/*3的倍数-无right边框*/
+.number_trem:nth-child(3n) {
+	border-right: none;
+}
+/*最后三个无bottom边框*/
+.number_trem:nth-child(10), .number_trem:nth-child(12) {
+	border-bottom: none;
+	background-color: #eee;
+}
+/*数字 0*/
+.number_trem:nth-child(11) {
+	border-bottom: none;
+}
+/*清除-图标*/
+.eliminate_cion:before {
+	content: " ";
+	display: block;
+	width: .52rem;
+	height: .52rem;
+	background: url(../../img/news/eliminate_cion.png) no-repeat 0 0;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	margin: auto;
+}
+/*删除-点击层*/
+.delete_box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+/* 数字键盘 -s*/

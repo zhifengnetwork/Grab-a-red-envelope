@@ -1,4 +1,8 @@
+
 $(function(){
+    $('html, body').animate({
+        scrollTop: $('html, body').height()
+    },10);
     //改变发送按钮样式
     $('.dialog_menu_input').keyup(function(){
         if($(this).html()!=''){
@@ -73,5 +77,6 @@ $(function(){
     // 隐藏转账弹框
     $('.dialog_transfer_back').click(function(){
         $('.dialog_transfer_wrap').hide()
+        $('.dialog_transfer_num_input').val('')
     })
 })
