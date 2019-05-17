@@ -86,7 +86,7 @@ function AnalyticEmotion(s) {
 			if($('#emotions .categorys')[0]) {
 				$('#emotions').css({
 //					top: eTop,
-                    bottom:'1.5rem',
+                    bottom:'1.35rem',
 					left: eLeft
 				});
 				$('#emotions').toggle();
@@ -95,7 +95,7 @@ function AnalyticEmotion(s) {
 			$('body').append('<div id="emotions"></div>');
 			$('#emotions').css({
 //				top: eTop,
-                bottom:'1.5rem', 
+                bottom:'1.35rem', 
 				left: eLeft
 			});
 			$('#emotions').html('<div>正在加载，请稍候...</div>');
