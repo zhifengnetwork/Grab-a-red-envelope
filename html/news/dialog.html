@@ -6,7 +6,8 @@
 	<script src="../../js/public/rem.js"></script>    
     <link rel="stylesheet" href="../../css/public/public.css">
     <link rel="stylesheet" href="../../css/public/public_head.css">
-    <link rel="stylesheet" href="../../css/news/dialog.css">
+     <link rel="stylesheet" href="../../css/news/jquery.sinaEmotion.css" />
+    <link rel="stylesheet" href="../../css/news/dialog.css">   
     <title>对话框</title>
 </head>
 
@@ -174,9 +175,9 @@
                     <img class="dialog_menu_img" src="../../img/news/voice.png" alt="">
                 </div>
                 <label class="dialog_menu_label">
-                    <div class="dialog_menu_input" contenteditable="true"></div>
+                    <div class="dialog_menu_input" contenteditable="true" ></div>
                 </label>
-                <span class="dialog_menu_send">发送</span>
+                <span class="dialog_menu_send" >发送</span>
             </div>
             <div class="dialog_menu_submenu">
                 <!-- 相机 -->
@@ -198,9 +199,11 @@
                     <img class="dialog_menu_submenu_img" src="../../img/news/transfer1.png" alt="">
                 </p>
                 <!-- 表情 -->
-                <p class="dialog_menu_submenu_item">
+                <p class="dialog_menu_submenu_item emotion_ear">
                     <img class="dialog_menu_submenu_img" src="../../img/news/smile.png" alt="">
                 </p>
+               
+                
             </div>
         </div>
 
@@ -273,6 +276,7 @@
 
     </div>
     <script src="../../js/public/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="../../js/news/jquery.sinaEmotion.js"></script>
     <script src="../../js/public/public.js"></script>
     <script src="../../js/news/dialog.js"></script>
     <script>
