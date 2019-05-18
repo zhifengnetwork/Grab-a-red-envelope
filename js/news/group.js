@@ -11,8 +11,15 @@ $(function(){
             $('.group_menu_submenu_img').css('margin','.2rem auto')
         }
     })
+
     // 红包弹框显示隐藏
-    $('.group_content_oneself,.group_content_opposite').click(function(){
+    $('.group_content_oneself_pack,.group_content_opposite_pack').click(function(){
         $('.group_packwrap').show();
+    })
+    $('.group_packwrap').click(function(){
+        $('.group_packwrap').hide();
+    })
+    $('.group_pack').click(function(){
+        event.stopPropagation();
     })
 })

@@ -161,8 +161,9 @@ body{
     float: left;
     display: block;
     width:78%;
-    height: 100%;
+    min-height: .45rem;
     border-radius: .2rem;
+    background: #fff;
     overflow: hidden;
 }
 .group_menu_voice{
@@ -189,10 +190,12 @@ body{
 .group_menu_input{
     display: block;
     width: 100%;
-    height: auto;
+    max-height: 3rem;
     border: 0;
     outline: none;
-    padding: .1rem .2rem;
+    font-size: .3rem;
+    padding: .029rem .1rem;
+    overflow-y:scroll;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -241,6 +244,7 @@ body{
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
+    margin-right: .1rem;
     vertical-align: middle;
 }
 .group_pack_title{
@@ -256,10 +260,16 @@ body{
     text-align: center;
     font-size: .4rem;
 }
+.group_pack_num{
+    margin-top: .5rem;
+    font-size: .58rem;
+}
 .group_pack_info{
     position: absolute;
     left: .4rem;
     bottom: .4rem;
+    width: 92%;
+    line-height: 1rem;
     color: #9e192c;
 }
 /* 功能菜单 */
