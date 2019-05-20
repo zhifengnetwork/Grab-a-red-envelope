@@ -183,11 +183,11 @@ input::-webkit-input-placeholder {
 }
 .delete_img_box {
 	position: absolute;
-	top: .1rem;
-    right: .1rem;	
-	z-index: 1;
-	width: .5rem;
-	height: .5rem;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: .8rem;
+    height: .8rem;
 }
 .delete_img {
 	display: block;

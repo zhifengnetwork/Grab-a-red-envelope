@@ -455,11 +455,11 @@ body{
 }
 .delete_img_box {
 	position: absolute;
-	top: .1rem;
-    right: .1rem;	
-	z-index: 1;
-	width: .5rem;
-	height: .5rem;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: .8rem;
+    height: .8rem;
 }
 .delete_img {
 	display: block;
@@ -701,7 +701,7 @@ body{
 #emotions {
 	position: fixed;
 	left: 0!important;
-	width: 395px;
+	width: 100%;
 	font-size: 12px;
 	background: #fff;
 	border: 1px solid #e8e8e8;
@@ -724,4 +724,25 @@ body{
 }
 .page{
 	display: none;
+}
+/* 图片放大样式 */
+.magnify{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+.magnify_mask{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vh;
+    height: 100vh;
+    background: #1a1a1a;
+    z-index: 30;
 }
