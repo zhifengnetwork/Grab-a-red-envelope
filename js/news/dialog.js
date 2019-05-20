@@ -81,7 +81,7 @@ $(function(){
     })
     //点击表情包的图片，让滚动条滚动到底部
     $('.emotion_ear').click(function(){
-    	
+        $('.dialog_menu_input').focus();
 //  	console.log($(document).scrollTop())
 //  	$("html,body").animate({scrollTop:$(document).scrollTop()},1000);
     	
@@ -91,6 +91,27 @@ $(function(){
    $('.emotion_ear').SinaEmotion($('.dialog_menu_input'));
 // $('#face').SinaEmotion($('.emotion'));
    //测试本地解析
-   
-	
+    //点击图片放大
+    $('.dialog_content').on('click','.dialog_content_oneself_textimg .dialog_content_oneself_img,.dialog_content_opposite_textimg .dialog_content_opposite_img',function(){
+        if(!$(this).hasClass('magnify_active')){
+            let src = $(this).attr('src');
+            $(this).addClass('magnify_active');
+            $('.magnify_mask').show();
+            $('.magnify').attr('src',src);
+        }else{
+            $(this).removeClass('magnify_active');
+            $('.magnify_mask').hide();
+            $('.magnify').attr('src','');
+        }
+    });
+	$('.magnify_mask').click(function(){
+        $('.dialog_content_oneself_textimg .dialog_content_oneself_img,.dialog_content_opposite_textimg .dialog_content_opposite_img').removeClass('magnify_active');
+        $('.magnify').attr('src','')
+        $(this).hide();
+    });
+
+    // 点击发送按钮不关闭输入法
+    $('.dialog_menu_send').click(function(){
+        $('.dialog_menu_input').focus();
+    });
 })

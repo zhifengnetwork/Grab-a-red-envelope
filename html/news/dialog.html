@@ -6,7 +6,7 @@
 	<script src="../../js/public/rem.js"></script>    
     <link rel="stylesheet" href="../../css/public/public.css">
     <link rel="stylesheet" href="../../css/public/public_head.css">
-     <link rel="stylesheet" href="../../css/news/jquery.sinaEmotion.css" />
+    <link rel="stylesheet" href="../../css/news/jquery.sinaEmotion.css" />
     <link rel="stylesheet" href="../../css/news/dialog.css">   
     <title>对话框</title>
 </head>
@@ -206,7 +206,10 @@
                 
             </div>
         </div>
-
+        <!-- 放大后的图片 -->
+        <div class="magnify_mask">
+            <img class="magnify" src="" onerror="onerror=null;src='../../img/news/load.gif'" alt="">
+        </div>
         <!--(数字-键盘)底部弹窗（蒙版）body-->
         <div class="bottom_alert_wrap">
             <div class="mask_text">
@@ -359,9 +362,13 @@
 				
 				/*点击出现-底部弹窗*/
 				$('.dialog_transfer_affirm').on('click',function(){
-					$('.bottom_alert_wrap').show();
-					/*底部弹窗(出现)*/
-					$('.bottom_alert_box').animate({'bottom':'0'});
+                    $('.bottom_alert_wrap').show();
+                    $('.dialog_content').hide();
+                    /*底部弹窗(出现)*/
+                    setTimeout(function(){
+                        $('.bottom_alert_box').animate({'bottom':'0'})
+                    },300)
+					
 					/*获取当前滚动条的位置*/
 					thisScroll_num = $(document).scrollTop();
 					console.log('获取当前滚动条的位置',thisScroll_num);
@@ -376,7 +383,8 @@
 				})
 				/*关闭遮罩层*/
 				$('.delete_img_box').on('click',function(){
-					 $('.bottom_alert_wrap').hide();
+                     $('.bottom_alert_wrap').hide();
+                     $('.dialog_content').show();                     
 					 pass_val='';
 	                 $('.trem_box').removeClass('show_box');
 					/*底部弹窗(隐藏)*/

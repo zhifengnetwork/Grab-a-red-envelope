@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />        
+    <script src="../../js/public/rem.js"></script>    
+    <link rel="stylesheet" href="../../css/public/public.css">
+    <link rel="stylesheet" href="../../css/public/public_head.css">
+    <title>支付成功</title>
+    <style>
+        .pay_conten{
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .pay_conten_img{
+            width: 2rem;
+            height: 2rem;;
+        }
+        .pay_content_text{
+            margin-top: .2rem;
+            font-size: .3rem;
+        }
+        .pay_content_price{
+            margin-top: 1rem;
+            font-size: .6rem;
+        }
+        .pay_button{
+            margin: 1rem auto;
+            width: 4rem;
+            height: .8rem;
+            line-height: .8rem;
+            text-align: center;
+            color: #fff;
+            background: #2aa515;
+            border-radius: .1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap_frame">
+        <!--public head-->
+        <div class="lb_headWrap">
+            <p class="lb_headWrap_return" data-num="1" onclick="returnFun()">
+                <img class="lb_headWrap_return_img" src="../../img/public/left.png"/>
+            </p>
+            <span>支付成功</span>
+        </div>
+        <div class="pay_conten">
+            <p>
+                <img class="pay_conten_img" src="../../img/news/pay.png" alt="">
+            </p>
+            <p class="pay_content_text">支付成功</p>
+            <p class="pay_content_text">待神秘电波收款</p>
+            <p class="pay_content_price">￥ 999.00</p>
+        </div>
+        <div class="pay_button" onclick="returnFun()">
+            完成
+        </div>
+    </div>
+    <script src="../../js/public/jquery-1.8.3.js"></script>
+    <script src="../../js/public/public.js"></script>
+</body>
+</html>

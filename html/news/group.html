@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../css/public/public.css">
     <link rel="stylesheet" href="../../css/public/public_head.css">
     <link rel="stylesheet" href="../../css/news/group.css">
+    <link rel="stylesheet" href="../../css/news/givered.css">
     <title>群聊</title>
 </head>
 
@@ -105,65 +106,494 @@
                     <div class="group_pack_num">
                         ￥66.00元
                     </div>
-                    <div class="group_pack_info">
+                    <div class="group_pack_info" onclick="window.location.href='group_chat_room/red_details.html'">
                         查看领取详情
                     </div>
                 </div>
             </div>
+            
             <!-- 底部菜单 -->
-        <div class="group_menu">
+            <div class="group_menu">
                 <div class="group_menu_inputwrap clearfloat">
                     <div class="group_menu_voice">
-                        <img class="group_menu_img" src="../../img/news/voice.png" alt="">
+                            <img class="group_menu_img" src="../../img/news/voice.png" alt="">
+                        </div>
+                        <label class="group_menu_label">
+                            <div class="group_menu_input" contenteditable="true"></div>
+                        </label>
+                        <span class="group_menu_send">发送</span>
                     </div>
-                    <label class="group_menu_label">
-                        <textarea disabled='disabled' placeholder="禁言中" class="group_menu_input"></textarea>
-                    </label>
-                    <span class="group_menu_send">发送</span>
-                </div>
-                <div class="group_menu_submenu">
-                    <p class="group_menu_submenu_item">
-                        <img class="group_menu_submenu_img" src="../../img/news/recharge.png" alt="">
-                        <span>充值</span>
-                    </p>
-                    <p class="group_menu_submenu_item">
-                        <img class="group_menu_submenu_img" src="../../img/news/bill.png" alt="">
-                        <span>账单</span>
-                    </p>
-                    <p class="group_menu_submenu_item">
-                        <img class="group_menu_submenu_img" src="../../img/news/snatch_7.png" alt="">
-                        <span>7个红包</span>
-                    </p>
-                    <p class="group_menu_submenu_item">
-                        <img class="group_menu_submenu_img" src="../../img/news/snatch_9.png" alt="">
-                        <span>9个红包</span>
-                    </p>
-                    <p class="group_menu_submenu_item">
-                        <img class="group_menu_submenu_img" src="../../img/news/smile.png" alt="">
-                        <span>表情</span>
-                    </p>
-                    <p class="group_menu_submenu_item">
-                        <img class="group_menu_submenu_img" src="../../img/news/withdraw.png" alt="">
-                        <span>提现</span>
-                    </p>
-                    <p class="group_menu_submenu_item">
-                        <img class="group_menu_submenu_img" src="../../img/news/owner.png" alt="">
-                        <span>群主</span>
-                    </p>
-                    <p class="group_menu_submenu_item">
-                        <img class="group_menu_submenu_img" src="../../img/news/picture.png" alt="">
-                        <span>图片</span>
-                    </p>
-                </div>
-                <div class="group_menu_more">
-                    <img class="group_menu_more_img" src="../../img/news/more.png" alt="">
+                    <div class="group_menu_submenu">
+                        <p class="group_menu_submenu_item" onclick="window.location.href='my/my_wallet/recharge.html'">
+                            <img class="group_menu_submenu_img" src="../../img/news/recharge.png" alt="">
+                            <span>充值</span>
+                        </p>
+                        <p class="group_menu_submenu_item" onclick="window.location.href='my/my_wallet/bill.html'">
+                            <img class="group_menu_submenu_img" src="../../img/news/bill.png" alt="">
+                            <span>账单</span>
+                        </p>
+                        <p class="group_menu_submenu_item givered_7">
+                            <img class="group_menu_submenu_img" src="../../img/news/snatch_7.png" alt="">
+                            <span>7个红包</span>
+                        </p>
+                        <p class="group_menu_submenu_item givered_9">
+                            <img class="group_menu_submenu_img" src="../../img/news/snatch_9.png" alt="">
+                            <span>9个红包</span>
+                        </p>
+                        <p class="group_menu_submenu_item">
+                            <img class="group_menu_submenu_img" src="../../img/news/smile.png" alt="">
+                            <span>表情</span>
+                        </p>
+                        <p class="group_menu_submenu_item" onclick="window.location.href='my/withdrawal/withdrawal.html'">
+                            <img class="group_menu_submenu_img" src="../../img/news/withdraw.png" alt="">
+                            <span>提现</span>
+                        </p>
+                        <p class="group_menu_submenu_item">
+                            <img class="group_menu_submenu_img" src="../../img/news/owner.png" alt="">
+                            <span>群主</span>
+                        </p>
+                        <p class="group_menu_submenu_item">
+                            <img class="group_menu_submenu_img" src="../../img/news/picture.png" alt="">
+                            <span>图片</span>
+                        </p>
+                    </div>
+                    <div class="group_menu_more">
+                        <img class="group_menu_more_img" src="../../img/news/more.png" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
-
+            <!-- 领取详情 -->
+            <div class="red_details">
+                <div class="wrap_frame">
+                    <!--public head-->
+                    <div class="headWrap">
+                        <p class="lb_headWrap_return" onclick="returnFun()">
+                            <img class="lb_headWrap_return_img" src="../../img/public/left.png"/> 
+                        </p>
+                        <span>红包详情</span>
+                    </div>
+                    <!--内容-->
+                    <div class="content">
+                        <div class="top_wrap">
+                            <!---->
+                            <div class="top">
+                                <!--金额-->
+                                <div class="money">
+                                    <span class="com">共</span>
+                                    <span class="sum">50.00</span>
+                                    <span class="com">元</span>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="middle">
+                                <!--半圆背景-->
+                                <div class="oval"></div>
+                                <!--头像-->
+                                <div class="photo">
+                                    <img src="../../../img/0009g.png" />
+                                </div>
+                                <!--名称-->
+                                <div class="name">超级靓子</div>
+                            </div>
+                            <!--领取红包数-->
+                            <div class="get_wrap">
+                                <!--红包数说明-->
+                                <div class="account">
+                                    <div class="rece">
+                                        <span>已领取</span>
+                                        <span>9/9</span>
+                                        <span>共</span>
+                                        <span>500.00</span>
+                                    </div>
+                                    <div class="ray">
+                                        <span>雷点：</span>
+                                        <span>1，2，3</span>
+                                    </div>
+                                </div>
+                                <!--领取红包详细-->
+                                <div class="info_wrap">
+                                    <!--未中雷状态-->
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../img/0009g.png" />
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="super">超级靓子</div>
+                                            <p class="time">
+                                                <span>2019-04-09</span>
+                                                <span>23:02:45</span>
+                                            </p>
+                                        </div>
+                                        <div class="right_sum">
+                                            <p class="fig">50.00元</p>
+                                        </div>
+                                    </div>
+                                    <!--中雷状态-->
+                                    <div class="item active">
+                                        <div class="img">
+                                            <img src="../../img/0009g.png" />
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="super">超级靓子</div>
+                                            <p class="time">
+                                                <span>2019-04-09</span>
+                                                <span>23:02:45</span>
+                                            </p>
+                                        </div>
+                                        <div class="right_sum">
+                                            <p class="fig">50.00元</p>
+                                            <div class="crump">
+                                                <span class="crump_tu"></span>
+                                                <span class="theRay">中雷</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--未中雷状态-->
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../img/0009g.png" />
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="super">超级靓子</div>
+                                            <p class="time">
+                                                <span>2019-04-09</span>
+                                                <span>23:02:45</span>
+                                            </p>
+                                        </div>
+                                        <div class="right_sum">
+                                            <p class="fig">50.00元</p>
+                                        </div>
+                                    </div>
+                                    <!--未中雷状态-->
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../img/0009g.png" />
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="super">超级靓子</div>
+                                            <p class="time">
+                                                <span>2019-04-09</span>
+                                                <span>23:02:45</span>
+                                            </p>
+                                        </div>
+                                        <div class="right_sum">
+                                            <p class="fig">50.00元</p>
+                                        </div>
+                                    </div>
+                                    <!--未中雷状态-->
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../img/0009g.png" />
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="super">超级靓子</div>
+                                            <p class="time">
+                                                <span>2019-04-09</span>
+                                                <span>23:02:45</span>
+                                            </p>
+                                        </div>
+                                        <div class="right_sum">
+                                            <p class="fig">50.00元</p>
+                                        </div>
+                                    </div>
+                                    <!--未中雷状态-->
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../img/0009g.png" />
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="super">超级靓子</div>
+                                            <p class="time">
+                                                <span>2019-04-09</span>
+                                                <span>23:02:45</span>
+                                            </p>
+                                        </div>
+                                        <div class="right_sum">
+                                            <p class="fig">50.00元</p>
+                                        </div>
+                                    </div>
+                                    <!--未中雷状态-->
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../img/0009g.png" />
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="super">超级靓子</div>
+                                            <p class="time">
+                                                <span>2019-04-09</span>
+                                                <span>23:02:45</span>
+                                            </p>
+                                        </div>
+                                        <div class="right_sum">
+                                            <p class="fig">50.00元</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                   </div>
+            </div>
+            <!-- 发红包 -->
+            <div class="give_pack">
+                <div class="wrap_frame">
+                    <!--public head-->
+                    <div class="headWrap">
+                        <p class="lb_headWrap_return" onclick="returnFun()">
+                            <img class="lb_headWrap_return_img" src="../../img/public/left.png" />
+                        </p>
+                        <span>发红包</span>
+                    </div>
+                    <!--内容-->
+                    <div class="content">
+                        <div class="middle">
+                            <!--红包个数-->
+                            <div class="pdt">
+                                <div class="nitems">红包个数</div>
+                                <div class="inp_wrap">
+                                    <input class="text num" type="number" placeholder="最多发9个红包" />
+                                    <span>个</span>
+                                </div>
+                            </div>
+                            <!--总金额-->
+                            <div class="pdt">
+                                <div class="nitems">总金额</div>
+                                <div class="inp_wrap">
+                                    <input class="text" type="number" placeholder="红包范围20-800" />
+                                    <span>元</span>
+                                </div>
+                            </div>
+                            <!--雷点选择-->
+                            <div class="select">
+        
+                                <div class="dot">
+                                    <span>雷点选择</span>
+                                    <span></span>
+                                </div>
+                                <div class="ray_wrap">
+                                    <ul>
+                                        <li class="rob">0</li>
+                                        <li class="active">1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li class="rob">5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                    </ul>
+                                </div>
+        
+                            </div>
+                            <!--雷点说明-->
+                            <div class="state">多雷请选择多个数字，游戏倍数0</div>
+                            <!--发红包按钮-->
+                            <div class="give_btn">
+                                <a class="btn">发红包</a>
+                            </div>
+        
+                            <!--(数字-键盘)底部弹窗（蒙版）body-->
+                            <div class="bottom_alert_wrap">
+                                <div class="mask_text">
+                                    <div class="red_envelope">
+                                        红包
+                                        <p class="delete_img_box">
+                                            <img class="delete_img" src="../../img/news/delete_icon.png" alt="" />
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="red_envelope_money">￥<span>50.00</span></p>
+                                    <div class="ds">
+                                        <div class="ds_ds">
+                                            <div class="dsds_item">
+                                                <p class="dsds_item_icon_box">
+                                                    <img src="../../img/news/qian.png" class="tixian_pic" />
+                                                </p>
+                                                <span class="qunliao_item_text">账号余额(608元)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="password_box">
+                                        <p class="password_box_num"><span class="trem_box">·</span></p>
+                                        <p class="password_box_num"><span class="trem_box">·</span></p>
+                                        <p class="password_box_num"><span class="trem_box">·</span></p>
+                                        <p class="password_box_num"><span class="trem_box">·</span></p>
+                                        <p class="password_box_num"><span class="trem_box">·</span></p>
+                                        <p class="password_box_num"><span class="trem_box">·</span></p>
+                                    </div>
+                                </div>
+                                
+                                
+                                <!--输入完密码 => 遮罩层-->
+                                <div class="loading_wrap"><!--报错 标签-->
+                                    
+                                    输入的密码错误
+                                    
+                                    
+                                </div>
+                                
+                                <!--底部弹窗（框）-->
+                                <div class="bottom_alert_box">
+                                    <!--数字键盘-->
+                                    <div class="digital_keyboard_box">
+                                        <!--data-num:下标-->
+                                        <p class="number_trem digital_key" data_state="true">1</p>
+                                        <p class="number_trem digital_key" data_state="true">2</p>
+                                        <p class="number_trem digital_key" data_state="true">3</p>
+                                        <p class="number_trem digital_key" data_state="true">4</p>
+                                        <p class="number_trem digital_key" data_state="true">5</p>
+                                        <p class="number_trem digital_key" data_state="true">6</p>
+                                        <p class="number_trem digital_key" data_state="true">7</p>
+                                        <p class="number_trem digital_key" data_state="true">8</p>
+                                        <p class="number_trem digital_key" data_state="true">9</p>
+                                        <!--最后三个无bottom边框-->
+                                        <p class="number_trem number_trem_none"></p>
+                                        <p class="number_trem number_trem_none digital_key" data_state="true">0</p>
+                                        <div class="number_trem number_trem_none">
+                                            <i class="eliminate_cion"></i>
+                                            <!--删除按钮-->
+                                            <p class="delete_box digital_key" data-state="delete"></p>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <!--红包说明-->
+                            <div class="state">未领取的红包，将3分钟后退款</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
     <script src="../../js/public/jquery-1.8.3.js"></script>
     <script src="../../js/public/public.js"></script>
     <script src="../../js/news/group.js"></script>
+    <script>
+        $(function() {
+            /**
+             * 全局变量
+             * **/
+            /*存储-当前滚动条的位置*/
+            var thisScroll_num = null;
+            /*获取支付密码（后台*/
+            var pass_val = '';
+            /*雷点-选择*/
+            $(".ray_wrap ul li").click(function() {
+                $(this).siblings('.ray_wrap ul li').removeClass('active'); // 删除其他兄弟元素的样式
+                $(this).addClass('active'); // 添加当前元素的样式
+
+            });
+            /*000*/
+            $('.digital_key').on('click',function(){
+                /*触摸-添加样式*/
+                $(this).addClass('number_trem_active');
+                /*当前的元素*/
+                var this_eve = $(this);
+                /*当前的数字*/
+                var this_nun = Number(this_eve.html());
+                /*当前-状态(输入数字true，删除false)*/
+                var this_state = true;
+                /*删除-按钮*/
+                if(this_eve.attr('data-state') == 'delete'){
+                    /*如果当元素为空时*/
+                    if(pass_val == ""){
+                        console.log('密码为空!');
+                        remove_class($(this));
+                        return false;
+                    }
+                    /*删除最后一个元素*/
+                    arr_str = pass_val.split('');
+                    /*数组删除最后一项*/
+                    arr_str.pop();
+                    pass_val = arr_str.join('');
+//	        			if(pass_val.length){
+                    console.log('模拟删除代码',pass_val.length);
+                    /*页面-模拟删除代码*/
+                    if(pass_val.length > 0){
+                        $('.password_box_num .trem_box').eq(pass_val.length).removeClass("show_box");
+                    }else {
+                        $('.password_box_num .trem_box').eq(0).removeClass("show_box");
+                    }
+                    this_state = false;
+                }
+                /*获取支付密码*/
+                if(pass_val.length < 6 && this_state){
+                    pass_val += this_nun;
+                }
+                /*状态*/
+                if(this_state){
+                    /*页面-模拟密码-代码*/
+                    $('.password_box_num .trem_box').eq(pass_val.length-1).addClass("show_box");
+                }
+                console.log(pass_val);
+                /*密码长度为6时，ajax*/
+                if(pass_val.length == 6){
+                    remove_class($(this));
+                    $('.loading_wrap').show();
+                    $('.mask_text').hide();
+                    $('.bottom_alert_box').hide();
+                    console.log('ajax-最终密码:',pass_val);
+                    setTimeout(function(){
+                        $('.loading_wrap').hide();
+                        $('.mask_text').show();
+                        $('.bottom_alert_box').show();
+                        pass_val='';
+                        $('.trem_box').removeClass('show_box');
+                    },1100);
+                    return false;
+                }
+                remove_class($(this));
+            })
+            /*离开-删除样式*/
+            function remove_class(_this){
+                /*模拟-touchs事件，因为iso上失效*/
+                setTimeout(function(){
+                    _this.removeClass('number_trem_active');
+                },100);
+                
+            }
+            
+            /*点击出现-底部弹窗*/
+            $('.give_btn').on('click',function(){
+                $('.bottom_alert_wrap').show();
+                /*底部弹窗(出现)*/
+                $('.bottom_alert_box').animate({'bottom':'0'});
+                /*获取当前滚动条的位置*/
+                thisScroll_num = $(document).scrollTop();
+                console.log('获取当前滚动条的位置',thisScroll_num);
+                /**禁止底部滑动
+                 * 设置为fixed之后会飘到顶部，所以要动态计算当前用户所在高度
+                 **/
+                $('.wrap').css({
+                    'position':'fixed',
+                    'top': -thisScroll_num,
+                    'left': 0,
+                });
+            })
+            /*关闭遮罩层*/
+            $('.delete_img_box').on('click',function(){
+                 $('.bottom_alert_wrap').hide();
+                 pass_val='';
+                 $('.trem_box').removeClass('show_box');
+                /*底部弹窗(隐藏)*/
+                $('.bottom_alert_box').animate({'bottom':-($('.bottom_alert_box').height())});
+                /*恢复底部滑动*/
+                $('.wrap').css({
+                    'position':'',
+                    'top': '',
+                    'left': '',
+                });
+                console.log(66666,thisScroll_num);
+                /*恢复当前用户滚动的位置！*/
+                $(document).scrollTop(thisScroll_num);
+                
+            })
+        });
+    </script>
 </body>
 </html>
