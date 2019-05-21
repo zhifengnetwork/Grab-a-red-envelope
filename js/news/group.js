@@ -128,4 +128,28 @@ $(function(){
 
     //图片绑定表情包
    $('.emotion_ear').SinaEmotion($('.group_menu_input'));
+
+   //点击图片放大
+   $('.group_content').on('click','.group_content_oneself_textimg .group_content_oneself_img,.group_content_opposite_textimg .group_content_opposite_img',function(){
+        if(!$(this).hasClass('magnify_active')){
+            let src = $(this).attr('src');
+            $(this).addClass('magnify_active');
+            $('.magnify_mask').show();
+            $('.magnify').attr('src',src);
+        }else{
+            $(this).removeClass('magnify_active');
+            $('.magnify_mask').hide();
+            $('.magnify').attr('src','');
+        }
+    });
+    $('.magnify_mask').click(function(){
+        $('.group_content_oneself_textimg .group_content_oneself_img,.group_content_opposite_textimg .group_content_opposite_img').removeClass('magnify_active');
+        $('.magnify').attr('src','')
+        $(this).hide();
+    });
+
+    // 点击发送按钮不关闭输入法
+    $('.group_menu_send').click(function(){
+        $('.group_menu_input').focus();
+    });
 })

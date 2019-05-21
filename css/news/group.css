@@ -505,3 +505,24 @@ body{
 	
 	display: none;
 }
+/* 图片放大样式 */
+.magnify{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+.magnify_mask{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vh;
+    height: 100vh;
+    background: #1a1a1a;
+    z-index: 30;
+}
