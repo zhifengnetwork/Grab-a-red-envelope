@@ -365,7 +365,7 @@
                             <div class="pdt">
                                 <div class="nitems">总金额</div>
                                 <div class="inp_wrap">
-                                    <input class="text" type="number" placeholder="红包范围20-800" />
+                                    <input class="text price" type="number" placeholder="红包范围20-800" />
                                     <span>元</span>
                                 </div>
                             </div>
@@ -491,10 +491,26 @@
             /*获取支付密码（后台*/
             var pass_val = '';
             /*雷点-选择*/
+            let num = 1;
             $(".ray_wrap ul li").click(function() {
-                $(this).siblings('.ray_wrap ul li').removeClass('active'); // 删除其他兄弟元素的样式
-                $(this).addClass('active'); // 添加当前元素的样式
-
+                //$(this).siblings('.ray_wrap ul li').removeClass('active'); // 删除其他兄弟元素的样式
+                //$(this).addClass('active'); // 添加当前元素的样式
+                $(".ray_wrap ul li").each(function(){
+                    if($(this).hasClass('active')){
+                        num++;
+                    }
+                })
+                // 7为最大选择数量
+                if(num <= 7){
+                    if(!$(this).hasClass('active')){
+                        $(this).addClass('active');
+                    }else{
+                        $(this).removeClass('active');
+                    }
+                }else{
+                    $(this).removeClass('active');
+                }
+                num = 1;
             });
             /*000*/
             $('.digital_key').on('click',function(){
@@ -568,20 +584,33 @@
             
             /*点击出现-底部弹窗*/
             $('.give_btn').on('click',function(){
-                $('.bottom_alert_wrap').show();
-                /*底部弹窗(出现)*/
-                $('.bottom_alert_box').animate({'bottom':'0'});
-                /*获取当前滚动条的位置*/
-                thisScroll_num = $(document).scrollTop();
-                console.log('获取当前滚动条的位置',thisScroll_num);
-                /**禁止底部滑动
-                 * 设置为fixed之后会飘到顶部，所以要动态计算当前用户所在高度
-                 **/
-                $('.wrap').css({
-                    'position':'fixed',
-                    'top': -thisScroll_num,
-                    'left': 0,
-                });
+                if($('.price').val()>=20&&$('.price').val()<=800&&$('.num').val()<=9){
+                    let arr=[];
+                    $(".ray_wrap ul li").each(function(){
+                        if($(this).hasClass('active')){
+                            arr.push($(this).html());
+                        }
+                    })
+                    console.log('选中的点数'+arr);
+                    $('.bottom_alert_wrap').show();
+                    /*底部弹窗(出现)*/
+                    $('.bottom_alert_box').animate({'bottom':'0'})
+                    /*获取当前滚动条的位置*/
+                    thisScroll_num = $(document).scrollTop();
+                    console.log('获取当前滚动条的位置',thisScroll_num);
+                    /**禁止底部滑动
+                     * 设置为fixed之后会飘到顶部，所以要动态计算当前用户所在高度
+                     **/
+                    $('.wrap').css({
+                        'position':'fixed',
+                        'top': -thisScroll_num,
+                        'left': 0,
+                    });
+                }else if($('.num').val()<=9){
+                    alert('红包范围为20-800');
+                }else{
+                    alert('红包最大数量为9个')
+                }
             })
             /*关闭遮罩层*/
             $('.delete_img_box').on('click',function(){
