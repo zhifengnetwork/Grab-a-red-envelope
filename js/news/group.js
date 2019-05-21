@@ -3,15 +3,12 @@ $(function(){
     $('.group_menu_more').click(function(){
         if($(this).children().attr('src')=='../../img/news/more.png'){
             $(this).children().attr('src','../../img/news/more1.png');
-            $('.group_menu').css('height','auto');
-            $('.group_menu_submenu_img').css('margin','.2rem auto .1rem');
+            $('.group_menu_submenu').css('height','auto');
         }else{
             $(this).children().attr('src','../../img/news/more.png');
-            $('.group_menu').css('height','1.4rem');
-            $('.group_menu_submenu_img').css('margin','.2rem auto')
+            $('.group_menu_submenu').css('height','.45rem');
         }
     })
-
     // 红包弹框显示隐藏
     $('.group_content_oneself_pack,.group_content_opposite_pack').click(function(){
         $('.group_packwrap').show();
@@ -50,14 +47,6 @@ $(function(){
         $('.red_details').hide();
         $('body').css('padding-bottom','1.4rem')
     })
-    // 发送信息
-    $('.group_menu_send').click(function(){
-        if($(this).html()!=''){
-            $('.group_menu_send').css('background','#128ae6')
-        }else{
-            $('.group_menu_send').css('background','#c3f4ff')
-        }
-    })
 
     //改变发送按钮样式
     $('.group_menu_input').keyup(function(){
@@ -90,6 +79,8 @@ $(function(){
         $('html,body').animate({
             scrollTop: $('html,body').height()
         }, 'slow');
+        $('.group_menu_more').children().attr('src','../../img/news/more.png');
+        $('.group_menu_submenu').css('height','.45rem');
     })
 
     // 验证图片
