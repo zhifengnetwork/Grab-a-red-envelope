@@ -63,7 +63,7 @@
 	background-size: 100% 100%;
 }
 img {
-	display: block;
+	/* display: block; */
 	max-width: 100%;
 	margin: 0 auto;
 }

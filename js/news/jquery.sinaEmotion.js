@@ -134,6 +134,7 @@ function AnalyticEmotion(s) {
 				} else {
 					this.innerHTML += AnalyticEmotion(text);
 					$('.dialog_menu_send').css('background','#128ae6')
+					$('.group_menu_send').css('background','#128ae6')
 				}
 			});
 			return this;

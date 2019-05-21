@@ -1,5 +1,6 @@
 body{
-    background: #fff;
+    background: #fff !important;
+    padding-bottom: 2.8rem; 
 }
 /* 公告 */
 .group_notice{
@@ -17,7 +18,7 @@ body{
 }
 .group_notice_img{
     width: .26rem;
-    height: .26 rem;
+    height: .26rem;
 }
 .group_notice_text{
     color:#ff0101;
@@ -137,6 +138,138 @@ body{
     width: 100%;
     color: #9c1926;
 }
+/* 对方消息 */
+.group_content_opposite{
+    margin-top: .5rem;
+    width: 100%;
+    height: auto;
+}
+.group_content_opposite_imgwrap{
+    float: left;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.group_content_opposite_img,.group_content_oneself_img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.group_content_opposite_info{
+    max-width: 5rem;
+    word-wrap: break-word;
+    float: left;
+    margin-left: .2rem;
+}
+.group_content_opposite_name{
+    font-size: .26rem;
+    color: #8a8a8a;
+}
+.group_content_opposite_text{
+    position: relative;
+    margin-top: .1rem;
+    line-height: .5rem;
+    font-size: .36rem;
+    padding: .14rem .22rem;
+    background: #fff;
+    border-radius: .1rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.group_content_opposite_text:after{
+    content:'';
+    display: block;
+    position:absolute;
+    left:-0.1rem;;
+    top:.1rem;
+    width:.1rem;
+    border-width:0;
+    border-style:solid;
+    border-color:transparent;
+    border-top-width:.1rem;
+    border-top-color:currentColor;
+    border-radius:0 0 0 1rem;
+    color:#fff;
+}
+.group_content_oneself_textimg,.group_content_opposite_textimg{
+    margin-top: .1rem;
+    max-width: 4rem;
+    max-height: 3rem;
+    border-radius: .1rem;
+    overflow: hidden;
+}
+/* 本人消息 */
+.group_content_oneself,.group_content_opposite{
+    margin-top:.5rem; 
+    width: 100%;
+    height: auto;
+}
+.group_content_oneself_imgwrap{
+    float: right;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.group_content_opposite_imgwrap{
+    float: left;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.group_content_oneself_info{
+    max-width: 5rem;
+    word-wrap: break-word;
+    float: right;
+    margin-right: .2rem;
+}
+.group_content_opposite_info{
+    max-width: 5rem;
+    word-wrap: break-word;
+    float: left;
+    margin-right: .2rem;
+}
+.group_content_oneself_name{
+    font-size: .28rem;
+    text-align: right;
+    color: #8a8a8a;
+}
+.group_content_opposite_name{
+    font-size: .28rem;
+    text-align: left;
+    color: #8a8a8a;
+}
+.group_content_oneself_text,.group_content_opposite_text{
+    position: relative;
+    margin-top: .1rem;
+    line-height: .5rem;
+    font-size: .36rem;
+    color: #fff;
+    padding: .14rem .22rem;
+    background: #59bbf3;
+    border-radius: .1rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.group_content_oneself_text:after{
+    content:'';
+    display: block;
+    position:absolute;
+    right:-0.1rem;;
+    top:.1rem;
+    width:.1rem;
+    border-width:0;
+    border-style:solid;
+    border-color:transparent;
+    border-top-width:.1rem;
+    border-top-color:currentColor;
+    border-radius:0 0 1rem 0;
+    color:#59bbf3;
+}
 /* 底部菜单 */
 /* 输入框 */
 .group_menu{
@@ -147,6 +280,7 @@ body{
     bottom: 0;
     background: #eff2f4;
     padding: 0 .28rem;
+    z-index: 29;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -154,7 +288,17 @@ body{
 .group_menu_inputwrap{
     margin-top: .1rem;
     height: .45rem;
-    line-height: .4rem;    
+    line-height: .4rem;
+    display: box;              /* OLD - Android 4.4- */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-box-align: end;
+    -moz-align-items: flex-end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
 }
 .group_menu_label{
     position: relative;
@@ -274,7 +418,7 @@ body{
 }
 .give_pack,.red_details{
     display: none;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
@@ -326,4 +470,38 @@ body{
     display: block;
     width: .4rem;
     height: .4rem;
+}
+.red_details>.wrap_frame,.give_pack>.wrap_frame{
+    overflow: scroll;
+    position: fixed;
+    height: 100vh;
+}
+/* 摄像机input */
+.camera,.picture{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+#emotions{
+    position: fixed !important;
+    left: 0!important;
+    bottom: 1.4rem !important;
+	width: 100%;
+	font-size: 12px;
+	background: #fff;
+	border: 1px solid #e8e8e8;
+}
+#emotions .page{
+    display: none;
+}
+#prev{
+	display: none;	   
+}
+#next{
+	
+	display: none;
 }

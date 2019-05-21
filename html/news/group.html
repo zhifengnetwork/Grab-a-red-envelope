@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../../css/public/public_head.css">
     <link rel="stylesheet" href="../../css/news/group.css">
     <link rel="stylesheet" href="../../css/news/givered.css">
+    <link rel="stylesheet" href="../../css/news/red_details.css">
+    <link rel="stylesheet" href="../../css/news/jquery.sinaEmotion.css">
     <title>群聊</title>
 </head>
 
@@ -106,7 +108,7 @@
                     <div class="group_pack_num">
                         ￥66.00元
                     </div>
-                    <div class="group_pack_info" onclick="window.location.href='group_chat_room/red_details.html'">
+                    <div class="group_pack_info">
                         查看领取详情
                     </div>
                 </div>
@@ -124,13 +126,14 @@
                         <span class="group_menu_send">发送</span>
                     </div>
                     <div class="group_menu_submenu">
-                        <p class="group_menu_submenu_item" onclick="window.location.href='my/my_wallet/recharge.html'">
-                            <img class="group_menu_submenu_img" src="../../img/news/recharge.png" alt="">
-                            <span>充值</span>
+                        <p class="group_menu_submenu_item">
+                            <img class="group_menu_submenu_img" src="../../img/news/picture.png" alt="">
+                            <input type="file" class="picture">
+                            <span>图片</span>
                         </p>
-                        <p class="group_menu_submenu_item" onclick="window.location.href='my/my_wallet/bill.html'">
-                            <img class="group_menu_submenu_img" src="../../img/news/bill.png" alt="">
-                            <span>账单</span>
+                        <p class="group_menu_submenu_item emotion_ear">
+                            <img class="group_menu_submenu_img" src="../../img/news/smile.png" alt="">
+                            <span>表情</span>
                         </p>
                         <p class="group_menu_submenu_item givered_7">
                             <img class="group_menu_submenu_img" src="../../img/news/snatch_7.png" alt="">
@@ -140,9 +143,9 @@
                             <img class="group_menu_submenu_img" src="../../img/news/snatch_9.png" alt="">
                             <span>9个红包</span>
                         </p>
-                        <p class="group_menu_submenu_item">
-                            <img class="group_menu_submenu_img" src="../../img/news/smile.png" alt="">
-                            <span>表情</span>
+                        <p class="group_menu_submenu_item" onclick="window.location.href='my/my_wallet/bill.html'">
+                            <img class="group_menu_submenu_img" src="../../img/news/bill.png" alt="">
+                            <span>账单</span>
                         </p>
                         <p class="group_menu_submenu_item" onclick="window.location.href='my/withdrawal/withdrawal.html'">
                             <img class="group_menu_submenu_img" src="../../img/news/withdraw.png" alt="">
@@ -152,9 +155,9 @@
                             <img class="group_menu_submenu_img" src="../../img/news/owner.png" alt="">
                             <span>群主</span>
                         </p>
-                        <p class="group_menu_submenu_item">
-                            <img class="group_menu_submenu_img" src="../../img/news/picture.png" alt="">
-                            <span>图片</span>
+                        <p class="group_menu_submenu_item" onclick="window.location.href='my/my_wallet/recharge.html'"> 
+                            <img class="group_menu_submenu_img" src="../../img/news/recharge.png" alt="">
+                            <span>充值</span>
                         </p>
                     </div>
                     <div class="group_menu_more">
@@ -163,11 +166,11 @@
                 </div>
             </div>
             <!-- 领取详情 -->
-            <div class="red_details">
+            <div class="red_details clearfloat">
                 <div class="wrap_frame">
                     <!--public head-->
                     <div class="headWrap">
-                        <p class="lb_headWrap_return" onclick="returnFun()">
+                        <p class="lb_headWrap_return">
                             <img class="lb_headWrap_return_img" src="../../img/public/left.png"/> 
                         </p>
                         <span>红包详情</span>
@@ -190,7 +193,7 @@
                                 <div class="oval"></div>
                                 <!--头像-->
                                 <div class="photo">
-                                    <img src="../../../img/0009g.png" />
+                                    <img src="../../img/0009g.png" />
                                 </div>
                                 <!--名称-->
                                 <div class="name">超级靓子</div>
@@ -338,11 +341,11 @@
                    </div>
             </div>
             <!-- 发红包 -->
-            <div class="give_pack">
+            <div class="give_pack clearfloat">
                 <div class="wrap_frame">
                     <!--public head-->
                     <div class="headWrap">
-                        <p class="lb_headWrap_return" onclick="returnFun()">
+                        <p class="lb_headWrap_return">
                             <img class="lb_headWrap_return_img" src="../../img/public/left.png" />
                         </p>
                         <span>发红包</span>
@@ -376,7 +379,7 @@
                                 <div class="ray_wrap">
                                     <ul>
                                         <li class="rob">0</li>
-                                        <li class="active">1</li>
+                                        <li>1</li>
                                         <li>2</li>
                                         <li>3</li>
                                         <li>4</li>
@@ -471,6 +474,7 @@
             </div>
     </div>
     <script src="../../js/public/jquery-1.8.3.js"></script>
+    <script src="../../js/news/jquery.sinaEmotion.js"></script>
     <script src="../../js/public/public.js"></script>
     <script src="../../js/news/group.js"></script>
     <script>

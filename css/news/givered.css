@@ -156,8 +156,8 @@ input::-webkit-input-placeholder {
 }
 
 .wrap_frame {
-	position: absolute;
-	bottom: 0;
+	/* position: absolute;
+	bottom: 0; */
 }
 
 
