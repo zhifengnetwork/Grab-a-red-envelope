@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>设置</title>
+    <script src="../../../../js/public/rem.js"></script>
+     <!--public-->
+	<link rel="stylesheet" href="../../../../css/public/public.css" />
+	<!--头部-->
+    <link rel="stylesheet" href="../../../../css/public/public_head.css" />
+    <link rel="stylesheet" href="../../../../css/news/my/set_up.css">
+</head>
+<body>
+    <div class="wrap_frame">
+        <!--public head-->
+        <div class="lb_headWrap">
+            <p class="lb_headWrap_return" data-num="1" onclick="returnFun()">
+                <img class="lb_headWrap_return_img" src="../../../../img/public/back@2x.png"/>
+            </p>
+            <span>支付密码</span>
+        </div>
+        <div class="main-wrap">
+              <div class="set-page password_set">
+                    <ul>
+                        <li class="page-item alter_set" >
+                            <span class="item-text">修改支付密码</span>
+                            <span class="right-arrow"></span>
+                        </li>
+                        <li class="page-item forget_set">
+                            <span class="item-text">忘记支付密码</span>
+                            <span class="right-arrow"></span>
+                        </li>
+                    </ul>
+              </div>
+              <div class="set-page alter">
+                    <ul>
+                        <li class="page-item" >
+                            <span class="item-text">输入原密码</span>
+                            <input type="password">
+                        </li>
+                        <li class="page-item">
+                            <span class="item-text">输入新密码</span>
+                            <input type="password">
+                        </li>
+                    </ul>
+              </div>
+              <div class="set-page forget">
+                    <ul>
+                        <li class="page-item" >
+                            <span class="item-text">电话</span>
+                            <input type="text">
+                        </li>
+                        <li class="page-item">
+                            <input type="text">
+                            <span class="item-text">获取验证码</span>
+                        </li>
+                    </ul>
+              </div>
+              <div class="set_btn">
+                    保存
+              </div>
+              <div class="step_btn">
+                    下一步
+              </div>
+        </div>
+    </div>
+        <script src="../../../../js/public/jquery-1.8.3.js"></script>
+        <script src="../../../../js/public/public.js"></script>
+        <script>
+            // 点击显示隐藏密码设置
+            $('.alter_set').click(function(){
+                    $('.alter').show();
+                    $('.set_btn').show();
+                    $('.password_set').hide();
+            })
+            $('.set_btn').click(function(){
+                $('.alter input').val('');
+                $('.alter').hide();
+                $('.set_btn').hide();
+                $('.password_set').show();
+            })
+            $('.forget_set').click(function(){
+                $('.step_btn').show();
+                $('.forget').show();
+                $('.password_set').hide();
+            })
+        </script>
+</body>
+</html>

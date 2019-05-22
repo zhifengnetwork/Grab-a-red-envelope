@@ -61,7 +61,7 @@ $(function(){
     $('.group_menu_send').click(function(){
         let str = '';
         let text = $('.group_menu_input').html();
-        if(text == ''){
+        if(text == ''||text == undefined){
             return;
         }
         str +='<div class="group_content_oneself clearfloat">'

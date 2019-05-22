@@ -99,3 +99,34 @@
     font-size: .2rem;
     text-align: center;
 }
+.alter{
+    display: none;
+}
+.alter input,.forget input{
+    border: 0;
+    outline: none;
+    width: 78%;
+    height: 100%;
+    text-indent: .2rem;
+}
+.forget{
+    display: none;
+}
+.forget .item-text:nth-child(2){
+    padding: .1rem;
+    border: .02rem solid #ccc;
+}
+.forget .page-item:nth-child(2) input{
+    width: 75%;
+}
+.set_btn,.step_btn{
+    display: none;
+    margin: 1rem auto;
+    width: 4rem;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    color: #fff;
+    background: #2aa515;
+    border-radius: .1rem;
+}
