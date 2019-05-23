@@ -481,16 +481,14 @@
                     $('.password_set').hide();
             })
             $('.set_btn').click(function(){
-                if($('.old').val()==$('.new').val()&&$('.old').val()!=''){
+                if($('.old').val()!=''&&$('.new').val()!=''){
                     alert('保存成功')
                     $('.alter input').val('');
                     $('.alter').hide();
                     $('.set_btn').hide();
                     $('.password_set').show();
-                }else if($('.old').val()==''||$('.new').val()==''){
-                    alert('密码不能为空')
                 }else{
-                    alert('输入的密码不一致')
+                    alert('密码不能为空')
                 }
             })
             $('.forget_set').click(function(){
