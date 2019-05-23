@@ -29,6 +29,8 @@ $(function(){
                     +'</div>'
                 +'</div>'
         $('.dialog_content').append(str);
+        // 点击发送按钮获取焦点
+        $('.dialog_menu_input').focus();
         $('.dialog_menu_input').html('');
         $('.dialog_menu_send').css('background','#c3f4ff')
         $('html, body').animate({
@@ -81,7 +83,7 @@ $(function(){
     })
     //点击表情包的图片，让滚动条滚动到底部
     $('.emotion_ear').click(function(){
-        $('.dialog_menu_input').focus();
+        // $('.dialog_menu_input').focus();
 //  	console.log($(document).scrollTop())
 //  	$("html,body").animate({scrollTop:$(document).scrollTop()},1000);
     	
@@ -110,8 +112,4 @@ $(function(){
         $(this).hide();
     });
 
-    // 点击发送按钮不关闭输入法
-    $('.dialog_menu_send').click(function(){
-        $('.dialog_menu_input').focus();
-    });
 })

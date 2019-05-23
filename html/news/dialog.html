@@ -284,6 +284,20 @@
     <script src="../../js/news/dialog.js"></script>
     <script>
 			$(function() {
+                var u = navigator.userAgent;
+                var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+                if(isiOS){
+                    $('.dialog_menu_input').on('focus','input',function(){
+                        $('.lb_headWrap').css("position","relative");
+                        $('.dialog_menu').css("position","relative");                                 
+                        $(document).scroll(function(){
+                            $('.dialog_menu_input').blur()
+                        })
+                    }).on('focusout','input',function(){
+                        $('.lb_headWrap').css("position","fixed");
+                        $('.dialog_menu').css("position","fixed");                    
+                    });
+                }
 				/**
 				 * 全局变量
 				 * **/
