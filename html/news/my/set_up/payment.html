@@ -11,6 +11,252 @@
 	<!--头部-->
     <link rel="stylesheet" href="../../../../css/public/public_head.css" />
     <link rel="stylesheet" href="../../../../css/news/my/set_up.css">
+    <style>
+        /* 密码弹框 */
+        .mask_text {
+            margin: 1.5rem auto 0;
+            width: 80%;
+            height: 4rem;
+            border-radius: .15rem;
+            background: white;
+        }
+        .red_envelope {
+            position: relative;
+            text-align: center;
+            font-size: .3rem;
+            padding: .3rem 0 .1rem 0;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        .delete_img_box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            width: .8rem;
+            height: .8rem;
+        }
+        .delete_img {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;	
+            bottom: 0;
+            left: 0;
+            z-index: 3;
+            margin: auto;
+            width: .3rem;
+            height: .3rem;
+        }
+        .red_envelope_money{
+            font-size: .4rem;
+            text-align: center;
+            line-height: 2rem;
+        }
+        .red_envelope_money span{
+            
+            font-size: .4rem;
+            font-weight: 800;
+        }
+        .ds{
+            position: relative;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        .ds_ds{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,0);
+            -webkit-transform: translate(-50%,0);
+            -o-transform: translate(-50%,0);
+            -moz-transform: translate(-50%,0);
+            -ms-transform: translate(-50%,0);
+        }
+        .dsds_item {
+            display:block;
+            width: 100%;
+            height: .6rem;
+            letter-spacing: .02rem;
+            /*border-bottom: 1px solid green;*/
+        }
+        .dsds_item_icon_box {
+            float: left;
+            position: relative;
+            width: .4rem;
+            height: 100%;
+        }
+        .tixian_pic {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            margin: auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .qunliao_item_text {
+            float: left;
+            display: block;
+            width: auto;
+            height: 100%;
+            font-size: .24rem;
+            line-height: .65rem;
+            text-indent: .2rem;
+        }
+        .password_box {
+            display: table;
+            margin: 0 auto;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            width: auto;
+            height: .8rem;
+            border: .02rem solid #a7a7a7;
+        }
+        .password_box_num {
+            float: left;
+            border-right: .02rem solid #a7a7a7;
+            width: .8rem;
+            height: 100%;
+            font-size: 1rem;
+            line-height: .76rem;
+            text-align: center;
+        }
+        .password_box_num:last-child {
+            border-right: none;
+        }
+        .password_box_num .trem_box {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+        .password_box_num .show_box {
+            display: block;
+        }
+        /*底部弹窗 wrap*/
+        .bottom_alert_wrap {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 7.5rem;
+            /*height: 4.85rem;*/
+            height: 100%;
+            z-index: 103;
+            /*#5f6063*/
+            background: rgba(95,96,99,.7);
+        }
+        /*输入完密码 => 遮罩层*/
+        .loading_wrap {
+            display: none;
+            position: absolute;
+            /*top: 0;
+            left: 0;*/
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 1;
+            /*width: 100vw;
+            height: 100vh;*/
+            /*background-color: rgba(0,0,0,.4);*/
+            text-align: center;
+            /*line-height: 100vh;*/
+            /*color: #e60d54;*/
+            background: white;
+            font-size: .35rem;
+            text-align: center;
+            width: 3.5rem;
+            height: 1rem;
+            line-height: 1rem;
+            border-radius:.06rem;
+        }
+        /*底部弹窗 box */
+        .bottom_alert_box {
+            position: absolute;
+            bottom: -4rem;
+            /*bottom: 0;*/
+            left: 0;
+            width: 7.5rem;
+            height: 4rem;
+            /*height: auto;*/
+            /*溢出出现滚动条*/
+            overflow-y: scroll;
+        }
+        /*底部弹窗 box=> 内容*/
+        .digital_keyboard_box {
+            width: 7.5rem;
+            height: auto;	
+        }
+        /*项(数字)*/
+        .number_trem {
+            float: left;
+            position: relative;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            width: 33%;
+            height: 1rem;	
+            font-size: .36rem;
+            line-height: 1rem;
+            text-align: center;
+            font-family: "微软雅黑";
+            border-bottom: .02rem solid #BFBFBF;
+            border-right: .02rem solid #BFBFBF;
+            background-color: #fff;
+        }
+        .number_trem_active {
+            background-color: #ccc;
+        }
+        /*2、5、8*/
+        .number_trem:nth-child(3n-1) {
+            width: 34%;
+        }
+        /*3的倍数-无right边框*/
+        .number_trem:nth-child(3n) {
+            border-right: none;
+        }
+        /*最后三个无bottom边框*/
+        .number_trem:nth-child(10), .number_trem:nth-child(12) {
+            border-bottom: none;
+            background-color: #eee;
+        }
+        /*数字 0*/
+        .number_trem:nth-child(11) {
+            border-bottom: none;
+        }
+        /*清除-图标*/
+        .eliminate_cion:before {
+            content: " ";
+            display: block;
+            width: .52rem;
+            height: .52rem;
+            background: url(../../img/news/eliminate_cion.png) no-repeat 0 0;
+            background-size: 100% 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            margin: auto;
+        }
+        /*删除-点击层*/
+        .delete_box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+        }
+        /* 数字键盘 -s*/
+    </style>
 </head>
 <body>
     <div class="wrap_frame">
@@ -38,23 +284,23 @@
                     <ul>
                         <li class="page-item" >
                             <span class="item-text">输入原密码</span>
-                            <input type="password">
+                            <input class="old" type="password" onkeyup="this.value=this.value.replace(/[^\d]/g,'');" maxlength="6">
                         </li>
                         <li class="page-item">
                             <span class="item-text">输入新密码</span>
-                            <input type="password">
+                            <input class="new" type="password" onkeyup="this.value=this.value.replace(/[^\d]/g,'');" maxlength="6">
                         </li>
                     </ul>
               </div>
               <div class="set-page forget">
                     <ul>
                         <li class="page-item" >
-                            <span class="item-text">电话</span>
-                            <input type="text">
+                            <span class="item-text">绑定电话</span>
+                            <input class="phone" type="text" maxlength="11">
                         </li>
                         <li class="page-item">
-                            <input type="text">
-                            <span class="item-text">获取验证码</span>
+                            <input class="codetext" type="text">
+                            <button class="item-text code">获取验证码</button>
                         </li>
                     </ul>
               </div>
@@ -65,10 +311,169 @@
                     下一步
               </div>
         </div>
+        <!--(数字-键盘)底部弹窗（蒙版）body-->
+        <div class="bottom_alert_wrap">
+            <div class="mask_text">
+                <div class="red_envelope">
+                    <p class="delete_img_box">
+                        <img class="delete_img" src="../../../../img/news/delete_icon.png" alt="" />
+                    </p>
+                </div>
+                <p class="red_envelope_money">设置支付密码</p>
+                <div class="password_box">
+                    <p class="password_box_num"><span class="trem_box">·</span></p>
+                    <p class="password_box_num"><span class="trem_box">·</span></p>
+                    <p class="password_box_num"><span class="trem_box">·</span></p>
+                    <p class="password_box_num"><span class="trem_box">·</span></p>
+                    <p class="password_box_num"><span class="trem_box">·</span></p>
+                    <p class="password_box_num"><span class="trem_box">·</span></p>
+                </div>
+            </div>
+            <!--输入完密码 => 遮罩层-->
+            <div class="loading_wrap"><!--报错 标签-->
+                输入的密码错误
+            </div>
+            <!--底部弹窗（框）-->
+            <div class="bottom_alert_box">
+                <!--数字键盘-->
+                <div class="digital_keyboard_box">
+                    <!--data-num:下标-->
+                    <p class="number_trem digital_key" data_state="true">1</p>
+                    <p class="number_trem digital_key" data_state="true">2</p>
+                    <p class="number_trem digital_key" data_state="true">3</p>
+                    <p class="number_trem digital_key" data_state="true">4</p>
+                    <p class="number_trem digital_key" data_state="true">5</p>
+                    <p class="number_trem digital_key" data_state="true">6</p>
+                    <p class="number_trem digital_key" data_state="true">7</p>
+                    <p class="number_trem digital_key" data_state="true">8</p>
+                    <p class="number_trem digital_key" data_state="true">9</p>
+                    <!--最后三个无bottom边框-->
+                    <p class="number_trem number_trem_none"></p>
+                    <p class="number_trem number_trem_none digital_key" data_state="true">0</p>
+                    <div class="number_trem number_trem_none">
+                        <i class="eliminate_cion"></i>
+                        <!--删除按钮-->
+                        <p class="delete_box digital_key" data-state="delete"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
         <script src="../../../../js/public/jquery-1.8.3.js"></script>
         <script src="../../../../js/public/public.js"></script>
         <script>
+            $(function() {
+            /**
+             * 全局变量
+             * **/
+            /*存储-当前滚动条的位置*/
+            var thisScroll_num = null;
+            /*获取支付密码（后台*/
+            var pass_val = '';
+            $('.digital_key').on('click',function(){
+                /*触摸-添加样式*/
+                $(this).addClass('number_trem_active');
+                /*当前的元素*/
+                var this_eve = $(this);
+                /*当前的数字*/
+                var this_nun = Number(this_eve.html());
+                /*当前-状态(输入数字true，删除false)*/
+                var this_state = true;
+                /*删除-按钮*/
+                if(this_eve.attr('data-state') == 'delete'){
+                    /*如果当元素为空时*/
+                    if(pass_val == ""){
+                        console.log('密码为空!');
+                        remove_class($(this));
+                        return false;
+                    }
+                    /*删除最后一个元素*/
+                    arr_str = pass_val.split('');
+                    /*数组删除最后一项*/
+                    arr_str.pop();
+                    pass_val = arr_str.join('');
+//	        			if(pass_val.length){
+                    console.log('模拟删除代码',pass_val.length);
+                    /*页面-模拟删除代码*/
+                    if(pass_val.length > 0){
+                        $('.password_box_num .trem_box').eq(pass_val.length).removeClass("show_box");
+                    }else {
+                        $('.password_box_num .trem_box').eq(0).removeClass("show_box");
+                    }
+                    this_state = false;
+                }
+                /*获取支付密码*/
+                if(pass_val.length < 6 && this_state){
+                    pass_val += this_nun;
+                }
+                /*状态*/
+                if(this_state){
+                    /*页面-模拟密码-代码*/
+                    $('.password_box_num .trem_box').eq(pass_val.length-1).addClass("show_box");
+                }
+                console.log(pass_val);
+                /*密码长度为6时，ajax*/
+                if(pass_val.length == 6){
+                    remove_class($(this));
+                    $('.loading_wrap').show();
+                    $('.mask_text').hide();
+                    $('.bottom_alert_box').hide();
+                    console.log('ajax-最终密码:',pass_val);
+                    setTimeout(function(){
+                        $('.loading_wrap').hide();
+                        $('.mask_text').show();
+                        $('.bottom_alert_box').show();
+                        pass_val='';
+                        $('.trem_box').removeClass('show_box');
+                    },1100);
+                    return false;
+                }
+                remove_class($(this));
+            })
+            /*离开-删除样式*/
+            function remove_class(_this){
+                /*模拟-touchs事件，因为iso上失效*/
+                setTimeout(function(){
+                    _this.removeClass('number_trem_active');
+                },100);
+                
+            }
+            
+            /*点击出现-底部弹窗*/
+            function appear(){
+                $('.bottom_alert_wrap').show();
+                /*底部弹窗(出现)*/
+                $('.bottom_alert_box').animate({'bottom':'0'})
+                /*获取当前滚动条的位置*/
+                thisScroll_num = $(document).scrollTop();
+                console.log('获取当前滚动条的位置',thisScroll_num);
+                /**禁止底部滑动
+                 * 设置为fixed之后会飘到顶部，所以要动态计算当前用户所在高度
+                 **/
+                $('.wrap').css({
+                    'position':'fixed',
+                    'top': -thisScroll_num,
+                    'left': 0,
+                });
+            }
+            /*关闭遮罩层*/
+            $('.delete_img_box').on('click',function(){
+                 $('.bottom_alert_wrap').hide();
+                 pass_val='';
+                 $('.trem_box').removeClass('show_box');
+                /*底部弹窗(隐藏)*/
+                $('.bottom_alert_box').animate({'bottom':-($('.bottom_alert_box').height())});
+                /*恢复底部滑动*/
+                $('.wrap').css({
+                    'position':'',
+                    'top': '',
+                    'left': '',
+                });
+                console.log(66666,thisScroll_num);
+                /*恢复当前用户滚动的位置！*/
+                $(document).scrollTop(thisScroll_num);
+                
+            })
             // 点击显示隐藏密码设置
             $('.alter_set').click(function(){
                     $('.alter').show();
@@ -76,16 +481,53 @@
                     $('.password_set').hide();
             })
             $('.set_btn').click(function(){
-                $('.alter input').val('');
-                $('.alter').hide();
-                $('.set_btn').hide();
-                $('.password_set').show();
+                if($('.old').val()==$('.new').val()&&$('.old').val()!=''){
+                    alert('保存成功')
+                    $('.alter input').val('');
+                    $('.alter').hide();
+                    $('.set_btn').hide();
+                    $('.password_set').show();
+                }else if($('.old').val()==''||$('.new').val()==''){
+                    alert('密码不能为空')
+                }else{
+                    alert('输入的密码不一致')
+                }
             })
             $('.forget_set').click(function(){
                 $('.step_btn').show();
                 $('.forget').show();
                 $('.password_set').hide();
             })
+            // 获取验证码
+            $('.code').click(function(){
+                let phone=$('.phone').val()
+                if(/^1[34578]\d{9}$/.test(phone)){
+                    let s=60;
+                    let time=setInterval(function(){
+                        s--;
+                        $('.code').html(s+'秒后重新获取');
+                        $('.code').attr('disabled','disabled');
+                        $('.codetext').css('width','66%');
+                        if(s==0){
+                            $('.codetext').css('width','75%')
+                            $('.code').html('获取验证码');
+                            $('.code').removeAttr('disabled');
+                            clearInterval(time);
+                        }
+                    },1000)
+                }else{
+                    alert('手机格式错误');
+                }
+            })
+            // 下一步
+            $('.step_btn').click(function(){
+                if($('.codetext').val()!=''){
+                    appear();
+                }else{
+                    alert('验证码不能为空');
+                }
+            })
+        });
         </script>
 </body>
 </html>
