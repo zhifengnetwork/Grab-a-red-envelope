@@ -102,7 +102,7 @@
 .alter{
     display: none;
 }
-.alter input,.forget input{
+.alter input,.forget input,.set input{
     border: 0;
     outline: none;
     width: 78%;
@@ -118,6 +118,9 @@
 }
 .forget .page-item:nth-child(2) input{
     width: 75%;
+}
+.set{
+    display: none;
 }
 .set_btn,.step_btn{
     display: none;

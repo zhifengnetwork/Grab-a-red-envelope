@@ -278,6 +278,9 @@
                             <span class="item-text">忘记支付密码</span>
                             <span class="right-arrow"></span>
                         </li>
+                        <li class="page-item set_password">设置支付密码</span>
+                            <span class="right-arrow"></span>
+                        </li>
                     </ul>
               </div>
               <div class="set-page alter">
@@ -304,6 +307,18 @@
                         </li>
                     </ul>
               </div>
+              <div class="set-page set">
+                    <ul>
+                        <li class="page-item" >
+                            <span class="item-text">输入密码</span>
+                            <input class="new" type="password" onkeyup="this.value=this.value.replace(/[^\d]/g,'');" maxlength="6">
+                        </li>
+                        <li class="page-item">
+                            <span class="item-text">确认密码</span>
+                            <input class="news" type="password" onkeyup="this.value=this.value.replace(/[^\d]/g,'');" maxlength="6">
+                        </li>
+                    </ul>
+            </div>
               <div class="set_btn">
                     保存
               </div>
@@ -363,6 +378,15 @@
         <script src="../../../../js/public/public.js"></script>
         <script>
             $(function() {
+            // state 为1时显示设置密码
+            let state = 1;
+            if(state == 1){
+                $('.set_password').show();
+                $('.alter_set,.forget_set').hide();
+            }else{
+                $('.set_password').hide();
+                $('.alter_set,.forget_set').show();
+            }
             /**
              * 全局变量
              * **/
@@ -481,19 +505,43 @@
                     $('.password_set').hide();
             })
             $('.set_btn').click(function(){
-                if($('.old').val()!=''&&$('.new').val()!=''){
-                    alert('保存成功')
-                    $('.alter input').val('');
-                    $('.alter').hide();
-                    $('.set_btn').hide();
-                    $('.password_set').show();
+                if($('.news').val()!=''){
+                    if($('.set .news').val()!=''&&$('.set .new').val()!=''){
+                        if($('.set .news').val()!=$('.set .new').val()){
+                            alert('输入密码不一致')
+                        }else{
+                            alert('设置成功')
+                            // $('.set input').val('');
+                            // $('.set').hide();
+                            // $('.set_btn').hide();
+                            // $('.password_set').show();
+                            //返回上层页面
+                            returnFun();
+                        }
+                    }else{
+                        alert('输入密码不能为空')
+                    }
                 }else{
-                    alert('密码不能为空')
+                    if($('.old').val()!=''&&$('.new').val()!=''){
+                        alert('保存成功')
+                        $('.alter input').val('');
+                        $('.alter').hide();
+                        $('.set_btn').hide();
+                        $('.password_set').show();  
+                    }else{
+                        alert('密码不能为空')
+                    }
                 }
             })
             $('.forget_set').click(function(){
                 $('.step_btn').show();
                 $('.forget').show();
+                $('.password_set').hide();
+            })
+            // 设置支付密码
+            $('.set_password').click(function(){
+                $('.set').show();
+                $('.set_btn').show();
                 $('.password_set').hide();
             })
             // 获取验证码
