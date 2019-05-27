@@ -1,4 +1,3 @@
-
 $(function(){
     $('html, body').animate({
         scrollTop: $('html, body').height()
@@ -14,6 +13,12 @@ $(function(){
 
     // 发送消息
     $('.dialog_menu_send').click(function(){
+        if (navigator.vibrate) {
+            navigator.vibrate([200,50,200]);
+        } else if (navigator.webkitVibrate) {
+            navigator.webkitVibrate([200,50,200]);
+        }
+        $('#audio')[0].play();
         let str = '';
         let text = $('.dialog_menu_input').html();
         if(text == ''){
@@ -35,7 +40,7 @@ $(function(){
         $('.dialog_menu_send').css('background','#c3f4ff')
         $('html, body').animate({
             scrollTop: $('html, body').height()
-        }, 'slow');
+        }, 100);
     })
 
     // 验证图片
@@ -66,7 +71,7 @@ $(function(){
                 $('.dialog_content').append(str);
                 $('html, body').animate({
                     scrollTop: $('html, body').height()
-                }, 'slow');
+                }, 100);
             }
             $(".camera,.picture").val('');
         }

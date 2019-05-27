@@ -61,6 +61,9 @@ body{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+.transfer_content_item:last-child .transfer_content_item_content{
+    border: 0;
+}
 .transfer_content_item_name{
     float: left;
 }

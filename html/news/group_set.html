@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />    
+	<script src="../../js/public/rem.js"></script>  
+    <link rel="stylesheet" href="../../css/public/public.css">
+    <link rel="stylesheet" href="../../css/news/group_set.css">
+    <script src="../../js/public/public.js"></script>
+    <title>群聊设置</title>
+</head>
+<body>
+    <!-- 群头像 -->
+    <div class="group_portrait">
+        <img class="group_portrait_img" src="../../img/news/portrait.png" alt="">
+    </div>
+    <!-- 群成员 -->
+    <div class="group_member">
+        <div class="group_member_info">
+            <div class="group_member_info_item"><img src="../../img/0000⑨.jpg" alt="" class="group_member_info_img"></div>
+            <div class="group_member_info_item"><img src="../../img/0000⑨.jpg" alt="" class="group_member_info_img"></div>
+            <div class="group_member_info_item"><img src="../../img/0000⑨.jpg" alt="" class="group_member_info_img"></div>
+            <div class="group_member_info_item"><img src="../../img/0000⑨.jpg" alt="" class="group_member_info_img"></div>
+            <div class="group_member_info_item"><img src="../../img/0000⑨.jpg" alt="" class="group_member_info_img"></div>
+            <div class="group_member_info_item"><img src="../../img/0000⑨.jpg" alt="" class="group_member_info_img"></div>
+            <div class="group_member_info_item"><img src="../../img/0000⑨.jpg" alt="" class="group_member_info_img"></div>
+            <div class="group_member_info_item"><img src="../../img/0000⑨.jpg" alt="" class="group_member_info_img"></div>
+            <div class="group_member_info_item"><img src="../../img/0000⑨.jpg" alt="" class="group_member_info_img"></div>
+            <div class="group_member_info_item"><img src="../../img/0000⑨.jpg" alt="" class="group_member_info_img"></div>
+            <div class="group_member_info_item"><img src="../../img/0000⑨.jpg" alt="" class="group_member_info_img"></div>
+            <div class="group_member_info_item"><img src="../../img/0000⑨.jpg" alt="" class="group_member_info_img"></div>
+            <div class="group_member_info_item"><img src="../../img/0000⑨.jpg" alt="" class="group_member_info_img"></div>
+            <div class="group_member_info_item"><img src="../../img/0000⑨.jpg" alt="" class="group_member_info_img"></div>
+            <div class="group_member_info_item"><img src="../../img/0000⑨.jpg" alt="" class="group_member_info_img"></div>
+        </div>  
+        <div class="group_member_more">
+            查看更多成员>>
+        </div>
+    </div>
+    <!-- 群设置 -->
+    <div class="group_set">
+        <div class="group_set_list">
+            <div class="group_set_list_item">
+                <span>我的群名称</span>
+                <img class="group_set_list_img" src="../../img/news/arrow@2x.png" alt="">
+            </div>
+        </div>
+        <!-- 列表项 -->
+        <div class="group_set_list">
+            <div class="group_set_list_item">
+                <span>设为顶置</span>
+                <img class="group_set_list_image" src="../../img/news/set_up/radio-b@2x.png" alt="">
+            </div>
+            <div class="group_set_list_item">
+                <span>设为免打扰</span>
+                <img class="group_set_list_image" src="../../img/news/set_up/radio-b@2x.png" alt="">
+            </div>
+        </div>
+        <!-- 列表项 -->
+        <div class="group_set_list">
+            <div class="group_set_list_item">
+                <span>查找聊天内容</span>
+                <img class="group_set_list_img" src="../../img/news/arrow@2x.png" alt="">
+            </div>
+            <div class="group_set_list_item">
+                <span>更多群资料</span>
+                <img class="group_set_list_img" src="../../img/news/arrow@2x.png" alt="">
+            </div>
+        </div>
+        <!-- 列表项 -->
+        <div class="group_set_list">
+            <div class="group_set_list_item">
+                <span>聊天背景</span>
+                <img class="group_set_list_img" src="../../img/news/arrow@2x.png" alt="">
+            </div>
+            <div class="group_set_list_item">
+                <span>进场特效</span>
+                <img class="group_set_list_img" src="../../img/news/arrow@2x.png" alt="">
+            </div>
+            <div class="group_set_list_item">
+                <span>共享位置信息</span>
+                <img class="group_set_list_img" src="../../img/news/arrow@2x.png" alt="">
+            </div>
+        </div>
+        <!-- 列表项 -->
+        <div class="group_set_list">
+            <div class="group_set_list_item">
+                <span>删除聊天内容</span>
+                <img class="group_set_list_img" src="../../img/news/arrow@2x.png" alt="">
+            </div>
+        </div>
+        <!-- 列表项 -->
+        <div class="group_set_list">
+            <div class="group_set_list_item">
+                <span>投诉</span>
+                <img class="group_set_list_img" src="../../img/news/arrow@2x.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 退出群聊 -->
+    <div class="group_quit">
+        退出群聊
+    </div>
+</body>
+<script src="../../js/public/jquery-1.8.3.js"></script>
+<script>
+    $(function(){
+        $('.group_set_list_item').click(function(){
+            if($(this).find('.group_set_list_image').attr('src')=='../../img/news/set_up/radio-b@2x.png'){
+                $(this).find('.group_set_list_image').attr('src','../../img/news/set_up/radio-a@2x.png')
+            }else{
+                $(this).find('.group_set_list_image').attr('src','../../img/news/set_up/radio-b@2x.png')
+            }
+        })
+    })
+</script>
+</html>

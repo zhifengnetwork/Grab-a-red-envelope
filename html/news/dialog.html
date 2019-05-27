@@ -177,7 +177,7 @@
                 <label class="dialog_menu_label">
                     <div class="dialog_menu_input" contenteditable="true" ></div>
                 </label>
-                <span class="dialog_menu_send" >发送</span>
+                <span class="dialog_menu_send">发送</span>
             </div>
             <div class="dialog_menu_submenu">
                 <!-- 相机 -->
@@ -254,7 +254,7 @@
             <div class="bottom_alert_box">
                 <!--数字键盘-->
                 <div class="digital_keyboard_box">
-                    <!--data-num:下标-->
+                    <!--data-num:下标-->    
                     <p class="number_trem digital_key" data_state="true">1</p>
                     <p class="number_trem digital_key" data_state="true">2</p>
                     <p class="number_trem digital_key" data_state="true">3</p>
@@ -278,6 +278,9 @@
         </div>
 
     </div>
+    <audio id="audio">
+        <source src="../../img/news/tips.mp3">
+    </audio>
     <script src="../../js/public/jquery-1.8.3.js"></script>
     <script type="text/javascript" src="../../js/news/jquery.sinaEmotion.js"></script>
     <script src="../../js/public/public.js"></script>
@@ -287,16 +290,16 @@
                 var u = navigator.userAgent;
                 var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
                 if(isiOS){
-                    $('.dialog_menu_input').on('focus','input',function(){
-                        $('.lb_headWrap').css("position","relative");
-                        $('.dialog_menu').css("position","relative");                                 
-                        $(document).scroll(function(){
-                            $('.dialog_menu_input').blur()
-                        })
-                    }).on('focusout','input',function(){
-                        $('.lb_headWrap').css("position","fixed");
-                        $('.dialog_menu').css("position","fixed");                    
-                    });
+                    $('.dialog_menu_input').focus(function(){
+                        setTimeout(function(){ 
+                            document.body.scrollTop = document.body.scrollHeight; 
+                        },300);                                 
+                    })
+                    $('.dialog_menu_input').blur(function(){
+                        setTimeout(function(){ 
+                            document.body.scrollTop = document.body.scrollHeight; 
+                        },300);
+                    })
                 }
 				/**
 				 * 全局变量
