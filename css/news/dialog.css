@@ -76,6 +76,9 @@ body{
     border-radius: .1rem;
     overflow: hidden;
 }
+.dialog_content_oneself_textimg img,.dialog_content_opposite_textimg img{
+    pointer-events: auto;
+}
 /* 本人消息 */
 .dialog_content_oneself,.dialog_content_opposite{
     margin-top:.5rem; 

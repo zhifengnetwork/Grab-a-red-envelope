@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />    
 	<script src="../../js/public/rem.js"></script>  
     <link rel="stylesheet" href="../../css/public/public.css">
+    <link rel="stylesheet" href="../../css/public/public_head.css">
     <link rel="stylesheet" href="../../css/news/group_set.css">
     <script src="../../js/public/public.js"></script>
     <title>群聊设置</title>
 </head>
 <body>
+    <div class="lb_headWrap">
+        <p class="lb_headWrap_return" data-num="1" onclick="returnFun()">
+            <img class="lb_headWrap_return_img" src="../../img/public/left.png"/>
+        </p>
+        <span>群聊设置</span>
+    </div>
     <!-- 群头像 -->
     <div class="group_portrait">
         <img class="group_portrait_img" src="../../img/news/portrait.png" alt="">
@@ -105,6 +112,15 @@
 <script src="../../js/public/jquery-1.8.3.js"></script>
 <script>
     $(function(){
+        $('.lb_headWrap').hide();
+        $(window).scroll(function(){
+            let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+            if(scrollTop >= 100){
+                $('.lb_headWrap').show();
+            }else{
+                $('.lb_headWrap').hide();
+            }
+        })
         $('.group_set_list_item').click(function(){
             if($(this).find('.group_set_list_image').attr('src')=='../../img/news/set_up/radio-b@2x.png'){
                 $(this).find('.group_set_list_image').attr('src','../../img/news/set_up/radio-a@2x.png')
