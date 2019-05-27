@@ -303,7 +303,7 @@ body{
     float: left;
     display: block;
     width:78%;
-    min-height: .45rem;
+    min-height: .55rem;
     border-radius: .2rem;
     background: #fff;
     overflow: hidden;
@@ -312,8 +312,8 @@ body{
     position: relative;
     float: left;
     display: inline-block;
-    width: 6.5%;
-    height: .45rem;
+    width: .55rem;
+    height: .55rem;
     margin-right: .1rem;
     background: #fff;
     border-radius: 50%;
@@ -348,8 +348,8 @@ body{
     display: block;
     margin-left: .1rem;
     width: 12%;
-    height: .45rem;
-    line-height: .45rem;
+    height: .55rem;
+    line-height: .55rem;
     text-align: center;
     border-radius: .2rem;
     color: #fff;
@@ -456,8 +456,8 @@ body{
 .group_menu_submenu_img{
     margin: .2rem auto;
     display: block;
-    width: .4rem;
-    height: .4rem;
+    width: .5rem;
+    height: .5rem;
 }
 /* 更多 */
 .group_menu_more{
@@ -467,8 +467,8 @@ body{
 .group_menu_more_img{
     margin: .2rem auto;
     display: block;
-    width: .4rem;
-    height: .4rem;
+    width: .5rem;
+    height: .5rem;
 }
 .red_details>.wrap_frame,.give_pack>.wrap_frame{
     overflow: scroll;

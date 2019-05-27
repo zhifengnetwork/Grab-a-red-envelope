@@ -325,7 +325,7 @@ body{
 }
 .dialog_menu_inputwrap{
     margin-top: .1rem;
-    line-height: .4rem;    
+    line-height: .5rem;    
     display: box;              /* OLD - Android 4.4- */
     display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -350,8 +350,8 @@ body{
     position: relative;
     float: left;
     display: inline-block;
-    width: 6.5%;
-    height: .45rem;
+    width: .5rem;
+    height: .5rem;
     margin-right: .1rem;
     background: #fff;
     border-radius: 50%;
@@ -388,8 +388,8 @@ body{
     display: block;
     margin-left: .1rem;
     width: 12%;
-    height: .45rem;
-    line-height: .45rem;
+    height: .55rem;
+    line-height: .55rem;
     text-align: center;
     border-radius: .2rem;
     color: #fff;
@@ -397,7 +397,7 @@ body{
 }
 /* 功能菜单 */
 .dialog_menu_submenu{
-    height: .8rem;;
+    height: 1rem;;
     display: box;              /* OLD - Android 4.4- */
     display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -427,8 +427,8 @@ body{
     bottom: 0;
     margin: auto;
     display: block;
-    width: .4rem;
-    height: .4rem;
+    width: .5rem;
+    height: .5rem;
 }
 /* 摄像机input */
 .camera,.picture{
