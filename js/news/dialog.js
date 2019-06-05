@@ -1,7 +1,7 @@
 $(function(){
-    $('html, body').animate({
-        scrollTop: $('html, body').height()
-    },100);
+    // $('html, body').animate({
+    //     scrollTop: $('html, body').height()
+    // },100);
     //改变发送按钮样式
     $('.dialog_menu_input').keyup(function(){
         if($(this).html()!=''){
@@ -12,7 +12,7 @@ $(function(){
     })
 
     // 发送消息
-    $('.dialog_menu_send').click(function(){
+    $('.dialog_menu_send').on('click',function(){
         if (navigator.vibrate) {
             navigator.vibrate([200,50,200]);
         } else if (navigator.webkitVibrate) {
@@ -78,16 +78,16 @@ $(function(){
     });
 
     // 显示转账弹框
-    $('.transfer').click(function(){
+    $('.transfer').on('click',function(){
         $('.dialog_transfer_wrap').show()
     })
     // 隐藏转账弹框
-    $('.dialog_transfer_back').click(function(){
+    $('.dialog_transfer_back').on('click',function(){
         $('.dialog_transfer_wrap').hide()
         $('.dialog_transfer_num_input').val('')
     })
     //点击表情包的图片，让滚动条滚动到底部
-    $('.emotion_ear').click(function(){
+    $('.emotion_ear').on('click',function(){
         // $('.dialog_menu_input').focus();
 //  	console.log($(document).scrollTop())
 //  	$("html,body").animate({scrollTop:$(document).scrollTop()},1000);
@@ -111,7 +111,7 @@ $(function(){
             $('.magnify').attr('src','');
         }
     });
-	$('.magnify_mask').click(function(){
+	$('.magnify_mask').on('click',function(){
         $('.dialog_content_oneself_textimg .dialog_content_oneself_img,.dialog_content_opposite_textimg .dialog_content_opposite_img').removeClass('magnify_active');
         $('.magnify').attr('src','')
         $(this).hide();

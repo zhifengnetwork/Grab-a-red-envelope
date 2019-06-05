@@ -11,7 +11,7 @@
     <title>对话框</title>
 </head>
 
-<body>
+<body onload="scrollToEnd()" >
     <div class="wrap_frame">
         <!--public head-->
         <div class="lb_headWrap">
@@ -286,7 +286,12 @@
     <script src="../../js/public/public.js"></script>
     <script src="../../js/news/dialog.js"></script>
     <script>
+        function scrollToEnd(){//滚动到底部
+            var h = $(document).height()-$(window).height();
+            $(document).scrollTop(h); 
+}
 			$(function() {
+                console.log(document.body.scrollHeight)
                 var u = navigator.userAgent;
                 var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
                 if(isiOS){
