@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <script src="../../js/public/rem.js"></script>
+    <link rel="stylesheet" href="../../css/public/public.css">
+    <link rel="stylesheet" href="../../css/public/public_head.css">
+    <title>新朋友</title>
+    <style>
+        .new_friend_title{
+            height: .5rem;
+            line-height: .5rem;
+            background: #e5e5e5;
+            padding: 0 .28rem;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        .new_friend_item{
+            position: relative;
+            height: 1rem;
+            line-height: 1rem;
+            margin-top: .02rem;
+            background: #fff;
+            padding: 0 .28rem;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        .new_friend_item_imgwrap{
+            float: left;
+            position:relative;
+            width: 1rem;
+            height: 1rem;
+        }
+        .new_friend_item_img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+        }
+        .new_friend_item_right{
+            float: left;
+            position: relative;
+            width: 85%;
+            border-bottom: .02rem solid #ccc;
+        }
+        .new_friend_item_name{
+            float: left;
+            margin-left: .2rem;
+        }
+        .new_friend_item_btn{
+            position: absolute;
+            right: 1.48rem;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            height: .5rem;
+            width: 1rem;
+            line-height: .48rem;
+            text-align: center;
+            background: #00a7ff;
+            color: #fff;
+            border-radius: .2rem;
+        }
+        .new_friend_item_refuse{
+            position: absolute;
+            right: .28rem;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            height: .5rem;
+            width: 1rem;
+            line-height: .48rem;
+            text-align: center;
+            background: #ff5400;
+            color: #fff;
+            border-radius: .2rem;
+        }
+        .new_friend_item_result{
+            position: absolute;
+            right: .28rem;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            height: .5rem;
+            width: 1rem;
+            line-height: .48rem;
+            text-align: center;
+            color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap_frame">
+        <!--public head-->
+        <div class="lb_headWrap">
+            <p class="lb_headWrap_return" data-num="1" onclick="returnFun()">
+                <img class="lb_headWrap_return_img" src="../../img/public/left.png"/>
+            </p>
+            <span>新朋友</span>
+        </div>
+        <div class="new_friend_list">
+            <div class="new_friend_title">
+                申请列表
+            </div>
+            <div class="new_friend_item">
+                <div class="new_friend_item_imgwrap">
+                    <img class="new_friend_item_img" src="http://img3.imgtn.bdimg.com/it/u=1239957118,2147373077&fm=26&gp=0.jpg" alt="">
+                </div>
+                <div class="new_friend_item_right">
+                    <div class="new_friend_item_name">
+                        卡罗拉
+                    </div>
+                    <!-- <div class="new_friend_item_btn">
+                        同意
+                    </div>
+                    <div class="new_friend_item_refuse">
+                        拒绝
+                    </div> -->
+                    <div class="new_friend_item_result">
+                        已同意
+                    </div>
+                </div>
+            </div>
+            <div class="new_friend_item">
+                <div class="new_friend_item_imgwrap">
+                    <img class="new_friend_item_img" src="http://img3.imgtn.bdimg.com/it/u=1239957118,2147373077&fm=26&gp=0.jpg" alt="">
+                </div>
+                <div class="new_friend_item_right">
+                    <div class="new_friend_item_name">
+                        卡罗拉
+                    </div>
+                    <!-- <div class="new_friend_item_btn">
+                        同意
+                    </div>
+                    <div class="new_friend_item_refuse">
+                        拒绝
+                    </div> -->
+                    <div class="new_friend_item_result">
+                        已拒绝
+                    </div>
+                </div>
+            </div>
+            <div class="new_friend_item">
+                <div class="new_friend_item_imgwrap">
+                    <img class="new_friend_item_img" src="http://img3.imgtn.bdimg.com/it/u=1239957118,2147373077&fm=26&gp=0.jpg" alt="">
+                </div>
+                <div class="new_friend_item_right">
+                    <div class="new_friend_item_name">
+                        卡罗拉
+                    </div>
+                    <div class="new_friend_item_btn">
+                        同意
+                    </div>
+                    <div class="new_friend_item_refuse">
+                        拒绝
+                    </div>
+                    <!-- <div class="new_friend_item_result">
+                        已同意
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
